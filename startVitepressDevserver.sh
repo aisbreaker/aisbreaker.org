@@ -1,4 +1,4 @@
 #!/bin/bash
 
-npm run docs:dev
+npm run site:dev
 

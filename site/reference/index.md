@@ -1,7 +1,7 @@
 ---
 prev:
   text: 'Guide'
-  link: '/guide/'
+  link: '/docs/'
 next:
   text: 'Contact'
   link: '/contact'

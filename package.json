@@ -4,8 +4,8 @@
     "vue": "^3.3.4"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "site:dev": "vitepress dev site",
+    "site:build": "vitepress build site",
+    "site:preview": "vitepress preview site"
   }
 }

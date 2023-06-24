@@ -10,7 +10,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide/' },
+      { text: 'Guide', link: '/docs/' },
       { text: 'Reference', link: '/reference/' },
       { text: 'Contact', link: '/contact' },
     ],
@@ -30,7 +30,7 @@ export default defineConfig({
     ],*/
     //lastUpdatedDateTimeFormatOptions: { dateStyle: 'medium',  timeStyle: 'short' },
     editLink: {
-      pattern: 'https://github.com/aisbreaker/aisbreaker.org-web/edit/main/docs/:path'
+      pattern: 'https://github.com/aisbreaker/aisbreaker.org-web/edit/main/site/:path'
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/aisbreaker/' }
