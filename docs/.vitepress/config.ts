@@ -18,6 +18,7 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023 AIsBreaker',
     },
+    /*
     sidebar: [
       {
         text: 'Examples',
@@ -26,7 +27,8 @@ export default defineConfig({
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
       }
-    ],
+    ],*/
+    //lastUpdatedDateTimeFormatOptions: { dateStyle: 'medium',  timeStyle: 'short' },
     editLink: {
       pattern: 'https://github.com/aisbreaker/aisbreaker.org-web/edit/main/docs/:path'
     },

@@ -4,7 +4,7 @@ layout: home
 
 # https://vitepress.dev/reference/default-theme-home-page#hero-section
 hero:
-  name: "AIsBreaker"
+  name: "AIs Breaker"
   text: "Simplify Access to AI Services"
   tagline: AIsBreaker provides an easy-to-use and service-agnostic API to access different AI services (like OpenAI/ChatGPT API, Open-Assistant API, Google Bart API and many more) in a uniform way.
   actions:
