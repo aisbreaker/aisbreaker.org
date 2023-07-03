@@ -11,9 +11,10 @@ Guide
 =====
 
 
-(TO BE WRITTEN)
+(TO BE FILLED)
 
-- [AIsBreaker Packages for JavaScript and TypeScript](./aisbreaker-packages.md)
+- [AIsBreaker Packages/ES Modules for JavaScript and TypeScript](./aisbreaker-modules.md)
+- [Monorepo](./monorepo.md)
 - ...
 - writing docs: [Writing Docs for AIsBreaker.org](./writing-docs/)
 

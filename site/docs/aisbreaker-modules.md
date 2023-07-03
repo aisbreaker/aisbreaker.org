@@ -9,8 +9,8 @@ next:
 ---
 
 
-AIsBreaker Packages for JavaScript and TypeScript
-=================================================
+AIsBreaker Packages/ES Modules for JavaScript and TypeScript
+============================================================
 
 npm packages ([ES modules](https://nodejs.org/api/esm.html#esm_introduction)):
 - `aisbreaker-api`
