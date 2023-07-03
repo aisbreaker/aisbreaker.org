@@ -24,6 +24,12 @@ How Tos
     - [github.com/david-szabo97/example-typescript-npm-workspaces/](https://github.com/david-szabo97/example-typescript-npm-workspaces)
 
 
+::: warning
+A module must be built to become available for the dependent modules.
+
+Simply changing the (TypeScript) code without re-build has no effect to other modules.
+:::
+
 Relevant Hints
 --------------
 - monorepo with vite: [Vite: Monorepos and Linked Dependencies](https://vitejs.dev/guide/dep-pre-bundling.html#monorepos-and-linked-dependencies)
