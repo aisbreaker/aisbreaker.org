@@ -54,7 +54,6 @@ More information and inspiration for `text-to-image` tasks:
 - [`text-to-image` at HuggingFace](https://huggingface.co/tasks/text-to-image)
 
 
-
 image-to-image
 --------------
 An `image-to-image` tasks transforms a source image to match the characteristics of a target image, usually controlled by a user text prompt.
