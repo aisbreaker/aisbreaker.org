@@ -68,3 +68,9 @@ Example use cases:
 More information and inspiration for `text-to-image` tasks:
 - [`image-to-image` at HuggingFace](https://huggingface.co/tasks/image-to-image)
 
+
+aisbreaker
+----------
+An `aisbreaker` tasks is not a normal AI tasks, instead it's used to address special AIsBreaker services like *logging* or *remote proxy access* ...
+
+

@@ -26,3 +26,8 @@ Examples:
 - `chat:openai.ai/gpt-3.5-turbo`
 - ...
 
+Examples with special tasks:
+- `aisbreaker:proxy` - to access a remote AIsBreaker proxy
+- `aisbreaker:logging` - to enable the LoggingFilter
+- ...
+
