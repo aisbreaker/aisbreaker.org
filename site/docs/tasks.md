@@ -68,8 +68,20 @@ More information and inspiration for `text-to-image` tasks:
 - [`image-to-image` at HuggingFace](https://huggingface.co/tasks/image-to-image)
 
 
-aisbreaker
-----------
+Special Task Identifiers
+------------------------
+
+### aisbreaker
 An `aisbreaker` tasks is not a normal AI tasks, instead it's used to address special AIsBreaker services like *logging* or *remote proxy access* ...
+
+### private Prefix
+A task with prefix `private` (e.g. `private`, `private-chat`, `private-monster-tool`, ...) is application or client specific task with application or client specififc semantics.
+
+
+Reserved Task Identifiers
+-------------------------
+All task identifiers not mentioned above are reserved for future use and may not be used at the moment.
+
+
 
 
