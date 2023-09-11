@@ -13,7 +13,7 @@ Guide
 
 (TO BE FILLED)
 
-- [AIsBreaker Packages/ES Modules for JavaScript and TypeScript](./aisbreaker-modules.md)
+- [AIsBreaker Packages (ES Modules) for JavaScript and TypeScript](./aisbreaker-packages.md)
 - [Monorepo](./monorepo.md)
 - [Tasks](./tasks.md)
 - [serviceId](./serviceId.md)

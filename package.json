@@ -1,9 +1,15 @@
 {
   "devDependencies": {
+    "@types/node": "^20.5.9",
+    "typedoc": "^0.25.1",
+    "typedoc-plugin-markdown": "^3.16.0",
     "vitepress": "^1.0.0-beta.3",
     "vue": "^3.3.4"
   },
   "scripts": {
+    "docs:prepare": "scripts/reference-docs-prepare.sh",
+    "docs:build": "scripts/reference-docs-build.sh",
+ 
     "site:dev": "vitepress dev site",
     "site:build": "vitepress build site",
     "site:preview": "vitepress preview site"
