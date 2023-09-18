@@ -12,13 +12,13 @@ next:
 AIsBreaker API Key (AIsBreaker Access Token)
 ============================================
 
-Such [Access Token](access-token) is (sometimes) needed to access an AIsBreaker server and its encapsulated AI services
+Such [API Key (Access Token)](./api-keys.md) is (sometimes) needed to access an AIsBreaker server and its abstracted AI services.
 
 
 Create an Server Access Token
 -----------------------------
 
-The following command creates access token, which contains an `OPENAI_API_KEY`. Everything encrypted for this specific server instance.
+The following command creates access token, which contains an `OPENAI_API_KEY`. Everything is encrypted **for this specific server instance only**.
 
 ```bash
 # the AIsBreaker server
