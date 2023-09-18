@@ -10,8 +10,10 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Demo', link: 'https://demo.aisbreaker.org/' },
       { text: 'Guide', link: '/docs/' },
       { text: 'Reference', link: '/reference/' },
+      { text: 'Contribute', link: '/contribute' },
       { text: 'Contact', link: '/contact' },
     ],
     footer: {

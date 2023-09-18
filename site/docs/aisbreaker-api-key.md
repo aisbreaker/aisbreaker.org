@@ -1,0 +1,70 @@
+---
+prev:
+  text: 'Guide'
+  link: '/docs/'
+next:
+  text: '???'
+  link: '/???'
+
+---
+
+
+AIsBreaker API Key (AIsBreaker Access Token)
+============================================
+
+Such [Access Token](access-token) is (sometimes) needed to access an AIsBreaker server and its encapsulated AI services
+
+
+Create an Server Access Token
+-----------------------------
+
+The following command creates access token, which contains an `OPENAI_API_KEY`. Everything encrypted for this specific server instance.
+
+```bash
+# the AIsBreaker server
+#export HOSTPORT="https://api.demo.aisbreaker.org"
+export HOSTPORT="http://localhost:3000"
+
+# the included OPENAI_API_KEY
+export OPENAI_API_KEY="sk_1234567890..."
+
+# create the access token via API call
+curl "${HOSTPORT}/api/v1/oauth/token" \
+  -v -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "requestAuthAndQuotas": {
+      "requestQuotas": {
+        "perClientRequestLimits": {
+          "requestsPerMinute": 60,
+          "requestsPerHour": 600,
+          "requestsPerDay": 600
+        },
+        "globalRequestLimits": {
+          "requestsPerMinute": 120,
+          "requestsPerHour": 1200,
+          "requestsPerDay": 1200
+        }
+      },
+      "serviceSecrets": [
+        { "serviceId": "aisbreaker:network", "authSecret": "{{secret}}" },
+        { "serviceId": "chat:openai.com", "authSecret": "'"${OPENAI_API_KEY}"'" },
+        { "serviceId": "chat:dummy", "authSecret": "" },
+        { "serviceId": "", "authSecret": "INVALID" }
+      ]
+    },
+    "expirationTimeSpan": "365d"
+  }'
+```
+
+The result will look like this
+```bash
+{
+  "access_token": "aisbreaker_eyJ2ZXIi...SJDUog",
+  "token_type": "Bearer"
+}
+```
+
+Important: The generated API key in only valid for this API host (the API server hostname will also be used and checked).
+
+

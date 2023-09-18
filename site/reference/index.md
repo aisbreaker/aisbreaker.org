@@ -3,8 +3,8 @@ prev:
   text: 'Guide'
   link: '/docs/'
 next:
-  text: 'Contact'
-  link: '/contact'
+  text: 'Contribute'
+  link: '/contribute'
 ---
 
 Reference

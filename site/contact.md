@@ -1,7 +1,7 @@
 ---
 prev:
-  text: 'Reference'
-  link: '/reference/'
+  text: 'Contribute'
+  link: '/contribute'
 next:
   text: 'Home'
   link: '/'
@@ -10,7 +10,9 @@ next:
 Contact
 =======
 
-If you want to contribute, please email to
-Chris (at) aisbreaker.org
+If you want to contribute, please read [Contribute](./contribute.md) first.
 
-Or contribute directly to one of our [GitHub repos](https://github.com/aisbreaker/).
+To give feedback, report bugs, or ask questions, use the [AIsBreaker Discussions](https://github.com/orgs/aisbreaker/discussions/categories/general-disussion)
+
+For direct contains, please email to
+Chris (at) aisbreaker.org

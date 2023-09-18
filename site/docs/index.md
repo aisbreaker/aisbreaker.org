@@ -17,8 +17,12 @@ Guide
 - [Monorepo](./monorepo.md)
 - [Tasks](./tasks.md)
 - [serviceId](./serviceId.md)
+- [AIsBreaker API Key (AIsBreaker Access Token)](aisbreaker-api-key.md)
 - ...
-- writing docs: [Writing Docs for AIsBreaker.org](./writing-docs/)
+- [Released Artifacts](./release.md#released-artifacts)
+
+
+
 
 
 
