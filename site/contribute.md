@@ -37,5 +37,5 @@ Details
 -------
 For developers and contributors:
 - [Contribute](./contribute.md)
-- [Release and Deploy new Versions](./docs/release.md)
+- [Release and Deploy new Versions](./docs/aisbreaker-api-js/release.md)
 - [Writing Docs for AIsBreaker.org](./docs/writing-docs/)

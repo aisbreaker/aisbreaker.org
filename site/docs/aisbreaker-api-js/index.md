@@ -16,4 +16,4 @@ Topics
 - [Monorepo: Multiple JavaScript Modules/npm Packages in a single Git Repo](./monorepo.md)
 - [Development Process](./development-process.md)
 - [Release and Deploy new Versions](./release.md)
-  - [Released Artifacts](./aisbreaker-api-js/release.md#released-artifacts)
+  - [Released Artifacts](./release.md#released-artifacts)
