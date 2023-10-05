@@ -1,18 +1,17 @@
 ---
 prev:
-  text: 'Guide'
-  link: '/docs/'
+  text: 'Concepts'
+  link: './'
 next:
-  text: '???'
-  link: '/???'
-
+  text: 'Concepts'
+  link: './'
 ---
 
 
 Service Identification with `serviceId`
 =======================================
 
-Each service connected or provided by AIsBreaker has one or more `serviceId`s.
+Each service connected to or provided by AIsBreaker has one or more `serviceId`s to select the task, the service/vendor and the engine/AI model.
 
 Format: **[*task*:]*vendor*[/*engine*]**
 - `task` - specify the [task](./tasks.md) provided by the service
@@ -22,6 +21,7 @@ Format: **[*task*:]*vendor*[/*engine*]**
   - OPTIONAL: if not provided a best guess will be used, which can also depend on the `task`
 
 Examples:
+- `chat:openai.ai`
 - `chat:openai.ai/gpt-4`
 - `chat:openai.ai/gpt-3.5-turbo`
 - ...

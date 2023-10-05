@@ -31,7 +31,7 @@ Contributions as developer include:
 - **develop Java/Kotlin/JVM** code (AIsBreaker remote client for JVM): [Contact](./contact.md)
 - **devlop other language** code: [Contact](./contact.md)
 - write or **improve documentation**: pull requests to [repo aisbreaker/aisbreaker.org](https://github.com/aisbreaker/aisbreaker.org/)
-
+  - [Writing Docs](./docs/writing-docs/)
 
 Details
 -------

@@ -7,20 +7,24 @@ next:
   link: '/reference/'
 ---
 
-Guide
-=====
+Docs
+====
 
+Topics
+------
+- [Concepts](./concepts/)
+  - Service, Task, ServiceId, Service Properties/ServiceProps/AIsServiceProps, API Keys (Access Tokens), Request, Response/FinalResponse/ResponseEvent, ...
+- [Architecture (Overview)](./architecture.md)
+  - AIsBreaker Local API, AIsBreaker Remote API, ...
+- [Artifacts (Overview)](./artifacts.md)
+  - ...
+- [AIsBreaker API (JavaScript/TypeScript)](./aisbreaker-api-js/)
+  - [AIsBreaker Packages (ES Modules) for JavaScript and TypeScript](./aisbreaker-api-js/aisbreaker-packages.md)
+  - [Monorepo: Multiple JavaScript Modules/npm Packages in a single Git Repo](./aisbreaker-api-js/monorepo.md)
+  - [Development Process](./aisbreaker-api-js/development-process.md)
+  - [Release and Deploy new Versions](./aisbreaker-api-js/release.md)
+    - [Released Artifacts](./aisbreaker-api-js/release.md#released-artifacts)
 
-(TO BE FILLED)
-
-- [AIsBreaker Packages (ES Modules) for JavaScript and TypeScript](./aisbreaker-packages.md)
-- [Monorepo](./monorepo.md)
-- [Tasks](./tasks.md)
-- [serviceId](./serviceId.md)
-- [API Keys (Access Tokens)](./api-keys.md)
-  - [AIsBreaker API Key (AIsBreaker Access Token)](./aisbreaker-api-key.md)
-- ...
-- [Released Artifacts](./release.md#released-artifacts)
 
 
 

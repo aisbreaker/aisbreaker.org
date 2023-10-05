@@ -32,3 +32,36 @@ Some examples of static tech docs - maybe a source of inspiration:
 - https://github.com/vuejs/vitepress/tree/main/docs/
 - https://github.com/expressjs/expressjs.com/tree/gh-pages/en/
 
+
+## Diagrams with Mermaid
+We use [Mermaid](https://mermaid.js.org/intro/) to generate diagrams. It is a diagramming and charting tool that uses Markdown-inspired text definitions and a renderer to create and modify complex diagrams.
+
+It's integrated into VitePress with the [vitepress-plugin-mermaid](https://github.com/emersonbottero/vitepress-plugin-mermaid).
+
+Example:
+
+    ```mermaid
+    graph TD
+      A[Enter Chart Definition] --> B(Preview)
+      B --> C{decide}
+      C --> D[Keep]
+      C --> E[Edit Definition]
+      E --> B
+      D --> F[Save Image and Code]
+      F --> B
+    ```
+
+Example result:
+
+```mermaid
+graph TD
+  A[Enter Chart Definition] --> B(Preview)
+  B --> C{decide}
+  C --> D[Keep]
+  C --> E[Edit Definition]
+  E --> B
+  D --> F[Save Image and Code]
+  F --> B
+```
+
+

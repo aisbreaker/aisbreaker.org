@@ -1,11 +1,10 @@
 ---
 prev:
-  text: 'Guide'
-  link: '/docs/'
+  text: 'Concepts'
+  link: './'
 next:
-  text: '???'
-  link: '/???'
-
+  text: 'Concepts'
+  link: './'
 ---
 
 

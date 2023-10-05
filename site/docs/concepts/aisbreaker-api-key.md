@@ -1,11 +1,10 @@
 ---
 prev:
-  text: 'Guide'
-  link: '/docs/'
+  text: 'API Keys (Access Token)'
+  link: './api-keys.md'
 next:
-  text: '???'
-  link: '/???'
-
+  text: 'Concepts'
+  link: './'
 ---
 
 
@@ -14,19 +13,23 @@ AIsBreaker API Key (AIsBreaker Access Token)
 
 Such [API Key (Access Token)](./api-keys.md) is (sometimes) needed to access an AIsBreaker server and its abstracted AI services.
 
+An AIsBreaker API Key is often needed to access an AIsBreaker server and its abstracted AI services - to handle quotas and to use encrypted 3rd party API keys.
 
-Create an Server Access Token
------------------------------
+Format of an AIsBreaker API key: `aisbreaker_123abc...`
+
+
+Create an AIsBreaker API Key for a specific AIsBreaker Server
+-------------------------------------------------------------
 
 The following command creates access token, which contains an `OPENAI_API_KEY`. Everything is encrypted **for this specific server instance only**.
 
 ```bash
 # the AIsBreaker server
-#export HOSTPORT="https://api.demo.aisbreaker.org"
-export HOSTPORT="http://localhost:3000"
+#export HOSTPORT="http://localhost:3000"
+export HOSTPORT="https://api.demo.aisbreaker.org"
 
 # the included OPENAI_API_KEY
-export OPENAI_API_KEY="sk_1234567890..."
+export OPENAI_API_KEY="sk_123abc..."
 
 # create the access token via API call
 curl "${HOSTPORT}/api/v1/oauth/token" \
@@ -58,13 +61,36 @@ curl "${HOSTPORT}/api/v1/oauth/token" \
 ```
 
 The result will look like this
-```bash
+```json
 {
   "access_token": "aisbreaker_eyJ2ZXIi...SJDUog",
   "token_type": "Bearer"
 }
 ```
+and includes the encrypted `OPENAI_API_KEY`. The AIsBreaker server can then be used with this key, inclusive access to OpenAI within the specified quotas.
+
+To use the generated key for the usage example below, store it in an environment variable `AISBREAKER_API_KEY`.
 
 Important: The generated API key in only valid for this API host (the API server hostname will also be used and checked).
 
 
+Use an AIsBreaker API Key
+-------------------------
+
+```bash
+# the AIsBreaker server
+#export HOSTPORT="http://localhost:3000"
+export HOSTPORT="https://api.demo.aisbreaker.org"
+
+# the API key
+export AISBREAKER_API_KEY="aisbreaker_123abc..."
+
+# create the access token via API call
+curl "${HOSTPORT}/api/v1/foo" \
+  -v -X POST \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer ${AISBREAKER_API_KEY}" \
+  -d '{
+    "xxx": {
+  }'
+```
