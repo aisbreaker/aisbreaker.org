@@ -10,8 +10,8 @@
     "vue": "^3.3.4"
   },
   "scripts": {
-    "docs:prepare": "scripts/reference-docs-prepare.sh",
-    "docs:build": "scripts/reference-docs-build.sh",
+    "reference-docs:prepare": "scripts/reference-docs-prepare.sh",
+    "reference-docs:build": "scripts/reference-docs-build.sh",
     "site:dev": "vitepress dev site",
     "site:build": "vitepress build site",
     "site:preview": "vitepress preview site"
