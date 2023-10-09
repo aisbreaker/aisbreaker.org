@@ -62,6 +62,15 @@ export default withMermaid /*defineConfig*/ ({
         link: 'https://github.com/orgs/aisbreaker/discussions/categories/general-disussion',
       },
     ],
+    lastUpdated: {
+      text: 'Updated at (UTC)',
+      formatOptions: {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+        hour12: false,
+        timeZone: "UTC",
+      }
+    },
     search: {
       provider: 'local',
       options: {
