@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 next:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 ---
 
 
@@ -13,7 +13,7 @@ Service Properties / ServiceProps / AIsServiceProps
 
 ... are the properties of a service, which are needed to connect to the service. Usually a JSON or YAML.
 
-At a minimum, as [serviceId](serviceId.md) is needed to select the service and the task.
+At a minimum, as [serviceId](./serviceId) is needed to select the service and the task.
 
 
 Examples

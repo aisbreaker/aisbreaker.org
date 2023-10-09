@@ -10,17 +10,18 @@ next:
 Concepts
 ========
 
-Here we explain some basic concepts generative AI services and of AIsBreaker ...
+Here we explain some basic concepts generative AI services and of AIsBreaker ... in addtion to the [Architecture (Overview)](architecture.md).
 
 
 Service
 -------
 ... is an AI service provided by AIsBreaker or by a 3rd party service provider.
 
-Examples are: OpenAI/ChatGPT, any Huggingface service, Stability.io image generation service, ...
+Examples are: OpenAI (ChatGPT) service, any Huggingface AI service, OpenAssistant AI service, Stability.io image generation service, ...
 
 Each service connected to or provided by AIsBreaker solves a specific `task` and is addressed by one or more `serviceId`s.
 
+A list of implemented service connectors/features: [Services](./services)
 
 Task
 ----

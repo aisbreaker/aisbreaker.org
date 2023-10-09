@@ -7,27 +7,19 @@ next:
   link: '/reference/'
 ---
 
-Docs
-====
+AIsBreaker Docs
+===============
 
-Topics
-------
-- [Concepts](./concepts/)
-  - Service, Task, ServiceId, Service Properties/ServiceProps/AIsServiceProps, API Keys (Access Tokens), Request, Response/FinalResponse/ResponseEvent, ...
-- [Architecture (Overview)](./architecture.md)
-  - AIsBreaker Local API, AIsBreaker Remote API, ...
-- [Artifacts (Overview)](./artifacts.md)
-  - ...
-- [AIsBreaker API (JavaScript/TypeScript)](./aisbreaker-api-js/)
-  - [AIsBreaker Packages (ES Modules) for JavaScript and TypeScript](./aisbreaker-api-js/aisbreaker-packages.md)
-  - [Monorepo: Multiple JavaScript Modules/npm Packages in a single Git Repo](./aisbreaker-api-js/monorepo.md)
-  - [Development Process](./aisbreaker-api-js/development-process.md)
-  - [Release and Deploy new Versions](./aisbreaker-api-js/release.md)
-    - [Released Artifacts](./aisbreaker-api-js/release.md#released-artifacts)
+What is AIsBreaker?
+-------------------
+
+AIsBreaker is an **open** platform for **AI Services**.
 
 
-
-
-
-
-
+How to Read the Docs?
+---------------------
+You can explore AIsBreaker in these phases:
+* checkout our [Demo](./demo-guide)
+* read the [Architecture (Overview)](./architecture) and about the [Basic Concepts](./concepts)
+* follow the **Getting Started** tutorial in your preferred programming language: [TypeScript/JavaScript](./getting-started-with-typescript-javascript), [Python](./getting-started-with-python), [Java](./getting-started-with-java) and [Others](./aisbreaker-rest-api)
+* explore more details

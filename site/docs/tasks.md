@@ -1,17 +1,19 @@
 ---
 prev:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 next:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 ---
 
 
 Tasks of AI Services
 ====================
 
-AI services can solve diferent tasks. The `task` is usually part of the [serviceId](serviceId.md) to classify the expected result of the service.
+AI services can solve diferent tasks. The `task` is usually part of the [serviceId](./serviceId) to classify the expected result of the service.
+
+A list of implemented service connectors/features: [Services](./services)
 
 The following tasks are currently supported ...
 

@@ -10,9 +10,10 @@ next:
 Contact
 =======
 
-If you want to contribute, please read [Contribute](./contribute.md) first.
-
 To give feedback, report bugs, or ask questions, use the [AIsBreaker Discussions](https://github.com/orgs/aisbreaker/discussions/categories/general-disussion)
+
+If you want to contribute, please check our [Contribute](./contribute.md) page.
+
 
 For direct contains, please email to
 Chris (at) aisbreaker.org

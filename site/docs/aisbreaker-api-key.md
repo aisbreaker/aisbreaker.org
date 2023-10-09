@@ -4,7 +4,7 @@ prev:
   link: './api-keys.md'
 next:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 ---
 
 

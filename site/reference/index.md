@@ -10,9 +10,15 @@ next:
 Reference
 =========
 
-Basic Concepts
---------------
-Check [Concepts](/docs/concepts/) pages for an overview of basic concepts.
+Basics
+------
+* architecture: [Architecture](/docs/architecture)
+* basic concepts: [Concepts](/docs/concepts)
+
+
+Services
+--------
+* A list of implemented service connectors/features: [Services](/docs/services)
 
 
 AIsBreaker Packages for JavaScript and TypeScript
@@ -29,6 +35,6 @@ AIsBreaker Packages (ES Modules) for JavaScript and TypeScript ([Overview](/docs
   - [source code](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-core-browserjs/)
 
 
-AIsBreaker Remote REST API
---------------------------
-See: [AIsBreaker Remote REST API - Spec](https://app.swaggerhub.com/apis/aisbreaker/ais1/)
+AIsBreaker REST API
+-------------------
+See: [AIsBreaker REST API](../docs/aisbreaker-rest-api)

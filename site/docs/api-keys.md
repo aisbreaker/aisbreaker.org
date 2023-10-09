@@ -1,7 +1,7 @@
 ---
 prev:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 next:
   text: 'AIsBreaker API Key (AIsBreaker Access Token)'
   link: './aisbreaker-api-key.md'

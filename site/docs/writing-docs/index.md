@@ -21,10 +21,11 @@ cd aisbreaker.org/
 
 ## Formatting Hints
 Markdown formatting hints:
-- [markdown-examples.md](./markdown-examples.md)
+- [Markdown Examples](./markdown-examples)
   - Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
     - [Import Code Snippets](https://vitepress.dev/guide/markdown#import-code-snippets)
     - [Code Groups](https://vitepress.dev/guide/markdown#code-groups)
+- [API Markdown Examples](./api-examples)
 
 
 ## Examples

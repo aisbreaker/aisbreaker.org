@@ -1,10 +1,10 @@
 ---
 prev:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 next:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 ---
 
 
@@ -14,6 +14,9 @@ Request
 
 Service-independent means that the format of the request is the same for all service implementations/vendors of the same `task`.
 
+If a conversation consists of multiple requests, then the `conversationState` of the previous response is used as input for the next request.
+
+The result of a request is a [Response](response.md)
 
 Examples
 --------
@@ -41,6 +44,23 @@ Examples
     "stream": true
   }
   ```
+- chat request (example 3 - continue a chat conversation, i.e. with conversationState returned from previous chat response):
+  ```json
+  {
+    "inputs": [{
+      "text": {
+        "role": "user",
+        "content": "What is TypeScript?"
+      }
+    }],
+    "conversationState":"eyJtZXNzYW...19XX0="
+  }
+  ```
+
+
+
+"conversationState":"eyJtZXNzYW...19XX0=",
+
 
 
 Specification/Declaration

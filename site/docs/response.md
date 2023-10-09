@@ -1,16 +1,16 @@
 ---
 prev:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 next:
   text: 'Concepts'
-  link: './'
+  link: './concepts'
 ---
 
 
-Response (FinalResponse and ResponseEvent)
+Response (ResponseFinal and ResponseEvent)
 ==========================================
-... is the (service independent) output of/result from an AI service.
+... is the (service independent) output of/result to a [Request](./request) from an AI service.
 
 Service-independent means that the format of the request is the same for all service implementations/vendors of the same `task`.
 
