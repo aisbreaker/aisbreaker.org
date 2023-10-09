@@ -23,7 +23,7 @@ graph TD
     App ==API Key + Service Properties + <b>Request</b>==> Lib
     Lib ==<b>Response</b>==> App
   end
-  Lib --> Server
+  Lib --AIsBreaker REST API--> Server
   subgraph internet["Internet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
     Server["AIsBreaker Server
             <sub><sup><b>self-hosted</b> or <b>api.demo.aisbreaker.org</b></sup></sub>

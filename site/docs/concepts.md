@@ -7,8 +7,8 @@ next:
   link: '/reference/'
 ---
 
-Concepts
-========
+Basic Concepts
+==============
 
 Here we explain some basic concepts generative AI services and of AIsBreaker ... in addtion to the [Architecture (Overview)](architecture.md).
 
