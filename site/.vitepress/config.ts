@@ -43,8 +43,8 @@ export default withMermaid /*defineConfig*/ ({
       }
     ],*/
     sidebar: {
-      '/docs/': { base: '/docs/', items: sidebarDocs() },
-      '/reference/': { base: '/reference/', items: sidebarReference() },
+      '/docs/': { base: '/docs', items: sidebarDocs() },
+      '/reference/': { base: '/reference', items: sidebarReference() },
       //'/docs/aisbreaker-api-js/aisbreaker-packages': { base: '/reference/', items: sidebarReference() },
     },
     //lastUpdatedDateTimeFormatOptions: { dateStyle: 'medium',  timeStyle: 'short' },
@@ -125,42 +125,42 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'What is AIsBreaker?', link: 'index' },
-        { text: 'Architecture (Overview)', link: 'architecture' },
-        { text: 'Basic Concepts', link: 'concepts' },
+        { text: 'What is AIsBreaker?', link: '/' },
+        { text: 'Architecture (Overview)', link: '/architecture' },
+        { text: 'Basic Concepts', link: '/concepts' },
       ]
     },
     {
       text: 'Gettings Started',
       collapsed: false,
       items: [
-        { text: 'Getting Started - with TypeScript/JavaScript', link: 'getting-started-with-typescript-javascript' },
-        { text: 'Getting Started - with Python', link: 'getting-started-with-python' },
-        { text: 'Getting Started - with Java/Kotlin/JVM', link: 'getting-started-with-java' },
-        { text: 'Getting Started - with REST API', link: 'aisbreaker-rest-api' },
+        { text: 'Getting Started - with TypeScript/JavaScript', link: '/getting-started-with-typescript-javascript' },
+        { text: 'Getting Started - with Python', link: '/getting-started-with-python' },
+        { text: 'Getting Started - with Java/Kotlin/JVM', link: '/getting-started-with-java' },
+        { text: 'Getting Started - with REST API', link: '/aisbreaker-rest-api' },
       ]
     },
     {
       text: 'Client Details',
       collapsed: false,
       items: [
-        { text: 'Services (List)', link: 'services' },
-        { text: 'Tasks of AI Services', link: 'tasks' },
-        { text: 'Service Identification with serviceId', link: 'serviceId' },
-        { text: 'Service Properties / ServiceProps / AIsServiceProps', link: 'service-properties' },
-        { text: 'Request', link: 'request' },
-        { text: 'Response (ResponseFinal and ResponseEvent)', link: 'response' },
-        { text: 'AIsBreaker Client API', link: 'aisbreaker-client-api' },
-        { text: 'AIsBreaker REST API', link: 'aisbreaker-rest-api' },
-        { text: 'API Keys (Access Tokens)', link: 'api-keys' },
-        { text: 'AIsBreaker API Key (AIsBreaker Access Token)', link: 'aisbreaker-api-key' },
+        { text: 'Services (List)', link: '/services' },
+        { text: 'Tasks of AI Services', link: '/tasks' },
+        { text: 'Service Identification with serviceId', link: '/serviceId' },
+        { text: 'Service Properties / ServiceProps / AIsServiceProps', link: '/service-properties' },
+        { text: 'Request', link: '/request' },
+        { text: 'Response (ResponseFinal and ResponseEvent)', link: '/response' },
+        { text: 'AIsBreaker Client API', link: '/aisbreaker-client-api' },
+        { text: 'AIsBreaker REST API', link: '/aisbreaker-rest-api' },
+        { text: 'API Keys (Access Tokens)', link: '/api-keys' },
+        { text: 'AIsBreaker API Key (AIsBreaker Access Token)', link: '/aisbreaker-api-key' },
       ],
     },
     {
       text: 'Server Details',
       collapsed: false,
       items: [
-        { text: 'AIsBreaker Server', link: 'aisbreaker-server' },
+        { text: 'AIsBreaker Server', link: '/aisbreaker-server' },
       ],
     },
     {
@@ -168,17 +168,17 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'AIsBreaker for JavaScript/TypeScript',
-          base: '/docs/aisbreaker-api-js/',
+          base: '/docs/aisbreaker-api-js',
           collapsed: false,
           items: [
             //{ text: 'Topics', link: 'aisbreaker-api-js/' },
-            { text: 'AIsBreaker Packages', link: './aisbreaker-packages' },
-            { text: 'Monorepo', link: './monorepo' },
-            { text: 'Development Process', link: './development-process' },
-            { text: 'Release and Deploy new Versions', link: './release' },
+            { text: 'AIsBreaker Packages', link: '/aisbreaker-packages' },
+            { text: 'Monorepo', link: '/monorepo' },
+            { text: 'Development Process', link: '/development-process' },
+            { text: 'Release and Deploy new Versions', link: '/release' },
           ]
         },
-        { text: 'Writing Docs', link: 'writing-docs/' },
+        { text: 'Writing Docs', link: '/writing-docs/' },
       ]
     },
   ]

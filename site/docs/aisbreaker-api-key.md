@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'API Keys (Access Token)'
-  link: './api-keys.md'
-next:
-  text: 'Concepts'
-  link: './concepts'
+#prev:
+#  text: 'API Keys (Access Token)'
+#  link: './api-keys.md'
+#next:
+#  text: 'Concepts'
+#  link: './concepts'
 ---
 
 

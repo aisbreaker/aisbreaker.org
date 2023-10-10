@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Home'
-  link: '/'
-next:
-  text: 'AIsBreaker Packages (ES Modules) for JavaScript and TypeScript'
-  link: '/docs/aisbreaker-api-js/aisbreaker-packages'
+#prev:
+#  text: 'Home'
+#  link: '/'
+#next:
+#  text: 'AIsBreaker Packages (ES Modules) for JavaScript and TypeScript'
+#  link: '/docs/aisbreaker-api-js/aisbreaker-packages'
 ---
 
 AIsBreaker API (JavaScript/TypeScript)

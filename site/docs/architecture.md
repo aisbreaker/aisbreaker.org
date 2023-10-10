@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Home'
-  link: '/'
-next:
-  text: 'Concepts'
-  link: './concepts'
+#prev:
+#  text: 'Home'
+#  link: '/'
+#next:
+#  text: 'Concepts'
+#  link: './concepts'
 ---
 
 Architecture (Overview)

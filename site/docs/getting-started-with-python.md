@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Home'
-  link: '/'
-next:
-  text: 'Reference'
-  link: '/reference/'
+#prev:
+#  text: 'Home'
+#  link: '/'
+#next:
+#  text: 'Reference'
+#  link: '/reference/'
 ---
 
 Getting Started - with Python

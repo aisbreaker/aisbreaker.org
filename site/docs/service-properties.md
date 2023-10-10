@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Concepts'
-  link: './concepts'
-next:
-  text: 'Concepts'
-  link: './concepts'
+#prev:
+#  text: 'Concepts'
+#  link: './concepts'
+#next:
+#  text: 'Concepts'
+#  link: './concepts'
 ---
 
 

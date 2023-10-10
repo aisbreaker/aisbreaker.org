@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Home'
-  link: '/'
-next:
-  text: 'Reference'
-  link: '/reference/'
+#prev:
+#  text: 'Home'
+#  link: '/'
+#next:
+#  text: 'Reference'
+#  link: '/reference/'
 ---
 
 AIsBreaker Server
@@ -19,6 +19,10 @@ Features
 - [AIsBreaker REST API](aisbreaker-rest-api)
 - access to all AI service connectors via a single API
 - authentication and quotas with [AIsBreakers API Key (AIsBreaker Access Tokens)](aisbreaker-api-key)
+
+Public Demo Server
+------------------
+For testing purposes, we provide a public demo server at [api.demo.aisbreaker.org](https://api.demo.aisbreaker.org/api/v1/version). It is a free service and can be used by anyone. However, it is not intended for production use and may be shut down at any time without notice.
 
 
 Installation

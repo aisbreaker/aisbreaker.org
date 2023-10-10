@@ -1,6 +1,6 @@
 ---
 prev:
-  text: 'Guide'
+  text: 'Docs'
   link: '/docs/'
 next:
   text: 'Contribute'

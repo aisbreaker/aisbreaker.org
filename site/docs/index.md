@@ -2,9 +2,9 @@
 prev:
   text: 'Home'
   link: '/'
-next:
-  text: 'Reference'
-  link: '/reference/'
+#next:
+#  text: 'Reference'
+#  link: '/reference/'
 ---
 
 AIsBreaker Docs

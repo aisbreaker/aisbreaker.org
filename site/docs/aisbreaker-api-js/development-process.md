@@ -1,11 +1,10 @@
 ---
-prev:
-  text: 'Guide'
-  link: '/docs/'
-next:
-  text: '???'
-  link: '/???'
-
+#prev:
+#  text: 'Monorepo'
+#  link: '/docs/aisbreaker-api-js/monorepo'
+#next:
+#  text: 'Release and Deploy new Versions'
+#  link: '/docs/aisbreaker-api-js/release'
 ---
 
 
@@ -36,5 +35,6 @@ For git repo [aisbreaker-js](https://github.com/aisbreaker/aisbreaker-js/):
   - all Docker images (if `packages/Dockerfile` is avalable) are build and published
 
 To deploy the new code to [demo.aisbreaker.org](https://demo.aisbreaker.org/) and to [api.demo.aisbreaker.org](https://api.demo.aisbreaker.org/):
-- set the new version in (NEW REPO - TODO) and push it to the `main` branch
+- set the new version in [aisbreaker-js/deployment/aisbreaker-prod/](https://github.com/aisbreaker/aisbreaker-js/tree/develop/deployment/aisbreaker-prod/) and push it to the `main` branch
   - this triggers the publishing process in GitHub CI
+  - see also initial Kubernetes setup repo [aisbreaker-k8s/](https://github.com/aisbreaker/aisbreaker-k8s/)

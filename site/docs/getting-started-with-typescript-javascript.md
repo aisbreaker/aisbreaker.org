@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Home'
-  link: '/'
-next:
-  text: 'Reference'
-  link: '/reference/'
+#prev:
+#  text: 'Home'
+#  link: '/'
+#next:
+#  text: 'Reference'
+#  link: '/reference/'
 ---
 
 Getting Started - with TypeScript/JavaScript
@@ -32,7 +32,7 @@ export AISBREAKER_API_KEY="aisbreaker_123abc..."
 export OPENAI_API_KEY="sk-123abc..."
 ```
 :::
-In a browser webapps read the API Key from an authentication flow or from configuration instead. But only use [AIsBreaker API Keys](aisbreaker-api-key) to never expose your AI service API key to webapp user.
+In a browser webapps read the API Key from an authentication flow or from configuration instead. But only use [AIsBreaker API Keys](aisbreaker-api-key) to never expose your AI service API key to webapp users.
 
 
 Initialize the AIsBreaker Client API
@@ -78,15 +78,14 @@ const serviceProps = {
 ```
 :::
 
-Read the API Key from your environment, if required by your desired [service]
-Select your desired service:
+Read the API Key from your environment, if required by your desired service:
 
 ::: code-group
 ```TypeScript[main.ts (NodeJS app)]
 const auth: api.Auth = {
   secret: process.env.AISBREAKER_API_KEY || process.env.OPENAI_API_KEY || "",
 }
-// or
+// or (if no API is required by your desired service):
 const auth = undefined
 ```
 
@@ -94,7 +93,7 @@ const auth = undefined
 const auth = {
   secret: process.env.AISBREAKER_API_KEY || process.env.OPENAI_API_KEY || "",
 };
-// or
+// or (if no API is required by your desired service):
 const auth = undefined;
 ```
 
@@ -107,7 +106,7 @@ const auth = undefined;
 const auth: api.Auth = {
   secret: "...",
 }
-// or
+// or (if no API is required by your desired service):
 const auth = undefined
 ```
 
@@ -120,7 +119,7 @@ const auth = undefined
 const auth = {
   secret: "...",
 };
-// or
+// or (if no API is required by your desired service):
 const auth = undefined;
 ```
 :::
@@ -147,19 +146,80 @@ Use the AIsBreaker Client API
 -----------------------------
 Most API functions work asynchronously. It's a good idea to use [async + await](https://javascript.info/async-await) to make your code easier to read and write.
 
-Here we implement a simple conversation example in an `async` function: 1st request + 1st response + 2nd request + 2nd response: 
+Here we implement a simple conversation example in an `async` function: 1st request/question/prompt + 1st response/answer + 2nd request/question/prompt + 2nd response/answer: 
 
 ::: code-group
 ```TypeScript[main.ts]
-// TODO
+// 1st request/question/prompt
+const request1 = "What is an AI?"
+// process
+const response1 = await aisService.process({
+    inputs: [ {
+        text: {
+            role: 'user',
+            content: request1,
+        },
+    } ],
+})
+// 1st response/answer
+console.log(`response1: ${response1.outputs[0].text.content}`)
+
+// 2nd request/question/prompt
+const prompt2 = `
+    If your previous answer in English, then translate your answser to German.
+    If your previous answer was not English, then translate your answser to English.
+    Only provide the translated text.
+    `
+// process, include conversation state from previous request
+const response2 = await aisService.process({
+    inputs: [ {
+        text: {
+            role: 'system',
+            content: prompt2,
+        },
+    } ],
+    conversationState: response1.conversationState,
+})
+// 2nd response/answer
+console.log(`response2: ${response2.outputs[0].text.content}`)
+
 ```
 
 ```JavaScript[main.js]
-// TODO
+// 1st request/question/prompt
+const request1 = "What is an AI?";
+// process
+const response1 = await aisService.process({
+    inputs: [ {
+        text: {
+            role: 'user',
+            content: request1,
+        },
+    } ],
+});
+// 1st response/answer
+console.log(`response1: ${response1.outputs[0].text.content}`);
+
+// 2nd request/question/prompt
+const prompt2 = `
+    If your previous answer in English, then translate your answser to German.
+    If your previous answer was not English, then translate your answser to English.
+    Only provide the translated text.
+    `;
+// process, include conversation state from previous request
+const response2 = await aisService.process({
+    inputs: [ {
+        text: {
+            role: 'system',
+            content: prompt2,
+        },
+    } ],
+    conversationState: response1.conversationState,
+});
+// 2nd response/answer
+console.log(`response2: ${response2.outputs[0].text.content}`);
 ```
-
-
-
+:::
 
 Finally, we need to call the `action` function:
 

@@ -1,11 +1,10 @@
 ---
-prev:
-  text: 'Guide'
-  link: '/docs/'
-next:
-  text: '???'
-  link: '/???'
-
+#prev:
+#  text: 'AIsBreaker Packages for TypeScript and JavaScript'
+#  link: '/docs/aisbreaker-api-js/aisbreaker-packages'
+#next:
+#  text: 'Development Process'
+#  link: '/docs/aisbreaker-api-js/development-process'
 ---
 
 

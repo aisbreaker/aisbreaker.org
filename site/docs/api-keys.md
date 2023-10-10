@@ -1,10 +1,10 @@
 ---
-prev:
-  text: 'Concepts'
-  link: './concepts'
-next:
-  text: 'AIsBreaker API Key (AIsBreaker Access Token)'
-  link: './aisbreaker-api-key.md'
+#prev:
+#  text: 'Concepts'
+#  link: './concepts'
+#next:
+#  text: 'AIsBreaker API Key (AIsBreaker Access Token)'
+#  link: './aisbreaker-api-key.md'
 ---
 
 

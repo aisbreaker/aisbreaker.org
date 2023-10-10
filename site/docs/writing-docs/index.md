@@ -18,6 +18,12 @@ cd aisbreaker.org/
 ./startVitepressDevserver.sh
 ```
 
+To locally check for dead link and other errors (before committing):
+```bash
+cd aisbreaker.org/
+./buildDocs.sh
+```
+
 
 ## Formatting Hints
 Markdown formatting hints:

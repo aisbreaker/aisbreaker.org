@@ -1,11 +1,10 @@
 ---
-prev:
-  text: 'Guide'
-  link: '/docs/'
-next:
-  text: '???'
-  link: '/???'
-
+#prev:
+#  text: 'AIsBreaker Server'
+#  link: '/docs/aisbreaker-server'
+#next:
+#  text: 'Monorepo'
+#  link: '/docs/aisbreaker-api-js/monorepo'
 ---
 
 
