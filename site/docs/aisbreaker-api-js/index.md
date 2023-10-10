@@ -3,17 +3,13 @@ prev:
   text: 'Home'
   link: '/'
 next:
-  text: 'Reference'
-  link: '/reference/'
+  text: 'AIsBreaker Packages (ES Modules) for JavaScript and TypeScript'
+  link: '/docs/aisbreaker-api-js/aisbreaker-packages'
 ---
 
 AIsBreaker API (JavaScript/TypeScript)
 ======================================
 
-Topics
-------
-- [AIsBreaker Packages (ES Modules) for JavaScript and TypeScript](./aisbreaker-packages.md)
-- [Monorepo: Multiple JavaScript Modules/npm Packages in a single Git Repo](./monorepo.md)
-- [Development Process](./development-process.md)
-- [Release and Deploy new Versions](./release.md)
-  - [Released Artifacts](./release.md#released-artifacts)
+The AIsBreaker API is a JavaScript/TypeScript API to connect to AIsBreaker services.
+
+Continue Reading: [AIsBreaker Packages (ES Modules) for JavaScript and TypeScript](./aisbreaker-packages)
