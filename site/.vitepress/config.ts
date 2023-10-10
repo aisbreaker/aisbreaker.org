@@ -7,6 +7,7 @@ export default withMermaid /*defineConfig*/ ({
   lang: 'en-US',
   description: "AIsBreaker introduction and docs",
   lastUpdated: true,
+  appearance: 'dark',
   sitemap: {
     hostname: 'https://aisbreaker.org',
     transformItems(items) {
@@ -135,7 +136,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Getting Started - with TypeScript/JavaScript', link: 'getting-started-with-typescript-javascript' },
         { text: 'Getting Started - with Python', link: 'getting-started-with-python' },
-        { text: 'Getting Started - with Java', link: 'getting-started-with-java' },
+        { text: 'Getting Started - with Java/Kotlin/JVM', link: 'getting-started-with-java' },
         { text: 'Getting Started - with REST API', link: 'aisbreaker-rest-api' },
       ]
     },
