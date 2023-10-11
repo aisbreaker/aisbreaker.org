@@ -18,7 +18,7 @@ Basics
 
 Services
 --------
-* A list of implemented service connectors/features: [Services](/docs/services)
+* A list of implemented service connectors/features: [Services (List)](/docs/services)
 
 
 AIsBreaker Packages for JavaScript and TypeScript

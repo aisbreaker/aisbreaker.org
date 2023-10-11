@@ -52,6 +52,6 @@ AIsBreaker consists of these packages:
 
 - `aisbreaker-server`
   - code to run an NodeJS + [Express](https://expressjs.com/) HTTP server, to serve the AIsBreaker API via REST
-  - inclusive proxy server default setup
+  - inclusive server default setup
   - [source code](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-server/)
 

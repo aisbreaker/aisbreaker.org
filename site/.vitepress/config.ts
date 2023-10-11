@@ -8,6 +8,7 @@ export default withMermaid /*defineConfig*/ ({
   description: "AIsBreaker introduction and docs",
   lastUpdated: true,
   appearance: 'dark',
+  
   sitemap: {
     hostname: 'https://aisbreaker.org',
     transformItems(items) {
@@ -31,6 +32,11 @@ export default withMermaid /*defineConfig*/ ({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023 AIsBreaker',
+    },
+    // https://vitepress.dev/reference/default-theme-config#outline
+    outline: {
+      // level?: number | [number, number] | 'deep'
+      level: 'deep',
     },
     /*
     sidebar: [

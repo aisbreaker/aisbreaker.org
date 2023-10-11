@@ -16,14 +16,24 @@ The AIsBreaker Client API is the default way to access different AI services, us
 
 To access the client API you need the following three things: Service Properties, AIsBreaker API Key and the message you want to send.
 
-### Service Properties
 
 
-### AIsBreaker API Key
+AIsBreaker Client API - with TypeScript/JavaScript
+--------------------------------------------------
+
+Most API functions work asynchronously. It's importand to understand [async + await](https://javascript.info/async-await) and to used it to make your code easier to read and to write.
+
+### Using the AIsBreaker Client API
+- [Getting Started - with TypeScript/JavaScript](./getting-started-with-typescript-javascript)
 
 
-### Message
+### Relevant Data Types
+Important data types:
+- [Service Properties / ServiceProps / AIsServiceProps](./service-properties)
+- [AIsBreaker API Key (AIsBreaker Access Token)](./aisbreaker-api-key)
+- messages:
+  - request/question/prompt: [Request](./request)
+  - response/answer: [Response (ResponseFinal and ResponseEvent)](./response)
 
-
-### Result
-
+All details and source code:
+- [AIsBreaker Packages for TypeScript and JavaScript ](aisbreaker-api-js/aisbreaker-packages)

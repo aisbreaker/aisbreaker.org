@@ -58,11 +58,6 @@ Examples
   ```
 
 
-
-"conversationState":"eyJtZXNzYW...19XX0=",
-
-
-
 Specification/Declaration
 -------------------------
 - for TypeScript/JavaScript:

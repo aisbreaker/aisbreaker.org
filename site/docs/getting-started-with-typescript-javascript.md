@@ -27,9 +27,10 @@ npm install aisbreaker-api-js aisbreaker-core-browserjs
 Set an [API Key](./api-keys) in your environment, if required by your desired [service](./services), and only for NodeJS apps:
 ::: code-group
 ```bash[NodeJS app]
+# set AIsBreaker API Key:
 export AISBREAKER_API_KEY="aisbreaker_123abc..."
-# or
-export OPENAI_API_KEY="sk-123abc..."
+# or set OpenAI API Key:
+export AISBREAKER_API_KEY="sk-123abc..."
 ```
 :::
 In a browser webapps read the API Key from an authentication flow or from configuration instead. But only use [AIsBreaker API Keys](aisbreaker-api-key) to never expose your AI service API key to webapp users.
@@ -144,9 +145,9 @@ const aisService = api.AIsBreaker.getRemoteAIsService(url, serviceProps, auth);
 
 Use the AIsBreaker Client API
 -----------------------------
-Most API functions work asynchronously. It's a good idea to use [async + await](https://javascript.info/async-await) to make your code easier to read and write.
+Most API functions work asynchronously. It's a good idea to use [async + await](https://javascript.info/async-await) to make your code easier to read and to write.
 
-Here we implement a simple conversation example in an `async` function: 1st request/question/prompt + 1st response/answer + 2nd request/question/prompt + 2nd response/answer: 
+Below we implement a simple conversation example in an `async` function: 1st request/question/prompt + 1st response/answer + 2nd request/question/prompt + 2nd response/answer.
 
 ::: code-group
 ```TypeScript[main.ts]
@@ -182,7 +183,6 @@ const response2 = await aisService.process({
 })
 // 2nd response/answer
 console.log(`response2: ${response2.outputs[0].text.content}`)
-
 ```
 
 ```JavaScript[main.js]
@@ -220,6 +220,12 @@ const response2 = await aisService.process({
 console.log(`response2: ${response2.outputs[0].text.content}`);
 ```
 :::
+Details:
+- request/question/prompt: [Request](./request)
+- response/answer: [(ResponseFinal and ResponseEvent)](./response)
+
+
+
 
 Finally, we need to call the `action` function:
 
