@@ -5,38 +5,49 @@ layout: home
 # https://vitepress.dev/reference/default-theme-home-page#hero-section
 hero:
   name: "AIs Breaker"
-  text: "Simplify Access to AI Services"
-  tagline: AIsBreaker provides an easy-to-use and service-agnostic API to access different AI services (like OpenAI/ChatGPT API, Open-Assistant API, Google Bart API and many more) in a uniform way.
+  text: "Easy Access to all AI&nbsp;Services"
+  tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Open Assistant and more&nbsp;... to provide simplicity and to avoid vendor lock-in.
+  TO-LONG-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
+  image:
+    src: achitecture-overview-white-bg-lr-1.png
+    alt: AIsBreaker Architecture Overview
   actions:
     - theme: brand
-      text: Guide
+      text: Demo
+      link: /docs/demo-guide
+    - theme: alt
+      text: Docs
       link: /docs/
     - theme: alt
-      text: Contact
+      text: Contact / Help / Support
       link: /contact
-text: lalla
+#text: lalla
 
 # https://vitepress.dev/reference/default-theme-home-page#features-section
 features:
   - title: Our Vision
-    details: The API/SDKs we develop should help app developers to integrate AI services into their apps in a simple and uniform way. Without the need to learn a service specific API. With the possiblility to easy switch to an alternative AI service, so that the app developer can choose the AI service that currently fits best for her/his app.
+    details: We want to provide a free and open-sourced tool for app developers to access almost any generative AI service (including OpenAI/ChatGPT, all Hugging Face AIs, Open Assistant, and more) in the most easy and most open way.
+ 
+  - title: What is AIsBreaker?
+    details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Free open-source with MIT license."
 
-  - title: Our Goals
-    details: Simplify app development when accessing AI services, allow easy switch to an alternative AI service, prevent vendor lock-in, provide simple and clean APIs/SDKs/tools, provide very good docs, support of many programming languages and environments.
+    STILL-TO-LONG-details: Developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a standardized interface. Free open-source. No vendor lock-in, with the freedom to choose and switch between different AI service providers without constraints.
 
-  - title: Join Us and Contribute
-    details: If you want to join and to contribute, please contact us. Or contribute directly to one of our GitHub repos.
+    TO-LONG-details: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
+
+  #- title: Our Goals
+  #  details: Simplify app development when accessing AI services, allow easy switch to an alternative AI service, prevent vendor lock-in, provide simple and clean APIs/SDKs/tools, provide very good docs, support of many programming languages and environments.
+
+  - title: Help
+    details: If you need help, checkout our superb docs (inclusive getting-started), ask questions in the AIsBreaker Discussions forum or contact us directly.
     link: /contact
     linkText: Contact
 
-  - title: We Have
-    details: An SDK already exists for NodeJS/TypeScript/JavaScript.
+  #- title: Contribute
+  #  details: If you want to give feedback or to join uns an contribute, please contact us. Or contribute directly to one of our GitHub repos.
+  #  link: /contribute
+  #  linkText: Contribute
 
-  - title: We Plan
-    details: Providing SDKs for more programming languages, like Python, Java/Kotlin/JVM and maybe more. We also plan to provide demo apps and refrence clients for different use cases.
-
-  - title: We Support App Developers
-    details: To use the free and open-sourced AisBreaker API so that they can simply select and use the best AI service without to fear vendor lock-in. App Developers should focus on developing great apps.
 
 next:
   text: 'Contact'

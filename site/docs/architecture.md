@@ -7,8 +7,25 @@
 #  link: './concepts'
 ---
 
-Architecture (Overview)
-=======================
+Architecture
+============
+
+Overview
+--------
+When you implement your own app using any AIsBreaker API, you can access any third-party AI service all through a consistent and standardized interface.
+
+```mermaid
+graph TD
+    App["Your App
+         <b>Your Code</b>"] ==> Lib["AIsBreaker API
+                                   <sub><sup>free open source</sup></sub>"]
+    Lib --> AI1["OpenAI (ChatGPT)"]
+    Lib --> AI2["Hugging Face AIs"]
+    Lib --> AI3["Open Assistant AI"]
+    Lib --> AI4["..."]
+```
+
+
 
 AIsBreaker Client API Architecture
 ----------------------------------
@@ -29,7 +46,7 @@ graph TD
             <sub><sup><b>self-hosted</b> or <b>api.demo.aisbreaker.org</b></sup></sub>
             <sub><sup>free open source</sup></sub>"]
     Server --> AI1["OpenAI (ChatGPT)"]
-    Server --> AI2["Hugging Face AI"]
+    Server --> AI2["Hugging Face AIs"]
     Server --> AI3["Open Assistant AI"]
     Server --> AI4["..."]
   end
@@ -45,7 +62,9 @@ Instead of using the library, you can also call the REST API of the AIsBreaker s
 
 AIsBreaker Local API Architecture
 ---------------------------------
-_**Beginners should skip this section.**_
+::: tip
+**Beginners** should skip this section and continue with [Basic Concepts](./concepts).
+:::
 
 An AIsBreaker Local API library is also available, but only recommend for the internal AIsBreaker Server implementation itself and **not recommended for general use**.
 
@@ -61,7 +80,7 @@ graph TD
   end
   subgraph internet["Internet"]
     Lib --> AI1["OpenAI (ChatGPT)"]
-    Lib --> AI2["Hugging Face AI"]
+    Lib --> AI2["Hugging Face AIs"]
     Lib --> AI3["Open Assistant AI"]
     Lib --> AI4["..."]
   end

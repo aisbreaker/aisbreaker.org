@@ -125,7 +125,7 @@ const auth = undefined;
 ```
 :::
 
-Get access to the API:
+Select the [AIsBreaker server](aisbreaker-server) to use and get access to the API:
 ::: code-group
 ```TypeScript[main.ts]
 // set AIsBreaker Server URL:

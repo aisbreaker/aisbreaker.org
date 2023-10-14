@@ -37,7 +37,7 @@ export AISBREAKER_API_KEY="aisbreaker_123abc..."
 export AISBREAKER_API_KEY="sk-123abc..."
 ```
 
-Select the AIsBreaker server to use:
+Select the [AIsBreaker server](aisbreaker-server) to use:
 ```bash
 # set AIsBreaker Server URL:
 export URL="https://api.demo.aisbreaker.org"

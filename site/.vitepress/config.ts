@@ -27,7 +27,7 @@ export default withMermaid /*defineConfig*/ ({
       { text: 'Docs', link: '/docs/' },
       { text: 'Reference', link: '/reference/' },
       { text: 'Contribute', link: '/contribute' },
-      { text: 'Contact', link: '/contact' },
+      { text: 'Contact / Help / Support', link: '/contact' },
     ],
     footer: {
       message: 'Released under the MIT License.',
