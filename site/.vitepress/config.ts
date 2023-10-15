@@ -132,7 +132,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'What is AIsBreaker?', link: '/' },
-        { text: 'Architecture (Overview)', link: '/architecture' },
+        { text: 'Architecture', link: '/architecture' },
         { text: 'Basic Concepts', link: '/concepts' },
       ]
     },
