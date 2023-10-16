@@ -22,7 +22,7 @@ Examples
 --------
 ... of `ResponseFinal`:
 
-- chat response *(example 1 - response from OpenAI chat to the question "What is JavaScript?")*:
+- chat response *(example 1 - response from OpenAI chat to the question "What is JavaScript?")* inclusive [conversationState](conversation-state):
   ```json
   {
     "outputs":[

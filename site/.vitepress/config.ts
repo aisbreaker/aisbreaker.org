@@ -134,6 +134,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
         { text: 'What is AIsBreaker?', link: '/' },
         { text: 'Architecture', link: '/architecture' },
         { text: 'Basic Concepts', link: '/concepts' },
+        { text: 'Use Cases', link: '/use-cases' },
       ]
     },
     {
@@ -156,10 +157,12 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
         { text: 'Service Properties / ServiceProps / AIsServiceProps', link: '/service-properties' },
         { text: 'Request', link: '/request' },
         { text: 'Response (ResponseFinal and ResponseEvent)', link: '/response' },
+        { text: 'Conversation State', link: '/conversation-state' },
         { text: 'AIsBreaker Client API', link: '/aisbreaker-client-api' },
         { text: 'AIsBreaker REST API', link: '/aisbreaker-rest-api' },
         { text: 'API Keys (Access Tokens)', link: '/api-keys' },
         { text: 'AIsBreaker API Key (AIsBreaker Access Token)', link: '/aisbreaker-api-key' },
+        { text: 'Apps using AIsBreaker / Examples', link: '/examples' },
       ],
     },
     {

@@ -17,8 +17,9 @@ AIsBreaker is an open source project. We welcome contributions of all kinds from
 
 Contributions as User
 ---------------------
-Possible contributions as develuser:
+Possible contributions as app developer/user:
 - **give feedback**: [AIsBreaker General Discussion](https://github.com/orgs/aisbreaker/discussions/categories/general-disussion)
+- **report about your AIsBreaker usage** - and get listed on [Apps using AIsBreaker](docs/examples)
 - **write about your (potential) use cases**: [AIsBreaker General Discussion](https://github.com/orgs/aisbreaker/discussions/categories/general-disussion)
 - **report bugs**: [AIsBreaker Discussions: Q&A and Bugs](https://github.com/orgs/aisbreaker/discussions/categories/q-a)
 - **spreading the word** about AIsBreaker.org, e.g.
@@ -29,7 +30,7 @@ Possible contributions as develuser:
 
 Contributions as Developer
 --------------------------
-Possible contributions as developer:
+Possible contributions as AIsBreaker developer:
 - **develop TypeScript** code
   - improve core code: pull requests to [repo aisbreaker/aisbreaker-js](https://github.com/aisbreaker/aisbreaker-js/)
   - develop new connectors to new chat services: create a new git repo and [contact](./contact.md) us
