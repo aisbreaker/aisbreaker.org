@@ -9,7 +9,7 @@ hero:
   tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Open Assistant and more&nbsp;... to provide simplicity and to avoid vendor lock-in.
   TO-LONG-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
   image:
-    src: /architecture-overview-trans-bg-lr-1.png
+    src: /architecture-overview-trans-bg-lr-2.png
     alt: AIsBreaker Architecture Overview
   actions:
     - theme: brand

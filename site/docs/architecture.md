@@ -16,13 +16,12 @@ When you implement your own app using any AIsBreaker API, you can access any thi
 
 ```mermaid
 graph TD
-    App["Your App
-         <b>Your Code</b>"] ==> Lib["AIsBreaker API
-                                   <sub><sup>free open source</sup></sub>"]
+    App["<b>Your App</b>"] --> Lib["AIsBreaker API
+                                     <sub><sup>free open source</sup></sub>"]
     Lib --> AI1["OpenAI (ChatGPT)"]
     Lib --> AI2["Hugging Face AIs"]
     Lib --> AI3["Open Assistant AI"]
-    Lib --> AI4["..."]
+    Lib --> AI4[".&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;."]
 ```
 
 
