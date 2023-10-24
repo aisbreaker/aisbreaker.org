@@ -18,7 +18,7 @@ Sometimes, an [AIsBreaker API Key](aisbreaker-api-key.md) is also needed to acce
 Examples are:
 - [OpenAI API Keys](https://platform.openai.com/docs/api-reference/authentication), format: `sk-123abc...`
 - [Azure OpenAI API Keys](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#authentication)
-- [Huggingface User Access Tokens](https://huggingface.co/docs/hub/security-tokens), format: `hf_123abc...`
+- [Huggingface User Access Tokens](https://huggingface.co/docs/hub/security-tokens#user-access-tokens), format: `hf_123abc...`
 - [Stability AI API Keys](https://platform.stability.ai/docs/getting-started/authentication), format: `sk-123abc...`
 - ...
 - [AIsBreaker API Keys](aisbreaker-api-key.md), format: `aisbreaker_123abc...`
