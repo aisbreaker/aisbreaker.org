@@ -36,9 +36,19 @@ ServiceId
 Each service connected to or provided by AIsBreaker has one or more `serviceId`s to select the task, the service/vendor and the engine/AI model. Details on page: [serviceId](serviceId.md)
 
 
+Engine / Model
+--------------
+Each service supports one or mode `engines`. An engine is a vendor specific name of the engine/model/model family to use. More on page: [serviceId](serviceId.md)
+
+
 Service Properties / ServiceProps / AIsServiceProps
 ---------------------------------------------------
 ... are the properties of a service, which are needed to connect to the service. Usually a JSON or YAML. Details on page: [Service Properties / ServiceProps / AIsServiceProps](service-properties.md)
+
+
+Service URL
+-----------
+... is the URL of the actual AI service API. Details on page: [Service URL](url.md)
 
 
 API Keys (Access Tokens)

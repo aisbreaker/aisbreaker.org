@@ -155,6 +155,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
         { text: 'Tasks of AI Services', link: '/tasks' },
         { text: 'Service Identification with serviceId', link: '/serviceId' },
         { text: 'Service Properties / ServiceProps / AIsServiceProps', link: '/service-properties' },
+        { text: 'Service URL', link: '/url' },
         { text: 'Request', link: '/request' },
         { text: 'Response (ResponseFinal and ResponseEvent)', link: '/response' },
         { text: 'Conversation State', link: '/conversation-state' },

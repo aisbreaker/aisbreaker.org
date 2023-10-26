@@ -13,7 +13,9 @@ Service Properties / ServiceProps / AIsServiceProps
 
 ... are the properties of a service, which are needed to connect to the service. Usually a JSON or YAML.
 
-At a minimum, as [serviceId](./serviceId) is needed to select the service and the task.
+The [serviceId](./serviceId) is a mandatory field - it selects the service and the task.
+
+Optionally, a [Service URL](./url) can be specified to override the default service URL.
 
 
 Examples
@@ -25,14 +27,30 @@ Examples
     "serviceId": "chat:openai.com"
   }
   ```
-- OpenAI compatible service:
+  - will use `chat:openai.com` with (default) URL `https://api.openai.com/v1/chat/completions`
+- OpenAI compatible service with a different URL:
   ```yaml
   {
     "serviceId": "chat:openai.com",
-    # set the correct URL:
-    "url": "https://api.openai.compatible.example.com/v1/chat/completions"
+    "url": "https://api.openai.compatible.example.com/api/chat-completions"
   }
   ```
+  - will use the URL `https://api.openai.compatible.example.com/api/chat-completions`
+- Huggingface model with [Hosted Inference API](https://huggingface.co/docs/api-inference/index#hosted-inference-api) on Huggingfaces public shared infrastructure:
+  ```yaml
+  {
+    "serviceId": "chat:huggingface.co/microsoft/DialoGPT-large"
+  }
+  ```
+  - will use the default URL `https://api-inference.huggingface.co/models/${engine}` which leads to final service URL `https://api-inference.huggingface.co/models/microsoft/DialoGPT-large` for this example
+- Huggingface model with a privatly hosted [Inference Endpoint](https://huggingface.co/docs/inference-endpoints/index#inference-endpoints):
+  ```yaml
+  {
+    "serviceId": "chat:huggingface.co/microsoft/DialoGPT-large",
+    "url": "https://my-huggingface-inference-endpoint.example.com/api/v1/models/${engine}"
+  }
+  ```
+  - will lead to final service URL `https://my-huggingface-inference-endpoint.example.com/api/v1/models/microsoft/DialoGPT-large` for this example
 - Dummy chat (useful for cost-free testing only):
   ```yaml
   {
@@ -47,6 +65,7 @@ Examples
   ```
 
 More example can be found in
+- the [Services](./services) list
 - the [Demo AIsBreaker Chat](https://demo.aisbreaker.org/)
   - under: Settings (Gear left buttom) > Service > Service Properties
 
