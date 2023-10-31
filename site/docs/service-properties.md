@@ -32,10 +32,18 @@ Examples
   ```yaml
   {
     "serviceId": "chat:openai.com",
-    "url": "https://api.openai.compatible.example.com/api/chat-completions"
+    "url": "https://api.openai.compatible.example.com/"
   }
   ```
   - will use the URL `https://api.openai.compatible.example.com/api/chat-completions`
+- OpenAI compatible service with a different URL inclusive different path:
+  ```yaml
+  {
+    "serviceId": "chat:openai.com",
+    "url": "https://api.openai.compatible.example.com/my-api-chat-completions#no-default-path"
+  }
+  ```
+  - will use the URL `https://api.openai.compatible.example.com/my-api-chat-completions`
 - Huggingface model with [Hosted Inference API](https://huggingface.co/docs/api-inference/index#hosted-inference-api) on Huggingfaces public shared infrastructure:
   ```yaml
   {
@@ -47,7 +55,7 @@ Examples
   ```yaml
   {
     "serviceId": "chat:huggingface.co/microsoft/DialoGPT-large",
-    "url": "https://my-huggingface-inference-endpoint.example.com/api/v1/models/${engine}"
+    "url": "https://my-huggingface-inference-endpoint.example.com/api/v1/"
   }
   ```
   - will lead to final service URL `https://my-huggingface-inference-endpoint.example.com/api/v1/models/microsoft/DialoGPT-large` for this example
