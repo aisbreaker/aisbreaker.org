@@ -65,12 +65,22 @@ Examples
     "serviceId": "chat:dummy"
   }
   ```
-- Dummy chat again (useful for cost-free testing only):
+- Echo chat (useful for cost-free testing only):
   ```yaml
   {
-    "serviceId": "chat:dummy"
+    "serviceId": "chat:echo"
   }
   ```
+- Echo chat, modified my Mirror filter (useful for cost-free testing only):
+  ```yaml
+  {
+    "serviceId": "aisbreaker:mirror",
+    "forward2ServiceProps": {
+      "serviceId": "chat:echo"
+    }
+  }
+  ```
+
 
 More example can be found in
 - the [Services](./services) list
