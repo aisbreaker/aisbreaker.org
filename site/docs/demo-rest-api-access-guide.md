@@ -1,20 +1,27 @@
 ---
 prev:
-  text: 'Demo (Guide)'
-  link: '/docs/demo-guide'
+  text: 'Demo REST API Access (Guide)'
+  link: '/docs/demo-javascript-guide'
 next:
-  text: 'Introduction (AIsBreaker Docs)'
-  link: '/docs/'
+  text: 'Demo REST API Access (Guide)'
+  link: '/docs/demo-webapp-guide'
 ---
 
-Demo AIsBreaker API Access (Guide)
-==================================
+Demo REST API Access (Guide)
+============================
 
-The AIsBreaker API is a normal REST API with JSON data.
+The AIsBreaker REST API is a normal REST API with JSON data.
 
 
-First Request
--------------
+## Quick Start
+- open the AIsBreaker [Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)](https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start)
+- run `npm run start`
+- try different configurations/serviceProps/serviceIds
+
+
+## Slow Start
+
+### First Request
 Here is an example of a request to the AIsBreaker API with the `curl` command:
 
 ```bash
@@ -60,8 +67,7 @@ The response will look like this:
 }
 ```
 
-Second Request
---------------
+### Second Request
 To get a more useful response, replace
 
   `"serviceId": "chat:dummy"`
@@ -73,8 +79,11 @@ with
 in the request.
 
 
-More
-----
+### Try Online
+Checkout the [Quick Start](#quick-start) section above.
+
+
+### More Details
 More details on how to access the AIsBreaker API, with and without `curl`, can be found on the **Getting Started** tutorials.
 
 But before, you should understand the basic concepts and read the [Introduction (AIsBreaker Docs)](/docs/) ...

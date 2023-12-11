@@ -13,14 +13,31 @@ hero:
     alt: AIsBreaker Architecture Overview
   actions:
     - theme: brand
-      text: Demo
-      link: /docs/demo-guide
+      text: Demo JavaScript with NodeJS
+      link: /docs/demo-javascript-guide
+    - theme: brand
+      text: Demo REST API Access
+      link: /docs/demo-api-access-guide
+    - theme: brand
+      text: Demo Chat WebApp
+      link: /docs/demo-webapp-guide
     - theme: alt
-      text: Docs
+      text: AIsBreaker Docs
       link: /docs/
     - theme: alt
       text: Contact / Help / Support
       link: /contact
+
+#    - theme: brand
+#      text: Demo
+#      link: /docs/demo-guide
+#    - theme: alt
+#      text: Docs
+#      link: /docs/
+#    - theme: alt
+#      text: Contact / Help / Support
+#      link: /contact
+
 #text: lalla
 
 # https://vitepress.dev/reference/default-theme-home-page#features-section

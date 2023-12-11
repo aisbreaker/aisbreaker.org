@@ -25,7 +25,8 @@ Free open-source with MIT license.
 How to Read the Docs?
 ---------------------
 You can explore AIsBreaker in these phases:
-* checkout our [Demo](./demo-guide)
-* read the [Architecture (Overview)](./architecture) and about the [Basic Concepts](./concepts)
-* follow the **Getting Started** tutorial in your preferred programming language: [TypeScript/JavaScript](./getting-started-with-typescript-javascript), [Python](./getting-started-with-python), [Java/Kotlin/JVM](./getting-started-with-java) and [Others](./aisbreaker-rest-api)
-* explore more details
+- checkout our demos: [JavaScript with NodeJS](./demo-javascript-guide), [Demo REST API Access](./demo-rest-api-access-guide), [Demo Chat WebApp](./demo-webapp-guide)
+- read the [Architecture (Overview)](./architecture)
+- read about the [Basic Concepts](./concepts)
+- follow the **Getting Started** tutorial in your preferred programming language: [TypeScript/JavaScript](./getting-started-with-typescript-javascript), [Python](./getting-started-with-python), [Java/Kotlin/JVM](./getting-started-with-java) and [Others](./aisbreaker-rest-api)
+- explore more details

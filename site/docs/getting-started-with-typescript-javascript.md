@@ -40,6 +40,7 @@ Initialize the AIsBreaker Client API
 ------------------------------------
 Import required libraries:
 
+<!--
 ::: code-group
 ```TypeScript[main.ts (NodeJS app)]
 import { api, services } from 'aisbreaker-api-js'
@@ -62,19 +63,51 @@ import * as core from 'aisbreaker-core-browser';
 
 ```
 :::
+-->
+::: code-group
+```TypeScript[main.ts (NodeJS or Browser)]
+import { api } from 'aisbreaker-api-js'
+```
+
+```JavaScript[main.js (NodeJS or Browser)]
+import { api } from 'aisbreaker-api-js';
+```
+:::
 
 Select your desired service and define respective [Service Properties](./service-properties) - mainly the [serviceId](./serviceId):
 
 ::: code-group
 ```TypeScript[main.ts]
 const serviceProps: api.AIsServiceProps = {
-  serviceId: 'chat:openai.com',
+  //serviceId: 'chat:dummy',
+
+  serviceId: "chat:openai.com",
+
+  //serviceId: "chat:huggingface.co/microsoft/DialoGPT-large",
+
+  //serviceId: "chat:huggingface.co/<HF-ACCOUNT>/<HF-MODEL>",
+
+  //serviceId: "aisbreaker:mirror",
+  //forward2ServiceProps: {
+  //  "serviceId": "chat:echo"
+  //},
 }
 ```
 
 ```JavaScript[main.js]
 const serviceProps = {
-  serviceId: 'chat:openai.com',
+  //serviceId: 'chat:dummy',
+
+  serviceId: "chat:openai.com",
+
+  //serviceId: "chat:huggingface.co/microsoft/DialoGPT-large",
+
+  //serviceId: "chat:huggingface.co/<HF-ACCOUNT>/<HF-MODEL>",
+
+  //serviceId: "aisbreaker:mirror",
+  //forward2ServiceProps: {
+  //  "serviceId": "chat:echo"
+  //},
 };
 ```
 :::
@@ -98,7 +131,7 @@ const auth = {
 const auth = undefined;
 ```
 
-```TypeScript[main.ts (NodeJS app)]
+```TypeScript[main.ts (Browser webapp)]
 // In a browser webapps read the API Key
 // from an authentication flow or from configuration instead.
 //
@@ -111,7 +144,7 @@ const auth: api.Auth = {
 const auth = undefined
 ```
 
-```JavaScript[main.js (NodeJS app)]
+```JavaScript[main.js (Browser webapp)]
 // In a browser webapps read the API Key
 // from an authentication flow or from configuration instead.
 //
@@ -131,14 +164,14 @@ Select the [AIsBreaker server](aisbreaker-server) to use and get access to the A
 // set AIsBreaker Server URL:
 const url = "https://api.demo.aisbreaker.org"
 // get API access:
-const aisService: api.AIsService = api.AIsBreaker.getRemoteAIsService(url, serviceProps, auth)
+const aisService: api.AIsService = api.AIsBreaker.getAIsService(url, serviceProps, auth)
 ```
 
 ```JavaScript[main.js]
 // set AIsBreaker Server URL:
 const url = "https://api.demo.aisbreaker.org";
 // get API access:
-const aisService = api.AIsBreaker.getRemoteAIsService(url, serviceProps, auth);
+const aisService = api.AIsBreaker.getAIsService(url, serviceProps, auth);
 ```
 :::
 
@@ -258,8 +291,8 @@ Examples
 --------
 Some example apps are available:
 
-- **simple command line 'chat'** - JavaScriptScript + NodeJS
-  - source code: [aisbreaker-js/packages/aisbreaker-chat-cli/simple-chat-cli.js](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-chat-cli/simple-chat-cli.js)
+- **example simple 'chat'** - JavaScript + NodeJS
+  - source code: [aisbreaker/aisbreaker-example-simple-chat-node-js/](https://github.com/aisbreaker/aisbreaker-example-simple-chat-node-js/)
 
 - **simple command line 'chat'** - TypeScript + NodeJS:
   - source code (alternative 1): [aisbreaker-js/packages/aisbreaker-api-js/src/startChat.ts](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/startChat.ts)
@@ -273,5 +306,5 @@ https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-cor
   - source code: [aisbreaker-js/packages/aisbreaker-chat-cli/chat-cli.js](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-chat-cli/chat-cli.js)
 
 - **AIsBreaker Chat WebApp** - browser webapp in TypeScript with Vue3 using the AIsBreaker Client API:
-  - live demo: [demo.aisbreaker.org](https://demo.aisbreaker.org/) ([Demo Guide](./demo-guide))
+  - live demo: [demo.aisbreaker.org](https://demo.aisbreaker.org/) ([Demo Guide](./demo-webapp-guide))
   - source code: [aisbreaker-js/packages/aisbreaker-chat-webapp/](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-chat-webapp/)
