@@ -17,7 +17,7 @@ hero:
       link: /docs/demo-javascript-guide
     - theme: brand
       text: Demo REST API Access
-      link: /docs/demo-api-access-guide
+      link: /docs/demo-rest-api-access-guide
     - theme: brand
       text: Demo Chat WebApp
       link: /docs/demo-webapp-guide

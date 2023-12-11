@@ -35,7 +35,7 @@ export default withMermaid /*defineConfig*/ ({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Demo', items: [
+      { text: 'Demos', items: [
         {//text: 'Demo JavaScript with NodeJS',
           items: [
             {text: 'Demo JavaScript with NodeJS (Guide)', link: '/docs/demo-javascript-guide' }, 

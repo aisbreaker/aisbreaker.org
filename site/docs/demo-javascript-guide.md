@@ -175,7 +175,7 @@ Now you can change the configuration/serviceProps/serviceId to chat with an actu
 Checkout the [Quick Start](#quick-start) section above.
 
 
-### More Details
+## More Details
 More details on how to access the AIsBreaker API can be found on the **Getting Started** tutorials.
 
 But before, you should understand the basic concepts and read the [Introduction (AIsBreaker Docs)](/docs/) ...

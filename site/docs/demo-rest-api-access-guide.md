@@ -14,8 +14,8 @@ The AIsBreaker REST API is a normal REST API with JSON data.
 
 
 ## Quick Start
-- open the AIsBreaker [Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)](https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start)
-- run `npm run start`
+- open the AIsBreaker [Demo REST API Access (Live with Web-Curl)](https://reqbin.com/c-m2n6cdnu)
+- run the `curl`
 - try different configurations/serviceProps/serviceIds
 
 
@@ -29,9 +29,13 @@ export URL="https://api.demo.aisbreaker.org"
 curl "${URL}/api/v1/process" \
         -X POST \
         -H "Content-Type: application/json" \
+        -H "//Authorization: Bearer [YOUR_API_KEY]" \
         -d '{
   "service": {
-    "serviceId": "chat:dummy"
+    "serviceId": "chat:dummy",
+    "//serviceId": "chat:openai.com",
+    "///serviceId": "chat:huggingface.co/microsoft/DialoGPT-large",
+    "////serviceId": "chat:huggingface.co/YOUR-HF-ACCOUNT/YOUR-HF-MODEL"
   },
   "request": {
     "inputs": [ {
@@ -83,7 +87,7 @@ in the request.
 Checkout the [Quick Start](#quick-start) section above.
 
 
-### More Details
+## More Details
 More details on how to access the AIsBreaker API, with and without `curl`, can be found on the **Getting Started** tutorials.
 
 But before, you should understand the basic concepts and read the [Introduction (AIsBreaker Docs)](/docs/) ...
