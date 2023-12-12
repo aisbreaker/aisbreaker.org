@@ -46,10 +46,10 @@ hero:
 # https://vitepress.dev/reference/default-theme-home-page#features-section
 features:
   - title: Our Vision
-    details: We want to provide a free and open-sourced tool for app developers to access almost any generative AI service (including OpenAI/ChatGPT, all Hugging Face AIs, and more) in the most easy and most open way.
+    details: We want to provide a free and open-sourced tool for app developers to access any generative AI service (including OpenAI/ChatGPT, all Hugging Face AIs, and more) in the most easy and most open way.
  
   - title: What is AIsBreaker?
-    details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Free open-source with MIT license."
+    details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Licenced under MIT, it's open source and free to use."
 
     STILL-TO-LONG-details: Developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a standardized interface. Free open-source. No vendor lock-in, with the freedom to choose and switch between different AI service providers without constraints.
 
