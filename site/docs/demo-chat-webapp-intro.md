@@ -1,28 +1,24 @@
 ---
 prev:
-  text: 'Demo REST API Access (Guide)'
-  link: '/docs/demo-rest-api-access-guide'
+  text: 'Demo: REST API Access (Intro)'
+  link: '/docs/demo-rest-api-access-intro'
 next:
   text: 'Introduction (AIsBreaker Docs)'
   link: '/docs/'
 ---
 
-Demo Chat WebApp (Guide)
-========================
+Demo: Chat WebApp (Intro)
+=========================
 Demo Chat WebApp shows a web chat application that uses the AIsBreaker API. It can be used to play around with different configurations/services/servceIds.
 
-
-## Quick Start
-- open the AIsBreaker [Demo Chat WebApp (Live in Web)](https://demo.aisbreaker.org/)
-- start chat conversation
-- try different configurations/services/servceIds
+Other demos: [JavaScript Code (Intro)](./demo-javascript-intro), [REST API Access (Intro)](./demo-rest-api-access-intro)
 
 
-## Slow Start
 
-### Start the Demo Chat WebApp
+
+## Start the Chat WebApp
 See in the screencast below:
-- how to open the AIsBreaker Demo Chat WebApp (Live in Web):  [demo.aisbreaker.org](https://demo.aisbreaker.org/)
+- how to open the AIsBreaker Demo Chat WebApp (Live in Web): [demo.aisbreaker.org](https://demo.aisbreaker.org/)
 - how to start the first chat conversation (with the Dummy AI service)
 
 ...
@@ -30,7 +26,7 @@ See in the screencast below:
 ![Demo (1/3)](/demo-dummy-chat-recording-2023-12-04.gif)
 
 
-### Change Settings
+## Change Settings
 See in the screencast below:
 - how to change the actual AI [service](./concepts) configuration used for a conversation
 
@@ -40,7 +36,7 @@ See in the screencast below:
 
 
 
-### Chat with a Real AI Service
+## Chat with a Real AI Service
 See in the screencast below:
 - a conversation with a real/good actual AI (OpenAI ChatGPT)
 
@@ -49,10 +45,10 @@ See in the screencast below:
 ![Demo (3/3)](/demo-openai-chat-recording-2023-12-04.gif)
 
 
-
-### Try
-Checkout the [Quick Start](#quick-start) section above.
-
+## Summary
+- open the AIsBreaker Demo Chat WebApp (Live in Web): [demo.aisbreaker.org](https://demo.aisbreaker.org/)
+- start a chat conversation
+- try different configurations/serviceProps/serviceIds instead of the `chat:dummy`
 
 
 

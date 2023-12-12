@@ -38,20 +38,26 @@ export default withMermaid /*defineConfig*/ ({
       { text: 'Demos', items: [
         {//text: 'Demo JavaScript with NodeJS',
           items: [
-            {text: 'Demo JavaScript with NodeJS (Guide)', link: '/docs/demo-javascript-guide' }, 
-            {text: 'Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
+            {text: 'JavaScript Code (Intro)', link: '/docs/demo-javascript-intro' }, 
+            {text: 'JavaScript Code (Live Demo in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
+            //{text: 'Demo JavaScript with NodeJS (Guide)', link: '/docs/demo-javascript-guide' }, 
+            //{text: 'Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
          ],
         },
         {
           items: [
-            {text: 'Demo REST API Access (Guide)', link: '/docs/demo-rest-api-access-guide' },
-            {text: 'Demo REST API Access (Live with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
+            {text: 'REST API Access (Intro)', link: '/docs/demo-rest-api-access-intro' },
+            {text: 'REST API Access (Live Demo with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
+            //{text: 'Demo REST API Access (Guide)', link: '/docs/demo-rest-api-access-guide' },
+            //{text: 'Demo REST API Access (Live with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
           ]
         },
         {
           items: [
-            {text: 'Demo Chat WebApp (Guide)', link: '/docs/demo-webapp-guide' }, 
-            {text: 'Demo Chat WebApp (Live in Web)', link: 'https://demo.aisbreaker.org/' }, 
+            {text: 'Chat WebApp (Intro)', link: '/docs/demo-chat-webapp-intro' }, 
+            {text: 'Chat WebApp (Live Demo in Web)', link: 'https://demo.aisbreaker.org/' }, 
+            //{text: 'Demo Chat WebApp (Guide)', link: '/docs/demo-webapp-guide' }, 
+            //{text: 'Demo Chat WebApp (Live in Web)', link: 'https://demo.aisbreaker.org/' }, 
           ]
         },
       ]},

@@ -293,6 +293,8 @@ Some example apps are available:
 
 - **example simple 'chat'** - JavaScript + NodeJS
   - source code: [aisbreaker/aisbreaker-example-simple-chat-node-js/](https://github.com/aisbreaker/aisbreaker-example-simple-chat-node-js/)
+  - explained on: [Demo: JavaScript Code (Intro)](./demo-javascript-intro)
+  - open in your browser: [Demo: JavaScript Code (Live Demo in StackBlitz Web-IDE)](https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start)
 
 - **simple command line 'chat'** - TypeScript + NodeJS:
   - source code (alternative 1): [aisbreaker-js/packages/aisbreaker-api-js/src/startChat.ts](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/startChat.ts)
@@ -306,5 +308,5 @@ https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-cor
   - source code: [aisbreaker-js/packages/aisbreaker-chat-cli/chat-cli.js](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-chat-cli/chat-cli.js)
 
 - **AIsBreaker Chat WebApp** - browser webapp in TypeScript with Vue3 using the AIsBreaker Client API:
-  - live demo: [demo.aisbreaker.org](https://demo.aisbreaker.org/) ([Demo Guide](./demo-webapp-guide))
+  - live demo: [demo.aisbreaker.org](https://demo.aisbreaker.org/) ([Chat WebApp (Intro)](./demo-chat-webapp-intro))
   - source code: [aisbreaker-js/packages/aisbreaker-chat-webapp/](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-chat-webapp/)
