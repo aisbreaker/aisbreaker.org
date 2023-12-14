@@ -71,7 +71,7 @@ We use the free `api.demo.aisbreaker.org` server for convenience here. The serve
 ## Define your Prompt/your Question
 ```JavaScript
 const question1 = "What is NodeJS?";
-console.log(`***** Question1 *****\n${question1}\n`);
+console.log(`***** Question1 ***** ${question1}`);
 ```
 
 ## Get the Response/Answer from the AI Service
@@ -84,10 +84,10 @@ const response1 = await aisService.process({
         },
     } ],
 });
-console.log(`***** Answer1 *****\n${response1.outputs[0].text.content}\n`);
+console.log(`***** Answer1 ***** ${response1.outputs[0].text.content}`);
 ```
 
-## Run
+## Putting it all together
 ```bash
 npm install && npm run start
 ```
