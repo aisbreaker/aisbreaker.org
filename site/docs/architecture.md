@@ -62,7 +62,8 @@ Instead of using the library, you can also call the REST API of the AIsBreaker s
 AIsBreaker Local API Architecture
 ---------------------------------
 ::: tip
-**Beginners** should skip this section and continue with [Basic Concepts](./concepts).
+<!--**Beginners** should skip this section and continue with [Basic Concepts](./concepts). -->
+The following provides a more details. If you just want to use the API you can safely skip it and continue with [Basic Concepts](./concepts).
 :::
 
 An AIsBreaker Local API library is also available, but only recommend for the internal AIsBreaker Server implementation itself and **not recommended for general use**.
