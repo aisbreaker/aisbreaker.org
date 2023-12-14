@@ -4,7 +4,7 @@
 
 [base/TaskVendorEngine](../modules/base_TaskVendorEngine.md).TaskVendorEngine
 
-Parts of a serviceId = '<task>:<vendor>/<engine>'
+Parts of a serviceId = '&lt;task&gt;:&lt;vendor&gt;/&lt;engine&gt;'
 
 ## Table of contents
 
