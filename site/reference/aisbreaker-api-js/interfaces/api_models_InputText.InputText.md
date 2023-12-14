@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/models/InputText](../modules/api_models_InputText.md) / InputText
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/models/InputText](../modules/api_models_InputText.md) / InputText
 
 # Interface: InputText
 

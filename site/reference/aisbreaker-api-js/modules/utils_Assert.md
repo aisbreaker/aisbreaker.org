@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / utils/Assert
+[aisbreaker-api-js - v0.1.15](../README.md) / utils/Assert
 
 # Module: utils/Assert
 

@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/connectors/DummyAssistant](../modules/services_connectors_DummyAssistant.md) / DummyAssistantService
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/connectors/DummyAssistant](../modules/services_connectors_DummyAssistant.md) / DummyAssistantService
 
 # Class: DummyAssistantService
 
@@ -8,7 +8,7 @@ Every service API must implement this interface.
 
 ## Hierarchy
 
-- [`BaseAIsService`](base_BaseAIsService.BaseAIsService.md)<[`DummyAssistantServiceProps`](../interfaces/services_connectors_DummyAssistant.DummyAssistantServiceProps.md)\>
+- [`BaseAIsService`](base_BaseAIsService.BaseAIsService.md)<[`DummyAssistantServiceProps`](../interfaces/services_connectors_DummyAssistant.DummyAssistantServiceProps.md), [`DummyAssistantDefaults`](../interfaces/services_connectors_DummyAssistant.DummyAssistantDefaults.md)\>
 
   ↳ **`DummyAssistantService`**
 
@@ -21,8 +21,15 @@ Every service API must implement this interface.
 ### Properties
 
 - [auth](services_connectors_DummyAssistant.DummyAssistantService.md#auth)
+- [engine](services_connectors_DummyAssistant.DummyAssistantService.md#engine)
+- [engineOpt](services_connectors_DummyAssistant.DummyAssistantService.md#engineopt)
 - [greeting](services_connectors_DummyAssistant.DummyAssistantService.md#greeting)
+- [serviceDefaults](services_connectors_DummyAssistant.DummyAssistantService.md#servicedefaults)
 - [serviceProps](services_connectors_DummyAssistant.DummyAssistantService.md#serviceprops)
+- [task](services_connectors_DummyAssistant.DummyAssistantService.md#task)
+- [url](services_connectors_DummyAssistant.DummyAssistantService.md#url)
+- [urlOpt](services_connectors_DummyAssistant.DummyAssistantService.md#urlopt)
+- [vendor](services_connectors_DummyAssistant.DummyAssistantService.md#vendor)
 
 ### Methods
 
@@ -30,7 +37,8 @@ Every service API must implement this interface.
 - [getContext](services_connectors_DummyAssistant.DummyAssistantService.md#getcontext)
 - [getContextService](services_connectors_DummyAssistant.DummyAssistantService.md#getcontextservice)
 - [getConversationState](services_connectors_DummyAssistant.DummyAssistantService.md#getconversationstate)
-- [getModelFromServiceId](services_connectors_DummyAssistant.DummyAssistantService.md#getmodelfromserviceid)
+- [getService](services_connectors_DummyAssistant.DummyAssistantService.md#getservice)
+- [getServiceUrl](services_connectors_DummyAssistant.DummyAssistantService.md#getserviceurl)
 - [process](services_connectors_DummyAssistant.DummyAssistantService.md#process)
 - [processUnprotected](services_connectors_DummyAssistant.DummyAssistantService.md#processunprotected)
 - [splitTextIntoParts](services_connectors_DummyAssistant.DummyAssistantService.md#splittextintoparts)
@@ -39,13 +47,14 @@ Every service API must implement this interface.
 
 ### constructor
 
-• **new DummyAssistantService**(`serviceProps`, `auth?`)
+• **new DummyAssistantService**(`serviceProps`, `serviceDefaults`, `auth?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `serviceProps` | [`DummyAssistantServiceProps`](../interfaces/services_connectors_DummyAssistant.DummyAssistantServiceProps.md) |
+| `serviceDefaults` | [`DummyAssistantDefaults`](../interfaces/services_connectors_DummyAssistant.DummyAssistantDefaults.md) |
 | `auth?` | [`Auth`](../interfaces/api_models_Auth.Auth.md) |
 
 #### Overrides
@@ -54,7 +63,7 @@ Every service API must implement this interface.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:30](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L30)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:39](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L39)
 
 ## Properties
 
@@ -68,7 +77,35 @@ Every service API must implement this interface.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:28](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L28)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:37](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L37)
+
+___
+
+### engine
+
+• **engine**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[engine](base_BaseAIsService.BaseAIsService.md#engine)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:43](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L43)
+
+___
+
+### engineOpt
+
+• `Optional` **engineOpt**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[engineOpt](base_BaseAIsService.BaseAIsService.md#engineopt)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:42](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L42)
 
 ___
 
@@ -78,7 +115,21 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:28](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L28)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:37](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L37)
+
+___
+
+### serviceDefaults
+
+• **serviceDefaults**: [`DummyAssistantDefaults`](../interfaces/services_connectors_DummyAssistant.DummyAssistantDefaults.md)
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[serviceDefaults](base_BaseAIsService.BaseAIsService.md#servicedefaults)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:36](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L36)
 
 ___
 
@@ -94,7 +145,63 @@ set in constructor
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:27](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L27)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:35](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L35)
+
+___
+
+### task
+
+• **task**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[task](base_BaseAIsService.BaseAIsService.md#task)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:40](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L40)
+
+___
+
+### url
+
+• **url**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[url](base_BaseAIsService.BaseAIsService.md#url)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:45](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L45)
+
+___
+
+### urlOpt
+
+• `Optional` **urlOpt**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[urlOpt](base_BaseAIsService.BaseAIsService.md#urlopt)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:44](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L44)
+
+___
+
+### vendor
+
+• **vendor**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[vendor](base_BaseAIsService.BaseAIsService.md#vendor)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:41](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L41)
 
 ## Methods
 
@@ -102,7 +209,7 @@ set in constructor
 
 ▸ **checkRequest**(`request`, `context`): `void`
 
-check that all required fields are present
+Check that all required fields are present
 
 #### Parameters
 
@@ -121,7 +228,7 @@ check that all required fields are present
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:193](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L193)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:264](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L264)
 
 ___
 
@@ -148,7 +255,7 @@ for logging and error messages.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:165](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L165)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:217](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L217)
 
 ___
 
@@ -175,7 +282,7 @@ for logging and error messages.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:178](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L178)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:230](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L230)
 
 ___
 
@@ -199,36 +306,65 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:206](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L206)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:277](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L277)
 
 ___
 
-### getModelFromServiceId
+### getService
 
-▸ **getModelFromServiceId**(`serviceId`): `undefined` \| `string`
+▸ **getService**(`actualEngine?`): [`Service`](../interfaces/api_models_Service.Service.md)
 
-`task:service/model` -> `model`
-Examples:
-  `chat:foo.com/gpt-next` -> `gpt-next`
-  `text-to-image:bar-ai/my-model` -> `my-model`
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `actualEngine?` | `string` |
+
+#### Returns
+
+[`Service`](../interfaces/api_models_Service.Service.md)
+
+ResponseFinal.usage.service
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[getService](base_BaseAIsService.BaseAIsService.md#getservice)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:200](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L200)
+
+___
+
+### getServiceUrl
+
+▸ **getServiceUrl**(`url`, `engine`, `serviceDefaults`): `undefined` \| `string`
+
+Derive the service URL.
+
+Implemented as method here to allow overriding.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `serviceId` | `string` | ` |
+| `url` | `undefined` \| `string` | The (base) URL specified in AIsServiceProps. |
+| `engine` | `undefined` \| `string` | The engine derived form serviceId |
+| `serviceDefaults` | [`AIsServiceDefaults`](../interfaces/base_AIsServiceDefaults.AIsServiceDefaults.md) |  |
 
 #### Returns
 
 `undefined` \| `string`
 
+The URL to access the actual AI service.
+
 #### Inherited from
 
-[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[getModelFromServiceId](base_BaseAIsService.BaseAIsService.md#getmodelfromserviceid)
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[getServiceUrl](base_BaseAIsService.BaseAIsService.md#getserviceurl)
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:218](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L218)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:249](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L249)
 
 ___
 
@@ -254,7 +390,7 @@ Let the service do its work.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:38](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L38)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:70](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L70)
 
 ___
 
@@ -282,7 +418,7 @@ without the need to care about all error handling.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:39](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L39)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:48](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L48)
 
 ___
 
@@ -302,4 +438,4 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:109](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L109)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:113](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L113)

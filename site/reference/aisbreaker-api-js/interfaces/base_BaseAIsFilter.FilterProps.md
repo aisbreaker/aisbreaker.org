@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [base/BaseAIsFilter](../modules/base_BaseAIsFilter.md) / FilterProps
+[aisbreaker-api-js - v0.1.15](../README.md) / [base/BaseAIsFilter](../modules/base_BaseAIsFilter.md) / FilterProps
 
 # Interface: FilterProps
 

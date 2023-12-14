@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / [services/connectors/StabilityAiImage](../modules/services_connectors_StabilityAiImage.md) / StabilityAiImageFactory
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / [services/connectors/StabilityAiImage](../modules/services_connectors_StabilityAiImage.md) / StabilityAiImageFactory
 
 # Class: StabilityAiImageFactory
 
@@ -47,4 +47,4 @@ api.AIsAPIFactory.createAIsService
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:216](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L216)
+[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:211](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L211)

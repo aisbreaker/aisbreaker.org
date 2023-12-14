@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/models/RequestedMediaText](../modules/api_models_RequestedMediaText.md) / RequestedMediaText
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/models/RequestedMediaText](../modules/api_models_RequestedMediaText.md) / RequestedMediaText
 
 # Interface: RequestedMediaText
 

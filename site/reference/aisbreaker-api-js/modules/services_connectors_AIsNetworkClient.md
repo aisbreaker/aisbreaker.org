@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / services/connectors/AIsNetworkClient
+[aisbreaker-api-js - v0.1.15](../README.md) / services/connectors/AIsNetworkClient
 
 # Module: services/connectors/AIsNetworkClient
 
@@ -11,4 +11,5 @@
 
 ### Interfaces
 
+- [AIsNetworkClientDefaults](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientDefaults.md)
 - [AIsNetworkClientProps](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientProps.md)

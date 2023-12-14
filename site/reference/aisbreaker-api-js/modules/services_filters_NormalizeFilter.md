@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / services/filters/NormalizeFilter
+[aisbreaker-api-js - v0.1.15](../README.md) / services/filters/NormalizeFilter
 
 # Module: services/filters/NormalizeFilter
 

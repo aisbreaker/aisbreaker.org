@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/models/OutputImage](../modules/api_models_OutputImage.md) / OutputImage
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/models/OutputImage](../modules/api_models_OutputImage.md) / OutputImage
 
 # Interface: OutputImage
 

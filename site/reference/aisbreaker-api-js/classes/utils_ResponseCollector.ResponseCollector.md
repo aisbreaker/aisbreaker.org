@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [utils/ResponseCollector](../modules/utils_ResponseCollector.md) / ResponseCollector
+[aisbreaker-api-js - v0.1.15](../README.md) / [utils/ResponseCollector](../modules/utils_ResponseCollector.md) / ResponseCollector
 
 # Class: ResponseCollector
 

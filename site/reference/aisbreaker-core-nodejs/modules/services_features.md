@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / services/features
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / services/features
 
 # Module: services/features
 

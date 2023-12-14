@@ -1,6 +1,6 @@
 aisbreaker-api-js
 
-# aisbreaker-api-js - v0.0.42
+# aisbreaker-api-js - v0.1.15
 
 ## Table of contents
 
@@ -8,11 +8,11 @@ aisbreaker-api-js
 
 - [api](modules/api.md)
 - [api/AIsBreaker](modules/api_AIsBreaker.md)
+- [api/AIsBreakerGetFactory.test](modules/api_AIsBreakerGetFactory_test.md)
 - [api/AIsError](modules/api_AIsError.md)
 - [api/AIsService](modules/api_AIsService.md)
 - [api/models](modules/api_models.md)
 - [api/models/Auth](modules/api_models_Auth.md)
-- [api/models/Engine](modules/api_models_Engine.md)
 - [api/models/Input](modules/api_models_Input.md)
 - [api/models/InputImage](modules/api_models_InputImage.md)
 - [api/models/InputText](modules/api_models_InputText.md)
@@ -26,10 +26,17 @@ aisbreaker-api-js
 - [api/models/RequestedOptions](modules/api_models_RequestedOptions.md)
 - [api/models/ResponseEvent](modules/api_models_ResponseEvent.md)
 - [api/models/ResponseFinal](modules/api_models_ResponseFinal.md)
+- [api/models/Service](modules/api_models_Service.md)
 - [api/models/Usage](modules/api_models_Usage.md)
 - [base](modules/base.md)
+- [base/AIsServiceDefaults](modules/base_AIsServiceDefaults.md)
 - [base/BaseAIsFilter](modules/base_BaseAIsFilter.md)
 - [base/BaseAIsService](modules/base_BaseAIsService.md)
+- [base/ServiceUrlUtils](modules/base_ServiceUrlUtils.md)
+- [base/ServiceUrlUtils.test](modules/base_ServiceUrlUtils_test.md)
+- [base/TaskVendorEngine](modules/base_TaskVendorEngine.md)
+- [base/TaskVendorEngineUtils](modules/base_TaskVendorEngineUtils.md)
+- [base/TaskVendorEngineUtils.test](modules/base_TaskVendorEngineUtils_test.md)
 - [extern](modules/extern.md)
 - [extern/HttpStatusCodes](modules/extern_HttpStatusCodes.md)
 - [index](modules/index.md)

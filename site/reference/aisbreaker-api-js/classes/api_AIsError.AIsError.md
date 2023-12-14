@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/AIsError](../modules/api_AIsError.md) / AIsError
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/AIsError](../modules/api_AIsError.md) / AIsError
 
 # Class: AIsError
 
@@ -273,7 +273,7 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsError.ts:137](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsError.ts#L137)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsError.ts:144](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsError.ts#L144)
 
 ___
 
@@ -299,7 +299,7 @@ AIsError
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsError.ts:132](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsError.ts#L132)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsError.ts:139](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsError.ts#L139)
 
 ___
 

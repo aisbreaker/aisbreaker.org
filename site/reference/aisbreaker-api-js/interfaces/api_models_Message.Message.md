@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/models/Message](../modules/api_models_Message.md) / Message
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/models/Message](../modules/api_models_Message.md) / Message
 
 # Interface: Message
 

@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/connectors/AIsNetworkClient](../modules/services_connectors_AIsNetworkClient.md) / AIsNetworkClientProps
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/connectors/AIsNetworkClient](../modules/services_connectors_AIsNetworkClient.md) / AIsNetworkClientProps
 
 # Interface: AIsNetworkClientProps
 
@@ -32,7 +32,7 @@ the actual service; this filter will forward to this service
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:35](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L35)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:38](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L38)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **url**: `string`
 
-access this AIs server
+access this AIsBreaker server
 
 #### Overrides
 
@@ -82,4 +82,4 @@ access this AIs server
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:32](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L32)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:35](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L35)

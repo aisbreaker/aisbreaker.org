@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / [services/connectors/OpenaiComImage](../modules/services_connectors_OpenaiComImage.md) / OpenaiComImageService
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / [services/connectors/OpenaiComImage](../modules/services_connectors_OpenaiComImage.md) / OpenaiComImageService
 
 # Class: OpenaiComImageService
 
@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-- `BaseAIsService`<`api.AIsServiceProps`\>
+- `BaseAIsService`<[`OpenaiComImageProps`](../interfaces/services_connectors_OpenaiComImage.OpenaiComImageProps.md), [`OpenaiComImageDefaults`](../interfaces/services_connectors_OpenaiComImage.OpenaiComImageDefaults.md)\>
 
   ↳ **`OpenaiComImageService`**
 
@@ -19,8 +19,14 @@
 ### Properties
 
 - [auth](services_connectors_OpenaiComImage.OpenaiComImageService.md#auth)
+- [engine](services_connectors_OpenaiComImage.OpenaiComImageService.md#engine)
+- [engineOpt](services_connectors_OpenaiComImage.OpenaiComImageService.md#engineopt)
+- [serviceDefaults](services_connectors_OpenaiComImage.OpenaiComImageService.md#servicedefaults)
 - [serviceProps](services_connectors_OpenaiComImage.OpenaiComImageService.md#serviceprops)
+- [task](services_connectors_OpenaiComImage.OpenaiComImageService.md#task)
 - [url](services_connectors_OpenaiComImage.OpenaiComImageService.md#url)
+- [urlOpt](services_connectors_OpenaiComImage.OpenaiComImageService.md#urlopt)
+- [vendor](services_connectors_OpenaiComImage.OpenaiComImageService.md#vendor)
 
 ### Methods
 
@@ -28,8 +34,8 @@
 - [getContext](services_connectors_OpenaiComImage.OpenaiComImageService.md#getcontext)
 - [getContextService](services_connectors_OpenaiComImage.OpenaiComImageService.md#getcontextservice)
 - [getConversationState](services_connectors_OpenaiComImage.OpenaiComImageService.md#getconversationstate)
-- [getEngine](services_connectors_OpenaiComImage.OpenaiComImageService.md#getengine)
-- [getModelFromServiceId](services_connectors_OpenaiComImage.OpenaiComImageService.md#getmodelfromserviceid)
+- [getService](services_connectors_OpenaiComImage.OpenaiComImageService.md#getservice)
+- [getServiceUrl](services_connectors_OpenaiComImage.OpenaiComImageService.md#getserviceurl)
 - [process](services_connectors_OpenaiComImage.OpenaiComImageService.md#process)
 - [processUnprotected](services_connectors_OpenaiComImage.OpenaiComImageService.md#processunprotected)
 
@@ -37,22 +43,23 @@
 
 ### constructor
 
-• **new OpenaiComImageService**(`props`, `auth?`)
+• **new OpenaiComImageService**(`props`, `serviceDefaults`, `auth?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `AIsServiceProps` |
+| `props` | [`OpenaiComImageProps`](../interfaces/services_connectors_OpenaiComImage.OpenaiComImageProps.md) |
+| `serviceDefaults` | [`OpenaiComImageDefaults`](../interfaces/services_connectors_OpenaiComImage.OpenaiComImageDefaults.md) |
 | `auth?` | `Auth` |
 
 #### Overrides
 
-base.BaseAIsService&lt;api.AIsServiceProps\&gt;.constructor
+base.BaseAIsService&lt;OpenaiComImageProps, OpenaiComImageDefaults\&gt;.constructor
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:21](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L21)
+[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:26](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L26)
 
 ## Properties
 
@@ -66,13 +73,55 @@ base.BaseAIsService.auth
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:5
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:7
+
+___
+
+### engine
+
+• **engine**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.engine
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:11
+
+___
+
+### engineOpt
+
+• `Optional` **engineOpt**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.engineOpt
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:10
+
+___
+
+### serviceDefaults
+
+• **serviceDefaults**: [`OpenaiComImageDefaults`](../interfaces/services_connectors_OpenaiComImage.OpenaiComImageDefaults.md)
+
+#### Inherited from
+
+base.BaseAIsService.serviceDefaults
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:6
 
 ___
 
 ### serviceProps
 
-• **serviceProps**: `AIsServiceProps`
+• **serviceProps**: [`OpenaiComImageProps`](../interfaces/services_connectors_OpenaiComImage.OpenaiComImageProps.md)
 
 #### Inherited from
 
@@ -80,7 +129,21 @@ base.BaseAIsService.serviceProps
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:4
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:5
+
+___
+
+### task
+
+• **task**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.task
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:8
 
 ___
 
@@ -88,9 +151,41 @@ ___
 
 • **url**: `string`
 
+#### Inherited from
+
+base.BaseAIsService.url
+
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:19](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L19)
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:13
+
+___
+
+### urlOpt
+
+• `Optional` **urlOpt**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.urlOpt
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:12
+
+___
+
+### vendor
+
+• **vendor**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.vendor
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:9
 
 ## Methods
 
@@ -98,7 +193,7 @@ ___
 
 ▸ **checkRequest**(`request`, `context`): `void`
 
-check that all required fields are present
+Check that all required fields are present
 
 #### Parameters
 
@@ -117,7 +212,7 @@ base.BaseAIsService.checkRequest
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:38
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:62
 
 ___
 
@@ -144,7 +239,7 @@ base.BaseAIsService.getContext
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:26
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:38
 
 ___
 
@@ -171,7 +266,7 @@ base.BaseAIsService.getContextService
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:31
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:43
 
 ___
 
@@ -195,50 +290,65 @@ base.BaseAIsService.getConversationState
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:39
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:63
 
 ___
 
-### getEngine
+### getService
 
-▸ **getEngine**(): `Engine`
+▸ **getService**(`actualEngine?`): `Service`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `actualEngine?` | `string` |
 
 #### Returns
 
-`Engine`
+`Service`
+
+ResponseFinal.usage.service
+
+#### Inherited from
+
+base.BaseAIsService.getService
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:33](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L33)
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:33
 
 ___
 
-### getModelFromServiceId
+### getServiceUrl
 
-▸ **getModelFromServiceId**(`serviceId`): `undefined` \| `string`
+▸ **getServiceUrl**(`url`, `engine`, `serviceDefaults`): `undefined` \| `string`
 
-`task:service/model` -> `model`
-Examples:
-  `chat:foo.com/gpt-next` -> `gpt-next`
-  `text-to-image:bar-ai/my-model` -> `my-model`
+Derive the service URL.
+
+Implemented as method here to allow overriding.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `serviceId` | `string` | ` |
+| `url` | `undefined` \| `string` | The (base) URL specified in AIsServiceProps. |
+| `engine` | `undefined` \| `string` | The engine derived form serviceId |
+| `serviceDefaults` | `AIsServiceDefaults` |  |
 
 #### Returns
 
 `undefined` \| `string`
 
+The URL to access the actual AI service.
+
 #### Inherited from
 
-base.BaseAIsService.getModelFromServiceId
+base.BaseAIsService.getServiceUrl
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:48
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:54
 
 ___
 
@@ -264,7 +374,7 @@ base.BaseAIsService.process
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:10
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:18
 
 ___
 
@@ -295,4 +405,4 @@ base.BaseAIsService.processUnprotected
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:50](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L50)
+[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:45](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L45)

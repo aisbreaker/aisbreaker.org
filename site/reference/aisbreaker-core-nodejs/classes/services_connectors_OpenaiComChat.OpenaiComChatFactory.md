@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / [services/connectors/OpenaiComChat](../modules/services_connectors_OpenaiComChat.md) / OpenaiComChatFactory
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / [services/connectors/OpenaiComChat](../modules/services_connectors_OpenaiComChat.md) / OpenaiComChatFactory
 
 # Class: OpenaiComChatFactory
 
@@ -6,7 +6,7 @@
 
 ## Implements
 
-- `AIsAPIFactory`<`api.AIsServiceProps`, [`OpenaiComChatService`](services_connectors_OpenaiComChat.OpenaiComChatService.md)\>
+- `AIsAPIFactory`<[`OpenaiComChatProps`](../interfaces/services_connectors_OpenaiComChat.OpenaiComChatProps.md), [`OpenaiComChatService`](services_connectors_OpenaiComChat.OpenaiComChatService.md)\>
 
 ## Table of contents
 
@@ -47,4 +47,4 @@ api.AIsAPIFactory.createAIsService
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComChat.ts:541](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComChat.ts#L541)
+[aisbreaker-core-nodejs/src/services/connectors/OpenaiComChat.ts:527](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComChat.ts#L527)

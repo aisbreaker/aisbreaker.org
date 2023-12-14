@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/models/Request](../modules/api_models_Request.md) / Request
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/models/Request](../modules/api_models_Request.md) / Request
 
 # Interface: Request
 

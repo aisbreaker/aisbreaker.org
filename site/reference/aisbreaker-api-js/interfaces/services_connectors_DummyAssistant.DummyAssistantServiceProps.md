@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/connectors/DummyAssistant](../modules/services_connectors_DummyAssistant.md) / DummyAssistantServiceProps
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/connectors/DummyAssistant](../modules/services_connectors_DummyAssistant.md) / DummyAssistantServiceProps
 
 # Interface: DummyAssistantServiceProps
 
@@ -30,7 +30,7 @@ or (in very rare cases) with a service-specific extention of these properties.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:24](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L24)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:33](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L33)
 
 ___
 

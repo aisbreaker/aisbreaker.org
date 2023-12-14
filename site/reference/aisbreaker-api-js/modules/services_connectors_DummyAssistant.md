@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / services/connectors/DummyAssistant
+[aisbreaker-api-js - v0.1.15](../README.md) / services/connectors/DummyAssistant
 
 # Module: services/connectors/DummyAssistant
 
@@ -11,4 +11,5 @@
 
 ### Interfaces
 
+- [DummyAssistantDefaults](../interfaces/services_connectors_DummyAssistant.DummyAssistantDefaults.md)
 - [DummyAssistantServiceProps](../interfaces/services_connectors_DummyAssistant.DummyAssistantServiceProps.md)

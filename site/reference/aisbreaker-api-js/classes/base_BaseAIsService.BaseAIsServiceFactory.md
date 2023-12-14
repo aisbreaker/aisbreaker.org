@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [base/BaseAIsService](../modules/base_BaseAIsService.md) / BaseAIsServiceFactory
+[aisbreaker-api-js - v0.1.15](../README.md) / [base/BaseAIsService](../modules/base_BaseAIsService.md) / BaseAIsServiceFactory
 
 # Class: BaseAIsServiceFactory<SERVICE_T\>
 
@@ -40,7 +40,7 @@ Factory for creating a service API.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:264](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L264)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:316](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L316)
 
 ## Methods
 
@@ -65,4 +65,4 @@ Factory for creating a service API.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:267](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L267)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:319](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L319)

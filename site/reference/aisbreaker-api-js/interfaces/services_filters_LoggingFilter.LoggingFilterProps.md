@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/filters/LoggingFilter](../modules/services_filters_LoggingFilter.md) / LoggingFilterProps
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/filters/LoggingFilter](../modules/services_filters_LoggingFilter.md) / LoggingFilterProps
 
 # Interface: LoggingFilterProps
 

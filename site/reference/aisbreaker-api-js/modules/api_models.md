@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / api/models
+[aisbreaker-api-js - v0.1.15](../README.md) / api/models
 
 # Module: api/models
 
@@ -9,7 +9,6 @@
 - [AccessToken](api_models.md#accesstoken)
 - [Auth](api_models.md#auth)
 - [ClientRequest](api_models.md#clientrequest)
-- [Engine](api_models.md#engine)
 - [Input](api_models.md#input)
 - [InputImage](api_models.md#inputimage)
 - [InputImageRoleType](api_models.md#inputimageroletype)
@@ -29,6 +28,7 @@
 - [RequestedOptions](api_models.md#requestedoptions)
 - [ResponseEvent](api_models.md#responseevent)
 - [ResponseFinal](api_models.md#responsefinal)
+- [Service](api_models.md#service)
 - [StreamProgressFunction](api_models.md#streamprogressfunction)
 - [Usage](api_models.md#usage)
 
@@ -49,12 +49,6 @@ ___
 ### ClientRequest
 
 Re-exports [ClientRequest](../interfaces/api_models_Request.ClientRequest.md)
-
-___
-
-### Engine
-
-Re-exports [Engine](../interfaces/api_models_Engine.Engine.md)
 
 ___
 
@@ -169,6 +163,12 @@ ___
 ### ResponseFinal
 
 Re-exports [ResponseFinal](../interfaces/api_models_ResponseFinal.ResponseFinal.md)
+
+___
+
+### Service
+
+Re-exports [Service](../interfaces/api_models_Service.Service.md)
 
 ___
 

@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / [services/connectors/OpenaiComImage](../modules/services_connectors_OpenaiComImage.md) / OpenaiComImageFactory
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / [services/connectors/OpenaiComImage](../modules/services_connectors_OpenaiComImage.md) / OpenaiComImageFactory
 
 # Class: OpenaiComImageFactory
 
@@ -47,4 +47,4 @@ api.AIsAPIFactory.createAIsService
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:194](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L194)
+[aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts:190](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComImage.ts#L190)

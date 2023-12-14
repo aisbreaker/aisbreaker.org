@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / [services/connectors/OpenaiComChat](../modules/services_connectors_OpenaiComChat.md) / OpenaiComChatProps
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / [services/connectors/OpenaiComChat](../modules/services_connectors_OpenaiComChat.md) / OpenaiComChatProps
 
 # Interface: OpenaiComChatProps
 
@@ -58,12 +58,12 @@ ___
 
 • `Optional` **url**: `string`
 
-access this OpenAI API server
+URL of the AI service (optional).
 
-#### Overrides
+#### Inherited from
 
 api.AIsServiceProps.url
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/OpenaiComChat.ts:24](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/OpenaiComChat.ts#L24)
+aisbreaker-api-js/build/api/AIsService.d.ts:31

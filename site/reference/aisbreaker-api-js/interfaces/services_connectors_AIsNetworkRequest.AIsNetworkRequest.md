@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/connectors/AIsNetworkRequest](../modules/services_connectors_AIsNetworkRequest.md) / AIsNetworkRequest
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/connectors/AIsNetworkRequest](../modules/services_connectors_AIsNetworkRequest.md) / AIsNetworkRequest
 
 # Interface: AIsNetworkRequest
 

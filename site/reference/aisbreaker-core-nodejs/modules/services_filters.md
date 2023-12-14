@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / services/filters
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / services/filters
 
 # Module: services/filters
 

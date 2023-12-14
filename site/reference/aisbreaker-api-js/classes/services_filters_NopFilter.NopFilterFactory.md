@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/filters/NopFilter](../modules/services_filters_NopFilter.md) / NopFilterFactory
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/filters/NopFilter](../modules/services_filters_NopFilter.md) / NopFilterFactory
 
 # Class: NopFilterFactory
 

@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / api/models/ResponseEvent
+[aisbreaker-api-js - v0.1.15](../README.md) / api/models/ResponseEvent
 
 # Module: api/models/ResponseEvent
 

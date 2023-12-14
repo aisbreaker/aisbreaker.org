@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/connectors/AIsNetworkClient](../modules/services_connectors_AIsNetworkClient.md) / AIsNetworkClientService
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/connectors/AIsNetworkClient](../modules/services_connectors_AIsNetworkClient.md) / AIsNetworkClientService
 
 # Class: AIsNetworkClientService
 
@@ -8,7 +8,7 @@ Every service API must implement this interface.
 
 ## Hierarchy
 
-- [`BaseAIsService`](base_BaseAIsService.BaseAIsService.md)<[`AIsNetworkClientProps`](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientProps.md)\>
+- [`BaseAIsService`](base_BaseAIsService.BaseAIsService.md)<[`AIsNetworkClientProps`](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientProps.md), [`AIsNetworkClientDefaults`](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientDefaults.md)\>
 
   ↳ **`AIsNetworkClientService`**
 
@@ -21,7 +21,14 @@ Every service API must implement this interface.
 ### Properties
 
 - [auth](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#auth)
+- [engine](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#engine)
+- [engineOpt](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#engineopt)
+- [serviceDefaults](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#servicedefaults)
 - [serviceProps](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#serviceprops)
+- [task](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#task)
+- [url](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#url)
+- [urlOpt](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#urlopt)
+- [vendor](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#vendor)
 
 ### Methods
 
@@ -29,7 +36,9 @@ Every service API must implement this interface.
 - [getContext](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#getcontext)
 - [getContextService](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#getcontextservice)
 - [getConversationState](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#getconversationstate)
-- [getModelFromServiceId](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#getmodelfromserviceid)
+- [getHttpRequestHeaders](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#gethttprequestheaders)
+- [getService](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#getservice)
+- [getServiceUrl](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#getserviceurl)
 - [process](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#process)
 - [processNonStreamingRequest](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#processnonstreamingrequest)
 - [processStreamingRequest](services_connectors_AIsNetworkClient.AIsNetworkClientService.md#processstreamingrequest)
@@ -39,22 +48,23 @@ Every service API must implement this interface.
 
 ### constructor
 
-• **new AIsNetworkClientService**(`serviceProps`, `auth?`)
+• **new AIsNetworkClientService**(`serviceProps`, `serviceDefaults`, `auth?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
 | `serviceProps` | [`AIsNetworkClientProps`](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientProps.md) |
+| `serviceDefaults` | [`AIsNetworkClientDefaults`](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientDefaults.md) |
 | `auth?` | [`Auth`](../interfaces/api_models_Auth.Auth.md) |
 
-#### Inherited from
+#### Overrides
 
 [BaseAIsService](base_BaseAIsService.BaseAIsService.md).[constructor](base_BaseAIsService.BaseAIsService.md#constructor)
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:30](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L30)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:43](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L43)
 
 ## Properties
 
@@ -68,7 +78,49 @@ Every service API must implement this interface.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:28](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L28)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:37](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L37)
+
+___
+
+### engine
+
+• **engine**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[engine](base_BaseAIsService.BaseAIsService.md#engine)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:43](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L43)
+
+___
+
+### engineOpt
+
+• `Optional` **engineOpt**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[engineOpt](base_BaseAIsService.BaseAIsService.md#engineopt)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:42](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L42)
+
+___
+
+### serviceDefaults
+
+• **serviceDefaults**: [`AIsNetworkClientDefaults`](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientDefaults.md)
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[serviceDefaults](base_BaseAIsService.BaseAIsService.md#servicedefaults)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:36](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L36)
 
 ___
 
@@ -84,7 +136,63 @@ set in constructor
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:27](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L27)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:35](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L35)
+
+___
+
+### task
+
+• **task**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[task](base_BaseAIsService.BaseAIsService.md#task)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:40](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L40)
+
+___
+
+### url
+
+• **url**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[url](base_BaseAIsService.BaseAIsService.md#url)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:45](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L45)
+
+___
+
+### urlOpt
+
+• `Optional` **urlOpt**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[urlOpt](base_BaseAIsService.BaseAIsService.md#urlopt)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:44](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L44)
+
+___
+
+### vendor
+
+• **vendor**: `string`
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[vendor](base_BaseAIsService.BaseAIsService.md#vendor)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:41](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L41)
 
 ## Methods
 
@@ -92,7 +200,7 @@ set in constructor
 
 ▸ **checkRequest**(`request`, `context`): `void`
 
-check that all required fields are present
+Check that all required fields are present
 
 #### Parameters
 
@@ -111,7 +219,7 @@ check that all required fields are present
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:193](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L193)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:264](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L264)
 
 ___
 
@@ -138,7 +246,7 @@ for logging and error messages.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:165](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L165)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:217](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L217)
 
 ___
 
@@ -165,7 +273,7 @@ for logging and error messages.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:185](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L185)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:181](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L181)
 
 ___
 
@@ -189,36 +297,85 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:206](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L206)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:277](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L277)
 
 ___
 
-### getModelFromServiceId
+### getHttpRequestHeaders
 
-▸ **getModelFromServiceId**(`serviceId`): `undefined` \| `string`
+▸ **getHttpRequestHeaders**(`secret`): `any`
 
-`task:service/model` -> `model`
-Examples:
-  `chat:foo.com/gpt-next` -> `gpt-next`
-  `text-to-image:bar-ai/my-model` -> `my-model`
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `secret` | `undefined` \| `string` |
+
+#### Returns
+
+`any`
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:187](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L187)
+
+___
+
+### getService
+
+▸ **getService**(`actualEngine?`): [`Service`](../interfaces/api_models_Service.Service.md)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `actualEngine?` | `string` |
+
+#### Returns
+
+[`Service`](../interfaces/api_models_Service.Service.md)
+
+ResponseFinal.usage.service
+
+#### Inherited from
+
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[getService](base_BaseAIsService.BaseAIsService.md#getservice)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:200](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L200)
+
+___
+
+### getServiceUrl
+
+▸ **getServiceUrl**(`url`, `engine`, `serviceDefaults`): `undefined` \| `string`
+
+Derive the service URL.
+
+Implemented as method here to allow overriding.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `serviceId` | `string` | ` |
+| `url` | `undefined` \| `string` | The (base) URL specified in AIsServiceProps. |
+| `engine` | `undefined` \| `string` | The engine derived form serviceId |
+| `serviceDefaults` | [`AIsServiceDefaults`](../interfaces/base_AIsServiceDefaults.AIsServiceDefaults.md) |  |
 
 #### Returns
 
 `undefined` \| `string`
 
+The URL to access the actual AI service.
+
 #### Inherited from
 
-[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[getModelFromServiceId](base_BaseAIsService.BaseAIsService.md#getmodelfromserviceid)
+[BaseAIsService](base_BaseAIsService.BaseAIsService.md).[getServiceUrl](base_BaseAIsService.BaseAIsService.md#getserviceurl)
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:218](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L218)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:249](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L249)
 
 ___
 
@@ -244,7 +401,7 @@ Let the service do its work.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:38](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L38)
+[aisbreaker-js/packages/aisbreaker-api-js/src/base/BaseAIsService.ts:70](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/base/BaseAIsService.ts#L70)
 
 ___
 
@@ -270,7 +427,7 @@ process non-streaming
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:77](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L77)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:79](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L79)
 
 ___
 
@@ -296,7 +453,7 @@ process streaming
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:103](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L103)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:102](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L102)
 
 ___
 
@@ -327,4 +484,4 @@ The final result.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:50](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L50)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts:57](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/AIsNetworkClient.ts#L57)

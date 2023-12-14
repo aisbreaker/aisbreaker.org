@@ -1,6 +1,6 @@
 aisbreaker-core-browserjs
 
-# aisbreaker-core-browserjs - v0.0.42
+# aisbreaker-core-browserjs - v0.1.15
 
 ## Table of contents
 

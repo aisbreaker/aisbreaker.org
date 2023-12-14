@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / utils/AsyncUtils
+[aisbreaker-api-js - v0.1.15](../README.md) / utils/AsyncUtils
 
 # Module: utils/AsyncUtils
 

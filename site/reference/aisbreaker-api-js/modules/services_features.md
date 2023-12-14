@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / services/features
+[aisbreaker-api-js - v0.1.15](../README.md) / services/features
 
 # Module: services/features
 

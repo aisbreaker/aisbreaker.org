@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/models/Output](../modules/api_models_Output.md) / Output
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/models/Output](../modules/api_models_Output.md) / Output
 
 # Interface: Output
 

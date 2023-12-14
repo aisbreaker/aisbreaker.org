@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / index
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / index
 
 # Module: index
 

@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / api/AIsBreaker
+[aisbreaker-api-js - v0.1.15](../README.md) / api/AIsBreaker
 
 # Module: api/AIsBreaker
 

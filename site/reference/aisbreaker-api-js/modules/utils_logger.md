@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / utils/logger
+[aisbreaker-api-js - v0.1.15](../README.md) / utils/logger
 
 # Module: utils/logger
 

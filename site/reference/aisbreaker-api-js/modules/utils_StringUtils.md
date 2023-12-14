@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / utils/StringUtils
+[aisbreaker-api-js - v0.1.15](../README.md) / utils/StringUtils
 
 # Module: utils/StringUtils
 

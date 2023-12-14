@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/connectors/DummyAssistant](../modules/services_connectors_DummyAssistant.md) / DummyAssistantFactory
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/connectors/DummyAssistant](../modules/services_connectors_DummyAssistant.md) / DummyAssistantFactory
 
 # Class: DummyAssistantFactory
 
@@ -49,4 +49,4 @@ Factory for creating a service API.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:123](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L123)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts:127](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/connectors/DummyAssistant.ts#L127)

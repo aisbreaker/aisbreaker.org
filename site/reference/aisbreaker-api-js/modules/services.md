@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / services
+[aisbreaker-api-js - v0.1.15](../README.md) / services
 
 # Module: services
 
@@ -6,10 +6,12 @@
 
 ### References
 
+- [AIsNetworkClientDefaults](services.md#aisnetworkclientdefaults)
 - [AIsNetworkClientFactory](services.md#aisnetworkclientfactory)
 - [AIsNetworkClientProps](services.md#aisnetworkclientprops)
 - [AIsNetworkClientService](services.md#aisnetworkclientservice)
 - [AIsNetworkRequest](services.md#aisnetworkrequest)
+- [DummyAssistantDefaults](services.md#dummyassistantdefaults)
 - [DummyAssistantFactory](services.md#dummyassistantfactory)
 - [DummyAssistantService](services.md#dummyassistantservice)
 - [DummyAssistantServiceProps](services.md#dummyassistantserviceprops)
@@ -29,6 +31,12 @@
 - [filters](services.md#filters)
 
 ## References
+
+### AIsNetworkClientDefaults
+
+Re-exports [AIsNetworkClientDefaults](../interfaces/services_connectors_AIsNetworkClient.AIsNetworkClientDefaults.md)
+
+___
 
 ### AIsNetworkClientFactory
 
@@ -51,6 +59,12 @@ ___
 ### AIsNetworkRequest
 
 Re-exports [AIsNetworkRequest](../interfaces/services_connectors_AIsNetworkRequest.AIsNetworkRequest.md)
+
+___
+
+### DummyAssistantDefaults
+
+Re-exports [DummyAssistantDefaults](../interfaces/services_connectors_DummyAssistant.DummyAssistantDefaults.md)
 
 ___
 

@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / api/models/ResponseFinal
+[aisbreaker-api-js - v0.1.15](../README.md) / api/models/ResponseFinal
 
 # Module: api/models/ResponseFinal
 

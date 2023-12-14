@@ -19,6 +19,7 @@ pushd ../aisbreaker-js/packages/${PACKAGE}/
 # workaround because `--exclude` is not working as expected
 touch ./build
 mv ./build ../build-tmp-${PACKAGE}
+mv jest.config.ts jest.config.ts.tmp-disabled
 # action
 typedoc --plugin typedoc-plugin-markdown \
         --entryPointStrategy Expand \
@@ -32,23 +33,34 @@ typedoc --plugin typedoc-plugin-markdown \
         --includeVersion true \
         --gitRevision develop \
         --sourceLinkTemplate 'https://github.com/aisbreaker/aisbreaker-js/blob/{gitRevision}/{path}#L{line}' \
-        --out ${DOCS_DIR}/site/reference/${PACKAGE} \
-        || exit 1
+        --out ${DOCS_DIR}/site/reference/${PACKAGE}
+typedoc_exit_code=$?
 # rollback workaround
+mv jest.config.ts.tmp-disabled jest.config.ts
 mv ../build-tmp-${PACKAGE} ./build
-# action (post)
+# action
 popd
-
+# exit on error
+if [ $typedoc_exit_code -ne 0 ]; then
+  >&2 echo "typedoc command failed with exit code ${typedoc_exit_code}."
+  exit $exit_code
+fi
 
 # aisbreaker-core-nodejs
 PACKAGE="aisbreaker-core-nodejs"
 echo -e "\n===== ${PACKAGE} ..."
 rm -rf ./site/reference/${PACKAGE}
-# action
+# action (pre)
 pushd ../aisbreaker-js/packages/${PACKAGE}/
+# workaround because `--exclude` is not working as expected
+touch ./build
+mv ./build ../build-tmp-${PACKAGE}
+mv jest.config.ts jest.config.ts.tmp-disabled
+# action
 typedoc --plugin typedoc-plugin-markdown \
         --entryPointStrategy Expand \
         --entryPoints ./src \
+        --exclude     "'**/*.js'" \
         --readme none \
         --tsconfig    ./tsconfig.docs.json \
         --categorizeByGroup true \
@@ -57,16 +69,30 @@ typedoc --plugin typedoc-plugin-markdown \
         --includeVersion true \
         --gitRevision develop \
         --sourceLinkTemplate 'https://github.com/aisbreaker/aisbreaker-js/blob/{gitRevision}/{path}#L{line}' \
-        --out ${DOCS_DIR}/site/reference/${PACKAGE} \
-        || exit 1
+        --out ${DOCS_DIR}/site/reference/${PACKAGE}
+typedoc_exit_code=$?
+# rollback workaround
+mv jest.config.ts.tmp-disabled jest.config.ts
+mv ../build-tmp-${PACKAGE} ./build
+# action
 popd
+# exit on error
+if [ $typedoc_exit_code -ne 0 ]; then
+  >&2 echo "typedoc command failed with exit code ${typedoc_exit_code}."
+  exit $exit_code
+fi
 
 # aisbreaker-core-browserjs
 PACKAGE="aisbreaker-core-browserjs"
 echo -e "\n===== ${PACKAGE} ..."
 rm -rf ./site/reference/${PACKAGE}
-# action
+# action (pre)
 pushd ../aisbreaker-js/packages/${PACKAGE}/
+# workaround because `--exclude` is not working as expected
+touch ./build
+mv ./build ../build-tmp-${PACKAGE}
+#mv jest.config.ts jest.config.ts.tmp-disabled
+# action
 typedoc --plugin typedoc-plugin-markdown \
         --entryPointStrategy Expand \
         --entryPoints ./src \
@@ -78,9 +104,18 @@ typedoc --plugin typedoc-plugin-markdown \
         --includeVersion true \
         --gitRevision develop \
         --sourceLinkTemplate 'https://github.com/aisbreaker/aisbreaker-js/blob/{gitRevision}/{path}#L{line}' \
-        --out ${DOCS_DIR}/site/reference/${PACKAGE} \
-        || exit 1
+        --out ${DOCS_DIR}/site/reference/${PACKAGE}
+typedoc_exit_code=$?
+# rollback workaround
+mv jest.config.ts.tmp-disabled jest.config.ts
+mv ../build-tmp-${PACKAGE} ./build
+# action
 popd
+# exit on error
+if [ $typedoc_exit_code -ne 0 ]; then
+  >&2 echo "typedoc command failed with exit code ${typedoc_exit_code}."
+  exit $exit_code
+fi
 
 # show results
 echo -e "\n====== DONE with results ..."

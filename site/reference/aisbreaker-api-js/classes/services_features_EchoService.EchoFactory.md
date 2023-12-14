@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/features/EchoService](../modules/services_features_EchoService.md) / EchoFactory
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/features/EchoService](../modules/services_features_EchoService.md) / EchoFactory
 
 # Class: EchoFactory
 
@@ -49,4 +49,4 @@ Factory for creating a service API.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/services/features/EchoService.ts:74](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/features/EchoService.ts#L74)
+[aisbreaker-js/packages/aisbreaker-api-js/src/services/features/EchoService.ts:67](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/services/features/EchoService.ts#L67)

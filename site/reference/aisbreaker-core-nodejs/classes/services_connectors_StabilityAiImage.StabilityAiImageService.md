@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / [services/connectors/StabilityAiImage](../modules/services_connectors_StabilityAiImage.md) / StabilityAiImageService
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / [services/connectors/StabilityAiImage](../modules/services_connectors_StabilityAiImage.md) / StabilityAiImageService
 
 # Class: StabilityAiImageService
 
@@ -6,7 +6,7 @@
 
 ## Hierarchy
 
-- `BaseAIsService`<`api.AIsServiceProps`\>
+- `BaseAIsService`<[`StabilityAiImageProps`](../interfaces/services_connectors_StabilityAiImage.StabilityAiImageProps.md), [`StabilityAiImageDefaults`](../interfaces/services_connectors_StabilityAiImage.StabilityAiImageDefaults.md)\>
 
   ↳ **`StabilityAiImageService`**
 
@@ -19,9 +19,14 @@
 ### Properties
 
 - [auth](services_connectors_StabilityAiImage.StabilityAiImageService.md#auth)
-- [model](services_connectors_StabilityAiImage.StabilityAiImageService.md#model)
+- [engine](services_connectors_StabilityAiImage.StabilityAiImageService.md#engine)
+- [engineOpt](services_connectors_StabilityAiImage.StabilityAiImageService.md#engineopt)
+- [serviceDefaults](services_connectors_StabilityAiImage.StabilityAiImageService.md#servicedefaults)
 - [serviceProps](services_connectors_StabilityAiImage.StabilityAiImageService.md#serviceprops)
+- [task](services_connectors_StabilityAiImage.StabilityAiImageService.md#task)
 - [url](services_connectors_StabilityAiImage.StabilityAiImageService.md#url)
+- [urlOpt](services_connectors_StabilityAiImage.StabilityAiImageService.md#urlopt)
+- [vendor](services_connectors_StabilityAiImage.StabilityAiImageService.md#vendor)
 
 ### Methods
 
@@ -29,8 +34,8 @@
 - [getContext](services_connectors_StabilityAiImage.StabilityAiImageService.md#getcontext)
 - [getContextService](services_connectors_StabilityAiImage.StabilityAiImageService.md#getcontextservice)
 - [getConversationState](services_connectors_StabilityAiImage.StabilityAiImageService.md#getconversationstate)
-- [getEngine](services_connectors_StabilityAiImage.StabilityAiImageService.md#getengine)
-- [getModelFromServiceId](services_connectors_StabilityAiImage.StabilityAiImageService.md#getmodelfromserviceid)
+- [getService](services_connectors_StabilityAiImage.StabilityAiImageService.md#getservice)
+- [getServiceUrl](services_connectors_StabilityAiImage.StabilityAiImageService.md#getserviceurl)
 - [process](services_connectors_StabilityAiImage.StabilityAiImageService.md#process)
 - [processUnprotected](services_connectors_StabilityAiImage.StabilityAiImageService.md#processunprotected)
 
@@ -38,22 +43,23 @@
 
 ### constructor
 
-• **new StabilityAiImageService**(`props`, `auth?`)
+• **new StabilityAiImageService**(`props`, `serviceDefaults`, `auth?`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `props` | `AIsServiceProps` |
+| `props` | [`StabilityAiImageProps`](../interfaces/services_connectors_StabilityAiImage.StabilityAiImageProps.md) |
+| `serviceDefaults` | [`StabilityAiImageDefaults`](../interfaces/services_connectors_StabilityAiImage.StabilityAiImageDefaults.md) |
 | `auth?` | `Auth` |
 
 #### Overrides
 
-base.BaseAIsService&lt;api.AIsServiceProps\&gt;.constructor
+base.BaseAIsService&lt;StabilityAiImageProps, StabilityAiImageDefaults\&gt;.constructor
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:24](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L24)
+[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:28](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L28)
 
 ## Properties
 
@@ -67,23 +73,55 @@ base.BaseAIsService.auth
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:5
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:7
 
 ___
 
-### model
+### engine
 
-• **model**: `string`
+• **engine**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.engine
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:21](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L21)
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:11
+
+___
+
+### engineOpt
+
+• `Optional` **engineOpt**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.engineOpt
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:10
+
+___
+
+### serviceDefaults
+
+• **serviceDefaults**: [`StabilityAiImageDefaults`](../interfaces/services_connectors_StabilityAiImage.StabilityAiImageDefaults.md)
+
+#### Inherited from
+
+base.BaseAIsService.serviceDefaults
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:6
 
 ___
 
 ### serviceProps
 
-• **serviceProps**: `AIsServiceProps`
+• **serviceProps**: [`StabilityAiImageProps`](../interfaces/services_connectors_StabilityAiImage.StabilityAiImageProps.md)
 
 #### Inherited from
 
@@ -91,7 +129,21 @@ base.BaseAIsService.serviceProps
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:4
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:5
+
+___
+
+### task
+
+• **task**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.task
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:8
 
 ___
 
@@ -99,9 +151,41 @@ ___
 
 • **url**: `string`
 
+#### Inherited from
+
+base.BaseAIsService.url
+
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:22](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L22)
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:13
+
+___
+
+### urlOpt
+
+• `Optional` **urlOpt**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.urlOpt
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:12
+
+___
+
+### vendor
+
+• **vendor**: `string`
+
+#### Inherited from
+
+base.BaseAIsService.vendor
+
+#### Defined in
+
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:9
 
 ## Methods
 
@@ -109,7 +193,7 @@ ___
 
 ▸ **checkRequest**(`request`, `context`): `void`
 
-check that all required fields are present
+Check that all required fields are present
 
 #### Parameters
 
@@ -128,7 +212,7 @@ base.BaseAIsService.checkRequest
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:38
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:62
 
 ___
 
@@ -155,7 +239,7 @@ base.BaseAIsService.getContext
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:26
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:38
 
 ___
 
@@ -182,7 +266,7 @@ base.BaseAIsService.getContextService
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:31
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:43
 
 ___
 
@@ -206,56 +290,65 @@ base.BaseAIsService.getConversationState
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:39
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:63
 
 ___
 
-### getEngine
+### getService
 
-▸ **getEngine**(`model`): `Engine`
+▸ **getService**(`actualEngine?`): `Service`
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `model` | `string` |
+| `actualEngine?` | `string` |
 
 #### Returns
 
-`Engine`
+`Service`
+
+ResponseFinal.usage.service
+
+#### Inherited from
+
+base.BaseAIsService.getService
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:37](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L37)
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:33
 
 ___
 
-### getModelFromServiceId
+### getServiceUrl
 
-▸ **getModelFromServiceId**(`serviceId`): `undefined` \| `string`
+▸ **getServiceUrl**(`url`, `engine`, `serviceDefaults`): `undefined` \| `string`
 
-`task:service/model` -> `model`
-Examples:
-  `chat:foo.com/gpt-next` -> `gpt-next`
-  `text-to-image:bar-ai/my-model` -> `my-model`
+Derive the service URL.
+
+Implemented as method here to allow overriding.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `serviceId` | `string` | ` |
+| `url` | `undefined` \| `string` | The (base) URL specified in AIsServiceProps. |
+| `engine` | `undefined` \| `string` | The engine derived form serviceId |
+| `serviceDefaults` | `AIsServiceDefaults` |  |
 
 #### Returns
 
 `undefined` \| `string`
 
+The URL to access the actual AI service.
+
 #### Inherited from
 
-base.BaseAIsService.getModelFromServiceId
+base.BaseAIsService.getServiceUrl
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:48
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:54
 
 ___
 
@@ -281,7 +374,7 @@ base.BaseAIsService.process
 
 #### Defined in
 
-aisbreaker-api-js/build/base/BaseAIsService.d.ts:10
+aisbreaker-api-js/build/base/BaseAIsService.d.ts:18
 
 ___
 
@@ -312,4 +405,4 @@ base.BaseAIsService.processUnprotected
 
 #### Defined in
 
-[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:55](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L55)
+[aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts:47](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-core-nodejs/src/services/connectors/StabilityAiImage.ts#L47)

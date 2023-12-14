@@ -1,4 +1,4 @@
-[aisbreaker-core-nodejs - v0.0.42](../README.md) / services/connectors/OpenaiComChat
+[aisbreaker-core-nodejs - v0.1.15](../README.md) / services/connectors/OpenaiComChat
 
 # Module: services/connectors/OpenaiComChat
 
@@ -11,4 +11,5 @@
 
 ### Interfaces
 
+- [OpenaiComChatDefaults](../interfaces/services_connectors_OpenaiComChat.OpenaiComChatDefaults.md)
 - [OpenaiComChatProps](../interfaces/services_connectors_OpenaiComChat.OpenaiComChatProps.md)

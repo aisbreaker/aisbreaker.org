@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [services/filters/MirrorFilter](../modules/services_filters_MirrorFilter.md) / MirrorFilterFactory
+[aisbreaker-api-js - v0.1.15](../README.md) / [services/filters/MirrorFilter](../modules/services_filters_MirrorFilter.md) / MirrorFilterFactory
 
 # Class: MirrorFilterFactory
 

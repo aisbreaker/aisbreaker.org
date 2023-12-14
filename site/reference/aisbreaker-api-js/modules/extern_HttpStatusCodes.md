@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / extern/HttpStatusCodes
+[aisbreaker-api-js - v0.1.15](../README.md) / extern/HttpStatusCodes
 
 # Module: extern/HttpStatusCodes
 

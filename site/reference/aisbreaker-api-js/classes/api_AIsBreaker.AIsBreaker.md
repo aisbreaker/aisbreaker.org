@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/AIsBreaker](../modules/api_AIsBreaker.md) / AIsBreaker
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/AIsBreaker](../modules/api_AIsBreaker.md) / AIsBreaker
 
 # Class: AIsBreaker
 
@@ -17,13 +17,14 @@ Starting point for app code / for code using the AIs framework.
 ### Methods
 
 - [getAIsService](api_AIsBreaker.AIsBreaker.md#getaisservice)
-- [getRemoteAIsService](api_AIsBreaker.AIsBreaker.md#getremoteaisservice)
-- [pingRemoteAIsService](api_AIsBreaker.AIsBreaker.md#pingremoteaisservice)
+- [getFactory](api_AIsBreaker.AIsBreaker.md#getfactory)
+- [getLocalAIsService](api_AIsBreaker.AIsBreaker.md#getlocalaisservice)
+- [pingAIsService](api_AIsBreaker.AIsBreaker.md#pingaisservice)
 - [registerFactory](api_AIsBreaker.AIsBreaker.md#registerfactory)
 - [getAIsService](api_AIsBreaker.AIsBreaker.md#getaisservice-1)
 - [getInstance](api_AIsBreaker.AIsBreaker.md#getinstance)
-- [getRemoteAIsService](api_AIsBreaker.AIsBreaker.md#getremoteaisservice-1)
-- [pingRemoteAIsService](api_AIsBreaker.AIsBreaker.md#pingremoteaisservice-1)
+- [getLocalAIsService](api_AIsBreaker.AIsBreaker.md#getlocalaisservice-1)
+- [pingAIsService](api_AIsBreaker.AIsBreaker.md#pingaisservice-1)
 
 ## Constructors
 
@@ -39,7 +40,56 @@ Starting point for app code / for code using the AIs framework.
 
 ### getAIsService
 
-▸ **getAIsService**(`props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
+▸ **getAIsService**(`aisbreakerServerURL`, `props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
+
+Get a service API for the given props (which include the serviceId)
+from a remote AIsBreaker server.
+
+Inclusive all default filters. They will be added here during creation.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `aisbreakerServerURL` | `string` | URL of the remote AIsBreaker server |
+| `props` | [`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md) | of the requested service (incl. propos.serviceId) |
+| `auth?` | [`Auth`](../interfaces/api_models_Auth.Auth.md) | optional auth object |
+
+#### Returns
+
+[`AIsService`](../interfaces/api_AIsService.AIsService.md)
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:105](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L105)
+
+___
+
+### getFactory
+
+▸ **getFactory**(`props`): [`AIsAPIFactory`](../interfaces/api_AIsService.AIsAPIFactory.md)<[`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md), [`AIsService`](../interfaces/api_AIsService.AIsService.md)\>
+
+TODO: make this more intelligent to find services that do not exactly match the given serviceId
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `props` | [`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md) |
+
+#### Returns
+
+[`AIsAPIFactory`](../interfaces/api_AIsService.AIsAPIFactory.md)<[`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md), [`AIsService`](../interfaces/api_AIsService.AIsService.md)\>
+
+#### Defined in
+
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:40](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L40)
+
+___
+
+### getLocalAIsService
+
+▸ **getLocalAIsService**(`props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
 
 Get a service API for the given props (which include the serviceId).
 
@@ -58,40 +108,13 @@ Inclusive all default filters. They will be added here during creation.
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:66](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L66)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:78](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L78)
 
 ___
 
-### getRemoteAIsService
+### pingAIsService
 
-▸ **getRemoteAIsService**(`aisbreakerServerURL`, `props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
-
-Get a service API for the given props (which include the serviceId)
-from a remote AIsBreaker server.
-
-Inclusive all default filters. They will be added here during creation.
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `aisbreakerServerURL` | `string` | - |
-| `props` | [`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md) | of the requested service (incl. propos.serviceId) |
-| `auth?` | [`Auth`](../interfaces/api_models_Auth.Auth.md) | optional auth object |
-
-#### Returns
-
-[`AIsService`](../interfaces/api_AIsService.AIsService.md)
-
-#### Defined in
-
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:93](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L93)
-
-___
-
-### pingRemoteAIsService
-
-▸ **pingRemoteAIsService**(`aisbreakerServerURL`): `Promise`<`boolean`\>
+▸ **pingAIsService**(`aisbreakerServerURL`): `Promise`<`boolean`\>
 
 #### Parameters
 
@@ -105,7 +128,7 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:109](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L109)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:121](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L121)
 
 ___
 
@@ -135,12 +158,13 @@ ___
 
 ### getAIsService
 
-▸ `Static` **getAIsService**(`props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
+▸ `Static` **getAIsService**(`aisbreakerServerURL`, `props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
+| `aisbreakerServerURL` | `string` |
 | `props` | [`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md) |
 | `auth?` | [`Auth`](../interfaces/api_models_Auth.Auth.md) |
 
@@ -150,7 +174,7 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:77](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L77)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:116](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L116)
 
 ___
 
@@ -168,15 +192,14 @@ ___
 
 ___
 
-### getRemoteAIsService
+### getLocalAIsService
 
-▸ `Static` **getRemoteAIsService**(`aisbreakerServerURL`, `props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
+▸ `Static` **getLocalAIsService**(`props`, `auth?`): [`AIsService`](../interfaces/api_AIsService.AIsService.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `aisbreakerServerURL` | `string` |
 | `props` | [`AIsServiceProps`](../interfaces/api_AIsService.AIsServiceProps.md) |
 | `auth?` | [`Auth`](../interfaces/api_models_Auth.Auth.md) |
 
@@ -186,13 +209,13 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:104](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L104)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:89](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L89)
 
 ___
 
-### pingRemoteAIsService
+### pingAIsService
 
-▸ `Static` **pingRemoteAIsService**(`aisbreakerServerURL`): `Promise`<`boolean`\>
+▸ `Static` **pingAIsService**(`aisbreakerServerURL`): `Promise`<`boolean`\>
 
 #### Parameters
 
@@ -206,4 +229,4 @@ ___
 
 #### Defined in
 
-[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:131](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L131)
+[aisbreaker-js/packages/aisbreaker-api-js/src/api/AIsBreaker.ts:143](https://github.com/aisbreaker/aisbreaker-js/blob/develop/packages/aisbreaker-api-js/src/api/AIsBreaker.ts#L143)

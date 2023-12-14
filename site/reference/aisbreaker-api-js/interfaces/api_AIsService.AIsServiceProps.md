@@ -1,4 +1,4 @@
-[aisbreaker-api-js - v0.0.42](../README.md) / [api/AIsService](../modules/api_AIsService.md) / AIsServiceProps
+[aisbreaker-api-js - v0.1.15](../README.md) / [api/AIsService](../modules/api_AIsService.md) / AIsServiceProps
 
 # Interface: AIsServiceProps
 
