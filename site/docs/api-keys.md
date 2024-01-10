@@ -19,6 +19,7 @@ Examples are:
 - [OpenAI API Keys](https://platform.openai.com/docs/api-reference/authentication), format: `sk-123abc...`
 - [Azure OpenAI API Keys](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#authentication)
 - [Huggingface User Access Tokens](https://huggingface.co/docs/hub/security-tokens#user-access-tokens), format: `hf_123abc...`
+- [Google Cloud (Vertext AI) API Keys](ai-service-details/google-cloud-api-keys.md), format: `googlecloud-account-json-base64_123abc...`
 - [Stability AI API Keys](https://platform.stability.ai/docs/getting-started/authentication), format: `sk-123abc...`
 - ...
 - [AIsBreaker API Keys](aisbreaker-api-key.md), format: `aisbreaker_123abc...`
