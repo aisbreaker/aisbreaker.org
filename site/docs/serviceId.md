@@ -28,6 +28,7 @@ Examples:
 - `chat:openai.ai`
 - `chat:openai.ai/gpt-4`
 - `chat:openai.ai/gpt-3.5-turbo`
+- `chat:gemini.vertexai.google.com`
 - `chat:huggingface.co/microsoft/DialoGPT-large`
 - `chat:huggingface.co/facebook/blenderbot-400M-distill`
 - ...

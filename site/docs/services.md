@@ -23,6 +23,7 @@ The following table shows the service connectors/features availability:
 | `chat:openai.com/<ENGINE>`      | OK                  | OK                  | ChatGPT from OpenAI                  | https://api.openai.com/v1/chat/completions
 | `chat:openai.com/gpt-3.5-turbo` | OK                  | OK                  | ChatGPT from OpenAI: GPT 3.5         | https://api.openai.com/v1/chat/completions
 | `chat:openai.com/gpt-4`         | _NOT TESTED YET_    | _NOT TESTED YET_    | ChatGPT from OpenAI: GPT 4           | https://api.openai.com/v1/chat/completions
+| `chat:gemini.vertexai.google.com`               | OK                  | OK                  | Google Cloud Vertext AI gemini-pro | -
 | `chat:huggingface.co/<ENGINE>`  | OK                  | OK                  | access [Hugging Face](https://huggingface.co/) model with name `<ENGINE>` | https://api-inference.huggingface.co/models/${engine}
 | `chat:huggingface.co/microsoft/DialoGPT-large` | OK   | OK                  | access [Hugging Face](https://huggingface.co/) model `microsoft/DialoGPT-large` | https://api-inference.huggingface.co/models/microsoft/DialoGPT-large
 | **text-to-image** |
