@@ -63,12 +63,13 @@ export default withMermaid /*defineConfig*/ ({
       ]},
       { text: 'Docs', link: '/docs/' },
       { text: 'Reference', link: '/reference/' },
+      { text: 'Blog', link: '/blog/' },
       { text: 'Contribute', link: '/contribute' },
       { text: 'Contact / Help / Support', link: '/contact' },
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023 AIsBreaker',
+      copyright: 'Copyright © 2023-2024 AIsBreaker',
     },
     // https://vitepress.dev/reference/default-theme-config#outline
     outline: {
