@@ -102,13 +102,11 @@ Create a service account and get its JSON key file:
   ```
 
 ### Use a User Account JSON key file with AIsBreaker
-If you have such a JSON file then you need to base64-encode it and add a prefix `googlecloud-account-json-base64_`.
-
-E.g.
+Once you have your JSON key file, base64-encode it and add the prefix `googlecloud-account-json-base64_`. Here is an example on how you can do this in bash:
 ```bash
 KEYFILE_BASE64= `cat keyfile.json | base64 -w 0`
 export GOOGLE_CLOUD_API_KEY="googlecloud-account-json-base64_${KEYFILE_BASE64}"
-  # something like:
+  # creates a value like:
   #   googlecloud-account-json-base64_ey...
 ```
 

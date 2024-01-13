@@ -36,7 +36,7 @@ const serviceProps = {
 };
 ```
 
-Although you will eventually use an own Google Cloud API key, for now, we'll utilize the default AIsBreaker API key with strict quotas:
+Although you will eventually use an own Google Cloud API key, for now, we'll utilize the (invisible) default AIsBreaker API key with strict quotas:
 ```JavaScript
 const auth = {
 };
@@ -87,9 +87,9 @@ Node.js is a single-threaded, event-driven, non-blocking, asynchronous, cross-pl
 ```
 
 ## Incorporating your own Google Cloud Account
-The previous steps employed the default AIsBreaker API key with strict quotas. For productive use, you need to link your own Google Cloud account with a private API key.
+The previous steps employed the (invisible) default AIsBreaker API key with strict quotas. For productive use, you need to link your own Google Cloud account with a private API key.
 
-Unfortunately, getting an API key for Google Cloud is a much more complicated than for other AI services. This is due to the fact that Google Cloud is not a pure AI service provider, but a full cloud provider with many different services and complex access management. Therefore, need to follow the steps below to finally get an API key.
+Unfortunately, getting an API key for Google Cloud is a much more complicated than for other AI services. This is due to the fact that Google Cloud is not a pure AI service provider, but a full cloud provider with many different services and complex access management. Therefore, you need to follow the steps below to finally get an API key.
 
 ### Creating a Google Cloud Project
 Follow the instructions of [Setup Google Cloud to Access AI Services](/docs/ai-service-details/google-cloud-ai-setup) to create and configure your project:
@@ -134,11 +134,11 @@ Create a service account and get its JSON key file:
   ```
 
 ### Using a User Account JSON Key File with AIsBreaker
-Once you have your JSON key file, base64-encode it and add the prefix googlecloud-account-json-base64_. HEre is an example on how you can do this in bash:
+Once you have your JSON key file, base64-encode it and add the prefix `googlecloud-account-json-base64_`. Here is an example on how you can do this in bash:
 ```bash
 KEYFILE_BASE64= `cat keyfile.json | base64 -w 0`
 export GOOGLE_CLOUD_API_KEY="googlecloud-account-json-base64_${KEYFILE_BASE64}"
-  # something like:
+  # creates a value like:
   #   googlecloud-account-json-base64_ey...
 ```
 
@@ -164,9 +164,9 @@ npm run start
 ```
 
 ## Wrapping Up
-Experiment with the example code in the [StackBlitz Web-IDE](https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start). To delve deeper into the subject, review the comprehensive [AIsBreaker Docs](/docs/), starting with the basic concepts.
+Experiment with the example code, e.g. in the [StackBlitz Web-IDE](https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start). To delve deeper into the subject, review the comprehensive [AIsBreaker Docs](/docs/), starting with the basic concepts.
 
 Enjoy using Google's AI Gemini API, and feel free to share your feedback or suggestions. Happy coding!
 
-Best,
+Best,  
 Chris (at) aisbreaker.org
