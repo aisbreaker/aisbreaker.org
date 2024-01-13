@@ -11,7 +11,7 @@
 API Keys (Access Tokens) to Google Cloud Services
 =================================================
 
-To access services hosted in the Google Cloud (like Vertex AI Gemini API), you need to create a Google Cloud project and enable the respective services (as described on page [Setup Google Cloud to Access AI Services](google-cloud-ai-setup.md)).
+Getting an API key for Google Cloud to access AI services (like Vertex AI Gemini API) is a much more complicated than for other AI services. This is due to the fact that Google Cloud is not a pure AI service provider, but a full cloud provider with many different services and complex access management. Therefore, you need to create a Google Cloud project and enable the respective services (as described on page [Setup Google Cloud to Access AI Services](google-cloud-ai-setup.md)) first.
 
 The next step is to get an [API key (access token)](../api-keys.md) as described below. 
 
