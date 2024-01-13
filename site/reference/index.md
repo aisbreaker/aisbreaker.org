@@ -23,7 +23,8 @@ Services
 
 AIsBreaker Packages for JavaScript and TypeScript
 -------------------------------------------------
-AIsBreaker Packages (ES Modules) for JavaScript and TypeScript ([Overview](/docs/aisbreaker-api-js/aisbreaker-packages)):
+The most relevant AIsBreaker packages (ES Modules) for JavaScript and TypeScript ([Overview](/docs/aisbreaker-api-js/aisbreaker-packages)) are listed below. Details about recent changes and the latest versions of the packages can be found in the [CHANGELOG](https://github.com/aisbreaker/aisbreaker-js/blob/main/CHANGELOG.md).
+
 - Package `aisbreaker-api-js`
   - [reference docs (generated)](/reference/aisbreaker-api-js/README)
   - [source code](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-api-js/)
@@ -33,6 +34,8 @@ AIsBreaker Packages (ES Modules) for JavaScript and TypeScript ([Overview](/docs
 - Package `aisbreaker-core-browserjs`
   - [reference docs (generated)](/reference/aisbreaker-core-browserjs/README)
   - [source code](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-core-browserjs/)
+
+
 
 
 AIsBreaker REST API

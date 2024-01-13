@@ -13,7 +13,7 @@ AIsBreaker Packages for TypeScript and JavaScript
 
 The main TypeScript/JavaScript code is organized in a single [`aisbreaker-js` git repo](https://github.com/aisbreaker/aisbreaker-js/). This [Monorepo](monorepo) is splitted up in a couple of npm packages ([ES modules](https://nodejs.org/api/esm.html#esm_introduction)).
 
-AIsBreaker consists of these packages:
+AIsBreaker consists of the packages listed below. Details about recent changes and the latest versions of the packages can be found in the [CHANGELOG](https://github.com/aisbreaker/aisbreaker-js/blob/main/CHANGELOG.md).
 - **`aisbreaker-api-js`** (old name: `aisbreaker-api`) **(needed for browser and for NodeJS apps)**
   - basic API (interfaces)
   - base classes and functions for client use of the API
@@ -54,4 +54,3 @@ AIsBreaker consists of these packages:
   - code to run an NodeJS + [Express](https://expressjs.com/) HTTP server, to serve the AIsBreaker API via REST
   - inclusive server default setup
   - [source code](https://github.com/aisbreaker/aisbreaker-js/tree/develop/packages/aisbreaker-server/)
-
