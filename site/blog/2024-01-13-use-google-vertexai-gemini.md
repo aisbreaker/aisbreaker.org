@@ -11,7 +11,7 @@ In December 2023, Google introduced its new AI model and API, "Gemini". This art
 
 This tutorial is centered around [aisbreaker/aisbreaker-example-simple-chat-node-js/ (GitHub)](https://github.com/aisbreaker/aisbreaker-example-simple-chat-node-js/). The example can also be live-edited and executed directly in your browser through the [StackBlitz Web-IDE](https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start).
 
-To manually interact with the Gemini AI model, you can utilize the [AIsBreaker Chat WebApp (Live Demo in Web)](https://demo.aisbreaker.org/), further detailed in [Chat WebApp (Intro)](/docs/demo-chat-webapp-intro).
+To manually interact with the Gemini AI model without coding, you can utilize the [AIsBreaker Chat WebApp (Live Demo in Web)](https://demo.aisbreaker.org/), further detailed in [Chat WebApp (Intro)](/docs/demo-chat-webapp-intro).
 
 
 ## Initiating your JavaScript Project
