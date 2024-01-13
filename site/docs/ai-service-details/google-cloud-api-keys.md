@@ -71,7 +71,7 @@ cat ~/.config/gcloud/application_default_credentials.json
 This is a simple way to a long-lived JSON key file, but it transfers all rights of the user to this key file. A more secure, because access limited way is to create a service account and get its JSON key file as described below.
 
 
-### Create a Service Account long-lived  JSON key file for Google Cloud Services
+### Create a Service Account long-lived JSON key file for Google Cloud Services
 Create a service account and get its JSON key file:
 - create a service account: [Google Cloud > IAM & Admin > Service Accounts > Create](
   https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts/create?walkthrough_id=iam--create-service-account)
@@ -112,16 +112,28 @@ export GOOGLE_CLOUD_API_KEY="googlecloud-account-json-base64_${KEYFILE_BASE64}"
   #   googlecloud-account-json-base64_ey...
 ```
 
-Then you can use it as secret in an AIsBreaker auth object:
+Then you can use it as secret in an AIsBreaker auth object, together with setting the project and location in the servicePros object:
 
 ::: code-group
 ```TypeScript[TypeScript]
+const serviceProps: api.AIsServiceProps = {
+    serviceId: "chat:gemini.vertexai.google.com",
+    project: "<YOUR-GOOGLE-CLOUD-PROJECT>",   // the project name you set in the Google Cloud Console
+    location: "<YOUR-GOOGLE-CLOUD-LOCATION>", // e.g. 'us-central1'
+}
+...
 const auth: api.Auth = {
   secret: "googlecloud-account-json-base64_ey...",
 }
 ```
 
 ```JavaScript[JavaScript]
+const serviceProps = {
+    serviceId: "chat:gemini.vertexai.google.com",
+    project: "<YOUR-GOOGLE-CLOUD-PROJECT>",   // the project name you set in the Google Cloud Console
+    location: "<YOUR-GOOGLE-CLOUD-LOCATION>", // e.g. 'us-central1'
+};
+...
 const auth = {
   secret: "googlecloud-account-json-base64_ey...",
 };
