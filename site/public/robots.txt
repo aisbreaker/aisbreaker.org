@@ -1,0 +1,6 @@
+# default robots.txt:
+User-agent: *
+Disallow: /xyz-admin/
+Allow: /xyz-admin/admin-ajax
+
+Sitemap: https://aisbreaker.org/sitemap.xml
