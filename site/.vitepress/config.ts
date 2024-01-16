@@ -24,7 +24,8 @@ export default withMermaid /*defineConfig*/ ({
       gtag('config', 'G-Z1X0FSZ2Y0');`
     ]
   ],
-  
+  cleanUrls: true,
+
   sitemap: {
     hostname: 'https://aisbreaker.org',
     transformItems(items) {
