@@ -1,5 +1,11 @@
-import { defineConfig, type DefaultTheme } from 'vitepress'
+import { defineConfig, type DefaultTheme, HeadConfig } from 'vitepress'
 import { withMermaid } from "vitepress-plugin-mermaid";
+
+function getCanonicalUrl(relativePath: string): string {
+  return `https://aisbreaker.org/${relativePath}`
+    .replace(/index\.md$/, "")
+    .replace(/\.md$/, "")
+}
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid /*defineConfig*/ ({
@@ -9,6 +15,11 @@ export default withMermaid /*defineConfig*/ ({
   lastUpdated: true,
   appearance: 'dark',
   head: [
+    // social links and similar stuff
+    [ 
+      'link', 
+      { rel: 'icon', href: '/images/favicon.ico' }
+    ],
     // for Google Analytics (G-Z1X0FSZ2Y0):
     [
       'script',
@@ -25,7 +36,66 @@ export default withMermaid /*defineConfig*/ ({
     ]
   ],
   cleanUrls: true,
+  transformPageData(pageData) {
+    pageData.frontmatter.head ??= []
 
+    const title = 
+      pageData.frontmatter.layout === 'home'
+        ? `AIsBreaker`
+        : `${pageData.title} | AIsBreaker.org`
+    pageData.frontmatter.head.push([
+      'meta', { name: 'og:title', content: title } 
+    ]);
+
+    const canonicalUrl = getCanonicalUrl(pageData.relativePath)
+    pageData.frontmatter.head.push([
+      'meta', { name: 'og:url', content: canonicalUrl }
+    ]);
+    /*
+    pageData.frontmatter.head.push([
+      'meta', { name: 'og:description', content: pageData.description }
+    ]);
+    */
+    const imageUrl = "https://aisbreaker.org/architecture-overview-trans-bg-lr-2.png"
+    pageData.frontmatter.head.push([
+      'meta', { name: 'og:image', content: imageUrl }
+    ]);
+    //<meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
+    pageData.frontmatter.head.push([
+      'meta', { name: 'author', content: "AIsBreaker.org" }
+    ]);
+    //<meta name="copyright" content="Copyright owner" />
+
+    // add canonical URL, but skip the 404
+    // ( https://vitepress.dev/reference/site-config#example-adding-a-canonical-url-link )
+    const page = pageData.relativePath
+    if (page !== '404.md') {
+      const canonicalUrl = getCanonicalUrl(page)
+      pageData.frontmatter.head.push([
+        'link', { rel: 'canonical', href: canonicalUrl }
+      ])
+    }
+
+  },
+
+    /* moved to transformPageData() - see above
+  transformHead: ({ pageData }) => {
+    const head: HeadConfig[] = []
+
+    //head.push(['meta', { property: 'og:title', content: pageData.frontmatter.title }])
+    //head.push(['meta', { property: 'og:description', content: pageData.frontmatter.description }])
+
+    // add canonical URL, but skip the 404
+    // ( https://vitepress.dev/reference/site-config#example-adding-a-canonical-url-link )
+    const page = pageData.relativePath
+    if (page !== '404.md') {
+      const canonicalUrl = getCanonicalUrl(page)
+      head.push( ['link', { rel: 'canonical', href: canonicalUrl }] )
+    }
+
+    return head
+  },
+  */
   sitemap: {
     hostname: 'https://aisbreaker.org',
     transformItems(items) {
