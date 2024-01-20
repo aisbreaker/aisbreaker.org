@@ -1,4 +1,15 @@
 ---
+description: Contact page for AIsBreaker
+keywords:
+  - AIsBreaker
+  - contact
+  - feedback
+  - contribute
+  - bug
+  - question
+  - email
+  - Chris
+  - aisbreaker.org
 prev:
   text: 'Contribute'
   link: '/contribute'

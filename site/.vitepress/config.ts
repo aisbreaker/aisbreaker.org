@@ -7,6 +7,9 @@ function getCanonicalUrl(relativePath: string): string {
     .replace(/\.md$/, "")
 }
 
+const imageUrl = "https://aisbreaker.org/architecture-overview-trans-bg-lr-2.png"
+const author = "AIsBreaker.org"
+
 // https://vitepress.dev/reference/site-config
 export default withMermaid /*defineConfig*/ ({
   title: "AIsBreaker.org",
@@ -37,12 +40,12 @@ export default withMermaid /*defineConfig*/ ({
   ],
   cleanUrls: true,
   transformPageData(pageData) {
+    // add  meta tags for social sharing and SEO
     pageData.frontmatter.head ??= []
-
     const title = 
       pageData.frontmatter.layout === 'home'
         ? `AIsBreaker`
-        : `${pageData.title} | AIsBreaker.org`
+        : `${pageData.frontmatter.title || pageData.title } | AIsBreaker.org`
     pageData.frontmatter.head.push([
       'meta', { name: 'og:title', content: title } 
     ]);
@@ -51,22 +54,27 @@ export default withMermaid /*defineConfig*/ ({
     pageData.frontmatter.head.push([
       'meta', { name: 'og:url', content: canonicalUrl }
     ]);
-    /*
-    pageData.frontmatter.head.push([
-      'meta', { name: 'og:description', content: pageData.description }
-    ]);
-    */
-    const imageUrl = "https://aisbreaker.org/architecture-overview-trans-bg-lr-2.png"
+    const description = pageData.frontmatter.description || pageData.description
+    if (description) {
+      pageData.frontmatter.head.push([
+        'meta', { name: 'og:description', content: pageData.description }
+      ]);
+    }
     pageData.frontmatter.head.push([
       'meta', { name: 'og:image', content: imageUrl }
     ]);
-    //<meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
+    const keywords = pageData.frontmatter.keywords
+    if (keywords) {
+      pageData.frontmatter.head.push([
+        'meta', { name: 'keywords', content: keywords.join(', ') }
+      ]);
+    }
     pageData.frontmatter.head.push([
-      'meta', { name: 'author', content: "AIsBreaker.org" }
+      'meta', { name: 'author', content: author }
     ]);
     //<meta name="copyright" content="Copyright owner" />
 
-    // add canonical URL, but skip the 404
+    // add canonical URL for SEO, but skip the 404
     // ( https://vitepress.dev/reference/site-config#example-adding-a-canonical-url-link )
     const page = pageData.relativePath
     if (page !== '404.md') {

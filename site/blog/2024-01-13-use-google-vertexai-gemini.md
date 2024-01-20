@@ -1,5 +1,14 @@
 ---
 title: A Comprehensive Guide to Access Google's New Gemini AI API with AIsBreaker
+description: A comprehensive guide on accessing Google's new Gemini AI API through a simple JavaScript program using the AIsBreaker client library.
+keywords: 
+  - AIsBreaker
+  - Google
+  - Google Cloud
+  - Gemini
+  - Vertex AI
+  - API
+  - JavaScript
 ---
 
 # A Comprehensive Guide to Access Google's New Gemini AI API with AIsBreaker
