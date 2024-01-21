@@ -9,7 +9,7 @@ keywords:
   - Google Gemini AI
   - Hugging Face
   - Open Assistant
-image: og-image-architecture.png
+image: /og-image-architecture.png
 #prev:
 #  text: 'Home'
 #  link: '/'
