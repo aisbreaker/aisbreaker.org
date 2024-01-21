@@ -1,4 +1,15 @@
 ---
+description: "Getting started with AIsBreaker using TypeScript/JavaScript"
+keywords:
+  - AIsBreaker
+  - TypeScript
+  - JavaScript
+  - guide
+  - tutorial
+  - REST API
+  - OpenAI/ChatGPT
+  - Hugging Face
+  - Google Gemini AI
 #prev:
 #  text: 'Home'
 #  link: '/'

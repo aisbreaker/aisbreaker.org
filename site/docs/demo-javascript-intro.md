@@ -1,4 +1,15 @@
 ---
+description: 'This demo shows a JavaScript NodeJS application that uses the AIsBreaker API to access AI services.'
+keywords:
+  - AIsBreaker
+  - guide
+  - tutorial
+  - JavaScript
+  - TypeScript
+  - REST API
+  - OpenAI/ChatGPT
+  - Hugging Face
+  - Google Gemini AI
 prev:
   text: 'Home'
   link: '/'
@@ -38,7 +49,13 @@ const servicePros = {
 
     //serviceId: "chat:huggingface.co/<HF-ACCOUNT>/<HF-MODEL>",
 
-    //serviceId: "aisbreaker:mirror",
+    //serviceId  - JavaScript
+  - TypeScript
+  - Python
+  - Java
+  - Kotlin
+  - JVM
+: "aisbreaker:mirror",
     //forward2ServiceProps: {
     //  "serviceId": "chat:echo"
     //},
@@ -50,6 +67,12 @@ Optionally, provide your own [API key](./api-keys) for the AI service. If you do
 const auth = {
     // optionally, set your OpenAI API key:
     //secret: "sk-...",
+  - JavaScript
+  - TypeScript
+  - Python
+  - Java
+  - Kotlin
+  - JVM
 
     // optionally, set your Huggingface API key:
     //secret: "hf_...",

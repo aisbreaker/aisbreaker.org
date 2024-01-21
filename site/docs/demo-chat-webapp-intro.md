@@ -1,4 +1,11 @@
 ---
+description: "Demo Chat WebApp shows a web chat application that uses the AIsBreaker API. It can be used to play around with different configurations/services/servceIds."
+keywords:
+  - AIsBreaker
+  - web chat
+  - OpenAI/ChatGPT
+  - Hugging Face
+  - Google Gemini AI
 prev:
   text: 'Demo: REST API Access (Intro)'
   link: '/docs/demo-rest-api-access-intro'

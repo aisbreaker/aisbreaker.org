@@ -1,21 +1,22 @@
 ---
-description: AIsBreaker.org Homepage
+description: "AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more&nbsp;... to provide simplicity and to avoid vendor lock-in"
 keywords:
   - AIsBreaker
-  - home
   - homepage
-  - getting started
   - JavaScript
   - TypeScript
   - Python
   - Java
   - Kotlin
-  - JVM
   - REST API
-  - OpenAI
+  - OpenAI/ChatGPT
   - ChatGPT
+  - Google Gemini AI
   - Hugging Face
   - Open Assistant
+  - open-source
+  - MIT license
+image: /og-image-home.png
 
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home

@@ -4,12 +4,8 @@ keywords:
   - AIsBreaker
   - docs
   - documentation
-  - reference
   - guide
   - tutorial
-  - architecture
-  - concepts
-  - getting started
   - JavaScript
   - TypeScript
   - Python
@@ -17,11 +13,9 @@ keywords:
   - Kotlin
   - JVM
   - REST API
-  - OpenAI
-  - ChatGPT
+  - OpenAI/ChatGPT
   - Hugging Face
   - Open Assistant
-  - open-source
 prev:
   text: 'Home'
   link: '/'
