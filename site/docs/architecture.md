@@ -1,4 +1,15 @@
 ---
+description: "AIsBreaker Architecture: When you implement your own app using any AIsBreaker API, you can access any third-party AI service all through a consistent and standardized interface."
+keywords:
+  - AIsBreaker
+  - architecture
+  - REST API
+  - OpenAI/ChatGPT
+  - ChatGPT
+  - Google Gemini AI
+  - Hugging Face
+  - Open Assistant
+image: og-image-architecture.png
 #prev:
 #  text: 'Home'
 #  link: '/'
