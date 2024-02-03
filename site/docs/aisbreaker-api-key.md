@@ -15,7 +15,7 @@ Such [API Key (Access Token)](./api-keys.md) is (sometimes) needed to access an 
 
 An AIsBreaker API Key is often needed to access an AIsBreaker server and its abstracted AI services - to handle quotas and to use encrypted 3rd party API keys.
 
-Format of an AIsBreaker API key: `aisbreaker_123abc...`
+Format of an AIsBreaker API key: `aisbreaker_...`
 
 
 Create an AIsBreaker API Key for a specific AIsBreaker Server
@@ -29,7 +29,7 @@ The following command creates access token, which contains an `OPENAI_API_KEY`. 
 export HOSTPORT="https://api.demo.aisbreaker.org"
 
 # the included OPENAI_API_KEY
-export OPENAI_API_KEY="sk_123abc..."
+export OPENAI_API_KEY="sk_..."
 
 # create the access token via API call
 curl "${HOSTPORT}/api/v1/oauth/token" \
@@ -83,7 +83,7 @@ Use an AIsBreaker API Key
 export HOSTPORT="https://api.demo.aisbreaker.org"
 
 # the API key
-export AISBREAKER_API_KEY="aisbreaker_123abc..."
+export AISBREAKER_API_KEY="aisbreaker_..."
 
 # create the access token via API call
 curl "${HOSTPORT}/api/v1/foo" \

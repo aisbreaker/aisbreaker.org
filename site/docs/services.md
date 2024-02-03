@@ -22,10 +22,12 @@ The following table shows the service connectors/features availability:
 | `chat:openai.com`               | OK                  | OK                  | ChatGPT from OpenAI (default engine) | https://api.openai.com/v1/chat/completions
 | `chat:openai.com/<ENGINE>`      | OK                  | OK                  | ChatGPT from OpenAI                  | https://api.openai.com/v1/chat/completions
 | `chat:openai.com/gpt-3.5-turbo` | OK                  | OK                  | ChatGPT from OpenAI: GPT 3.5         | https://api.openai.com/v1/chat/completions
-| `chat:openai.com/gpt-4`         | _NOT TESTED YET_    | _NOT TESTED YET_    | ChatGPT from OpenAI: GPT 4           | https://api.openai.com/v1/chat/completions
+| `chat:openai.com/gpt-4`         | OK                  | OK                  | ChatGPT from OpenAI: GPT 4           | https://api.openai.com/v1/chat/completions
 | `chat:gemini.vertexai.google.com`               | OK                  | OK                  | Google Cloud Vertext AI gemini-pro | -
 | `chat:huggingface.co/<ENGINE>`  | OK                  | OK                  | access [Hugging Face](https://huggingface.co/) model with name `<ENGINE>` | https://api-inference.huggingface.co/models/${engine}
 | `chat:huggingface.co/microsoft/DialoGPT-large` | OK   | OK                  | access [Hugging Face](https://huggingface.co/) model `microsoft/DialoGPT-large` | https://api-inference.huggingface.co/models/microsoft/DialoGPT-large
+| `chat:replicate.com/<ENGINE>`  | OK                  | OK                  | access [Replicate.com](https://replicate.com/) model with name `<ENGINE>` | 
+| `chat:replicate.com/meta/llama-2-70b-chat` | OK      | OK                  | access [Replicate.com](https://replicate.com/) model `meta/llama-2-70b-chat` | 
 | **text-to-image** |
 | `text-to-image:dummy`           | OK                  | OK                  | cost-free dummy image generation - for testing only | -
 | `text-to-image:openai.com`      | OK                  | OK                  | [OpenAI DALL-E](https://openai.com/dall-e-3) image generation | https://api.openai.com/v1/images/generations
