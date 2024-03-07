@@ -49,13 +49,7 @@ const servicePros = {
 
     //serviceId: "chat:huggingface.co/<HF-ACCOUNT>/<HF-MODEL>",
 
-    //serviceId  - JavaScript
-  - TypeScript
-  - Python
-  - Java
-  - Kotlin
-  - JVM
-: "aisbreaker:mirror",
+    //serviceId: "aisbreaker:mirror",
     //forward2ServiceProps: {
     //  "serviceId": "chat:echo"
     //},
@@ -67,12 +61,6 @@ Optionally, provide your own [API key](./api-keys) for the AI service. If you do
 const auth = {
     // optionally, set your OpenAI API key:
     //secret: "sk-...",
-  - JavaScript
-  - TypeScript
-  - Python
-  - Java
-  - Kotlin
-  - JVM
 
     // optionally, set your Huggingface API key:
     //secret: "hf_...",
