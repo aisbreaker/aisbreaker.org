@@ -60,15 +60,14 @@ export AISBREAKER_API_KEY="sk-123abc..."
 
 
 ## Usage
-
-Get a tool description:
-```
-./aisbreaker.sh --help
-```
-
-Decide which [service(Id)](/docs/services) you want to use. The following examples all use `chat:openai.com`. By using a different serviceId you access a different AI service.
+Before start using the tool, you need to decide which generative AI service you want to use. On the [Services](/docs/services) page you find a list of available services and of their serviceIds. The following examples all use the serviceId `chat:openai.com`. By using a different serviceId you access a different AI service.
 
 In all examples below, we'll conveniently use the free `api.demo.aisbreaker.org` server. The server doesn't store any data or credentials. Feel free to install your own [AIsBreaker server](/docs/aisbreaker-server).
+
+To get a tool description run:
+```bash
+./aisbreaker.sh --help
+```
 
 
 ### Minimal Usage
@@ -82,8 +81,8 @@ Node.js is an open-source, server-side platform built on Chrome's V8 JavaScript 
 ```
 
 
-### Typical Usage
-Example with a conversation/state:
+### A typical Chat Conversation
+In a chat conversation you need to keep the state of the conversation. This can be done by using a state file specified with the `--state` option. The following example shows a conversation with two prompts in the same session:
 ```bash
 # preparation
 STATEFILE=`mktemp ./aisbreaker-state-XXXXXXXX`; echo ${STATEFILE}

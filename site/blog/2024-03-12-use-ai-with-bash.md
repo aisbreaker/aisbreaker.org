@@ -45,17 +45,17 @@ To get a tool description run:
 ```
 
 ### Minimal Usage
-The following example command just sends a simple text prompt (from stdin) to the AI service and shows the text response (to stdout):
+The following example command just sends a simple text prompt (from stdin) to the AI service
 ```bash
 echo "What is Nodejs?" | ./aisbreaker.sh --service=chat:openai.com
 ```
-will show output like:
+and shows the text response (on stdout):
 ```
 Node.js is an open-source, server-side platform built on Chrome's V8 JavaScript engine. It allows developers to build scalable network applications using JavaScript. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, making it ideal for data-intensive real-time applications. It is commonly used for building web servers, APIs, and other networking applications.
 ```
 
 ### A typical Chat Conversation
-In a chat conversation you need to keep the state of the conversation. This can be done by using the `--state` option. The following example shows a conversation with two prompts in the same session:
+In a chat conversation you need to keep the state of the conversation. This can be done by using a state file specified with the `--state` option. The following example shows a conversation with two prompts in the same session:
 ```bash
 # preparation
 STATEFILE=`mktemp ./aisbreaker-state-XXXXXXXX`; echo ${STATEFILE}
