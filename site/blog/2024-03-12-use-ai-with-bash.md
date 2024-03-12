@@ -1,7 +1,6 @@
 ---
 title: Accessing AI Services from Shell Script (OpenAI/ChatGPT, Hugging Face, Google Gemini AI and more)
-description: This article describes a bash shell script to provide a simple commandline
-interface to various generative AI services OpenAI/ChatGPT, Hugging Face, Google Gemini AI and more via AIsBreaker.org.
+description: This article describes a bash shell script to provide a simple commandline interface to various generative AI services OpenAI/ChatGPT, Hugging Face, Google Gemini AI and more via AIsBreaker.org.
 keywords: 
   - AIsBreaker
   - OpenAI/ChatGPT
