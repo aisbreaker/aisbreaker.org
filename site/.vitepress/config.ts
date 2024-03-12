@@ -261,6 +261,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'Getting Started - with TypeScript/JavaScript', link: '/getting-started-with-typescript-javascript' },
+        { text: 'Getting Started - with Bash Shellscript', link: '/getting-started-with-bash' },
         { text: 'Getting Started - with Python', link: '/getting-started-with-python' },
         { text: 'Getting Started - with Java/Kotlin/JVM', link: '/getting-started-with-java' },
         { text: 'Getting Started - with REST API', link: '/aisbreaker-rest-api' },
