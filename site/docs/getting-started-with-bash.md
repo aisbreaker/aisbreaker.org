@@ -66,18 +66,21 @@ Get a tool description:
 ./aisbreaker.sh --help
 ```
 
-Decide which [service(Id)](https://aisbreaker.org/docs/services) you want to use. The following examples all use `chat:openai.com`. By using a different serviceId you access a different AI service.
+Decide which [service(Id)](/docs/services) you want to use. The following examples all use `chat:openai.com`. By using a different serviceId you access a different AI service.
+
+In all examples below, we'll conveniently use the free `api.demo.aisbreaker.org` server. The server doesn't store any data or credentials. Feel free to install your own [AIsBreaker server](/docs/aisbreaker-server).
 
 
 ### Minimal Usage
-Example:
+The following example command just sends a simple text prompt (from stdin) to the AI service
 ```bash
 echo "What is Nodejs?" | ./aisbreaker.sh --service=chat:openai.com
 ```
-will show output like:
+and shows the text response (on stdout):
 ```
 Node.js is an open-source, server-side platform built on Chrome's V8 JavaScript engine. It allows developers to build scalable network applications using JavaScript. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, making it ideal for data-intensive real-time applications. It is commonly used for building web servers, APIs, and other networking applications.
 ```
+
 
 ### Typical Usage
 Example with a conversation/state:
