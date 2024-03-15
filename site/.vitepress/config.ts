@@ -49,7 +49,7 @@ export default withMermaid /*defineConfig*/ ({
       'meta', { name: 'og:title', content: title } 
     ])
 
-    const canonicalUrl = getCanonicalUrl(pageData.relativePath)
+    const canonicalUrl = pageData.frontmatter.canonical || getCanonicalUrl(pageData.relativePath)
     pageData.frontmatter.head.push([
       'meta', { name: 'og:url', content: canonicalUrl }
     ])
@@ -80,7 +80,7 @@ export default withMermaid /*defineConfig*/ ({
     // ( https://vitepress.dev/reference/site-config#example-adding-a-canonical-url-link )
     const page = pageData.relativePath
     if (page !== '404.md') {
-      const canonicalUrl = getCanonicalUrl(page)
+      //const canonicalUrl = getCanonicalUrl(page)
       pageData.frontmatter.head.push([
         'link', { rel: 'canonical', href: canonicalUrl }
       ])

@@ -8,6 +8,7 @@ keywords:
   - Google Gemini AI
   - API
   - bash
+canonical: https://aisbreaker.org/docs/getting-started-with-bash
 ---
 
 # Accessing AI Services from Shell Script (OpenAI/ChatGPT, Hugging Face, Google Gemini AI and more)
