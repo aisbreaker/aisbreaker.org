@@ -5,9 +5,6 @@ keywords:
   - homepage
   - JavaScript
   - TypeScript
-  - Python
-  - Java
-  - Kotlin
   - REST API
   - OpenAI/ChatGPT
   - ChatGPT
