@@ -266,7 +266,7 @@ console.log(`response2: ${response2.outputs[0].text.content}`);
 :::
 Details:
 - request/question/prompt: [Request](./request)
-- response/answer: [(ResponseFinal and ResponseEvent)](./response)
+- response/answer: [ResponseFinal and ResponseEvent](./response)
 
 
 

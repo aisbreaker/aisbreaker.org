@@ -142,7 +142,33 @@ export default withMermaid /*defineConfig*/ ({
           ]
         },
       ]},
-      { text: 'Docs', link: '/docs/' },
+      //{ text: 'Docs', link: '/docs/' },
+      { text: 'Docs', items: [
+        {
+          items: [
+            { text: 'Full AIsBreaker Docs ', link: '/docs/' },
+          ],
+        },
+        {
+          items: [
+            { text: 'Intro - What is AIsBreaker?', link: '/docs/' },
+            { text: 'Intro - Basic Concepts', link: '/docs/concepts' },
+          ],
+        },
+        {
+          items: [
+            { text: 'Getting Started - with TypeScript/JavaScript', link: '/docs/getting-started-with-typescript-javascript' },
+            { text: 'Getting Started - with Java/Kotlin/JVM', link: '/docs/getting-started-with-java' },
+            { text: 'Getting Started - with Python', link: '/docs/getting-started-with-python' },
+            { text: 'Getting Started - with Bash Shellscript', link: '/docs/getting-started-with-bash' },
+            { text: 'Getting Started - with REST API', link: '/docs/aisbreaker-rest-api' },
+          ],
+        },
+
+
+      ]},
+
+
       { text: 'Reference', link: '/reference/' },
       { text: 'Blog', link: '/blog/' },
       { text: 'Contribute', link: '/contribute' },
@@ -261,9 +287,9 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'Getting Started - with TypeScript/JavaScript', link: '/getting-started-with-typescript-javascript' },
-        { text: 'Getting Started - with Bash Shellscript', link: '/getting-started-with-bash' },
-        { text: 'Getting Started - with Python', link: '/getting-started-with-python' },
         { text: 'Getting Started - with Java/Kotlin/JVM', link: '/getting-started-with-java' },
+        { text: 'Getting Started - with Python', link: '/getting-started-with-python' },
+        { text: 'Getting Started - with Bash Shellscript', link: '/getting-started-with-bash' },
         { text: 'Getting Started - with REST API', link: '/aisbreaker-rest-api' },
       ]
     },
