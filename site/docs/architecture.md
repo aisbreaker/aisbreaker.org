@@ -18,8 +18,9 @@ image: /og-image-architecture.png
 #  link: './concepts'
 ---
 
-Architecture
-============
+<!--Architecture-->
+API Architecture
+================
 
 Overview
 --------

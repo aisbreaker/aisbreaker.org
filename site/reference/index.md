@@ -7,8 +7,9 @@ next:
   link: '/contribute'
 ---
 
-Reference
-=========
+<!--Reference-->
+API Reference
+=============
 
 Basics
 ------

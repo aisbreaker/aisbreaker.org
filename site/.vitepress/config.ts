@@ -116,6 +116,10 @@ export default withMermaid /*defineConfig*/ ({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+
+      { text: 'Blog', link: '/blog/' },
+
+      /*
       { text: 'Demos', items: [
         {//text: 'Demo JavaScript with NodeJS',
           items: [
@@ -142,16 +146,20 @@ export default withMermaid /*defineConfig*/ ({
           ]
         },
       ]},
+      */
       //{ text: 'Docs', link: '/docs/' },
-      { text: 'Docs', items: [
+      //{ text: 'Docs', items: [
+      { text: 'API Docs', items: [
         {
           items: [
-            { text: 'Full AIsBreaker Docs ', link: '/docs/' },
+            //{ text: 'Full AIsBreaker Docs ', link: '/docs/' },
+            { text: 'Full AIsBreaker API Docs ', link: '/docs/' },
           ],
         },
         {
           items: [
-            { text: 'Intro - What is AIsBreaker?', link: '/docs/' },
+            // { text: 'Intro - What is AIsBreaker?', link: '/docs/' },
+            { text: 'Intro - What is AIsBreaker API?', link: '/docs/' },
             { text: 'Intro - Basic Concepts', link: '/docs/concepts' },
           ],
         },
@@ -164,15 +172,39 @@ export default withMermaid /*defineConfig*/ ({
             { text: 'Getting Started - with REST API', link: '/docs/aisbreaker-rest-api' },
           ],
         },
+        {//text: 'Demo JavaScript with NodeJS',
+          items: [
+            {text: 'JavaScript Code (Intro)', link: '/docs/demo-javascript-intro' }, 
+            {text: 'JavaScript Code (Live Demo in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
+            //{text: 'Demo JavaScript with NodeJS (Guide)', link: '/docs/demo-javascript-guide' }, 
+            //{text: 'Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
+         ],
+        },
+        {
+          items: [
+            {text: 'REST API Access (Intro)', link: '/docs/demo-rest-api-access-intro' },
+            {text: 'REST API Access (Live Demo with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
+            //{text: 'Demo REST API Access (Guide)', link: '/docs/demo-rest-api-access-guide' },
+            //{text: 'Demo REST API Access (Live with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
+          ]
+        },
+        {
+          items: [
+            {text: 'Chat WebApp (Intro)', link: '/docs/demo-chat-webapp-intro' }, 
+            {text: 'Chat WebApp (Live Demo in Web)', link: 'https://demo.aisbreaker.org/' }, 
+            //{text: 'Demo Chat WebApp (Guide)', link: '/docs/demo-webapp-guide' }, 
+            //{text: 'Demo Chat WebApp (Live in Web)', link: 'https://demo.aisbreaker.org/' }, 
+          ]
+        },
 
 
       ]},
 
 
-      { text: 'Reference', link: '/reference/' },
-      { text: 'Blog', link: '/blog/' },
-      { text: 'Contribute', link: '/contribute' },
-      { text: 'Contact / Help / Support', link: '/contact' },
+      { text: 'API Reference', link: '/reference/' },
+      //{ text: 'Contribute', link: '/contribute' },
+      //{ text: 'Contact / Help / Support', link: '/contact' },
+      { text: 'Contact', link: '/contact' },
     ],
     footer: {
       message: 'Released under the MIT License.',
@@ -276,8 +308,10 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       text: 'Introduction',
       collapsed: false,
       items: [
-        { text: 'What is AIsBreaker?', link: '/' },
-        { text: 'Architecture', link: '/architecture' },
+        //{ text: 'What is AIsBreaker?', link: '/' },
+        { text: 'What is AIsBreaker API?', link: '/' },
+        //{ text: 'Architecture', link: '/architecture' },
+        { text: 'API Architecture', link: '/architecture' },
         { text: 'Basic Concepts', link: '/concepts' },
         { text: 'Use Cases', link: '/use-cases' },
       ]

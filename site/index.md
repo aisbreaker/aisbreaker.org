@@ -22,29 +22,28 @@ layout: home
 hero:
   name: "AIs Breaker"
   text: "Easy Access to all AI&nbsp;Services"
-  tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more&nbsp;... to provide simplicity and to avoid vendor lock-in.
-  TO-LONG-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
+  tagline: World's best AIs, open souce LLMs, AI agents, RAG apps, cloud-based setups, on-premise setups, offline setups ... AIsBreaker helps developers and users to find good and simple solutions and to avoid vendor lock-in.
+  OLD-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more&nbsp;... to provide simplicity and to avoid vendor lock-in.
+  TOO-LONG-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
   image:
-    src: /architecture-overview-trans-bg-lr-2.png
-    alt: AIsBreaker Architecture Overview
+    # src: /architecture-overview-trans-bg-lr-2.png
+    src: /transparent_1x1.png
+    # alt: AIsBreaker Architecture Overview
   actions:
-    - theme: brand
-      text: "Demos: JavaScript Code and more ..."
-      link: /docs/demo-javascript-intro
     #- theme: brand
-    #  text: "Demo: JavaScript Code"
+    #  text: "Demos: JavaScript Code and more ..."
     #  link: /docs/demo-javascript-intro
-    #- theme: brand
-    #  text: "Demo: REST API Access"
-    #  link: /docs/demo-rest-api-access-intro
-    #- theme: brand
-    #  text: "Demo: Chat WebApp"
-    #  link: /docs/demo-chat-webapp-intro
+
+    #- theme: alt
+    #  text: AIsBreaker Docs
+    #  link: /docs/
     - theme: alt
-      text: AIsBreaker Docs
-      link: /docs/
-    - theme: alt
-      text: Contact / Help / Support
+      text: Blog
+      link: /blog/
+
+    - theme: brand
+      #text: Contact / Help / Support
+      text: Contact
       link: /contact
 
 #    - theme: brand
@@ -61,15 +60,19 @@ hero:
 
 # https://vitepress.dev/reference/default-theme-home-page#features-section
 features:
+  #- title: Our Vision
+  #  details: We want to provide a free and open-sourced tool for app developers to access any generative AI service (including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more) in the most easy and most open way.
   - title: Our Vision
-    details: We want to provide a free and open-sourced tool for app developers to access any generative AI service (including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more) in the most easy and most open way.
+    details: We want to help software developers and users to access every generative AI service - full range from closed OpenAI/ChatGPT to open source solutions - in the most easy and most open way.
  
-  - title: What is AIsBreaker?
-    details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Licenced under MIT, it's open source and free to use."
+  - title: What is AIsBreaker API?
+    details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in. Open source, licenced under MIT, and free to use."
+    
+    STILL-A-BI-TOO-LONG-details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Licenced under MIT, it's open source and free to use."
 
-    STILL-TO-LONG-details: Developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a standardized interface. Free open-source. No vendor lock-in, with the freedom to choose and switch between different AI service providers without constraints.
+    STILL-TOO-LONG-details: Developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a standardized interface. Free open-source. No vendor lock-in, with the freedom to choose and switch between different AI service providers without constraints.
 
-    TO-LONG-details: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
+    TOO-LONG-details: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
 
   #- title: Our Goals
   #  details: Simplify app development when accessing AI services, allow easy switch to an alternative AI service, prevent vendor lock-in, provide simple and clean APIs/SDKs/tools, provide very good docs, support of many programming languages and environments.
