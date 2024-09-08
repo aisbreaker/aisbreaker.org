@@ -2,6 +2,9 @@
 description: "AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more&nbsp;... to provide simplicity and to avoid vendor lock-in"
 keywords:
   - AIsBreaker
+  - GenAI
+  - LLMs
+  - air-gapped
   - homepage
   - JavaScript
   - TypeScript
@@ -22,7 +25,7 @@ layout: home
 hero:
   name: "AIs Breaker"
   text: "Easy Access to all AI&nbsp;Services"
-  tagline: World's best AIs, open souce LLMs, AI agents, RAG apps, cloud-based setups, on-premise setups, offline setups ... AIsBreaker helps developers and users to find good and simple solutions and to avoid vendor lock-in.
+  tagline: World's best AIs, open souce LLMs, AI agents, RAG apps, cloud-based setups, on-premise setups, air-gapped setups ... AIsBreaker helps developers and users to find good and simple solutions and to avoid vendor lock-in.
   OLD-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of generative AI services, including OpenAI/ChatGPT, all Hugging Face AIs, Google Gemini AI, and more&nbsp;... to provide simplicity and to avoid vendor lock-in.
   TOO-LONG-tagline: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
   image:
@@ -65,14 +68,21 @@ features:
   - title: Our Vision
     details: We want to help software developers and users to access every generative AI service - full range from closed OpenAI/ChatGPT to open source solutions - in the most easy and most open way.
  
-  - title: What is AIsBreaker API?
-    details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in. Open source, licenced under MIT, and free to use."
+
+  - title: What API to Use?
+    details: "The a developer-friendly AIsBreaker API is now deprecated - we recommend using LangChain API as a better replacement."
+    link: /blog/2024-09-08-aisbreaker-api-deprecation-langchain-recommendation
+    linkText: Details
     
-    STILL-A-BI-TOO-LONG-details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Licenced under MIT, it's open source and free to use."
 
-    STILL-TOO-LONG-details: Developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a standardized interface. Free open-source. No vendor lock-in, with the freedom to choose and switch between different AI service providers without constraints.
+  #- title: What is AIsBreaker API?
+  #  details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in. Open source, licenced under MIT, and free to use."
+    
+  #  STILL-A-BI-TOO-LONG-details: "A Developer-friendly API for streamlined access to a variety of AI services, all through a standardized interface. No vendor lock-in, choose and switch between different AI service providers without constraints. Licenced under MIT, it's open source and free to use."
 
-    TOO-LONG-details: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
+  #  STILL-TOO-LONG-details: Developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a standardized interface. Free open-source. No vendor lock-in, with the freedom to choose and switch between different AI service providers without constraints.
+
+  #  TOO-LONG-details: AIsBreaker offers a developer-friendly API for streamlined access to a variety of AI services, including the OpenAI/ChatGPT API, Hugging Face AIs, Open Assistant API, and more, all through a consistent and standardized interface. It is a free open-source tool designed to prevent vendor lock-in, ensuring users have the freedom to choose and switch between different service providers without constraints.
 
   #- title: Our Goals
   #  details: Simplify app development when accessing AI services, allow easy switch to an alternative AI service, prevent vendor lock-in, provide simple and clean APIs/SDKs/tools, provide very good docs, support of many programming languages and environments.

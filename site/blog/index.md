@@ -7,6 +7,12 @@ hero:
   tagline: Read our latest articles
 ---
 
+<a href="/blog/2024-09-08-aisbreaker-api-deprecation-langchain-recommendation" style="display: block; width:50%; margin: auto; padding: .75rem; border: 2px #e5e7eb solid; border-radius: 1rem;">
+    <h2 style="font-size: 1.25rem; line-height: 1.75rem; font-weight: 700;">AIsBreaker API is Now Deprecated - We Recommend Using LangChain Instead</h2>
+    <small><i>By Chris, September 8, 2024</i></small>
+    <p>AIsBreaker API is now deprecated — discover why we're recommending the powerful LangChain framework as the superior alternative ...</p>
+</a>
+
 <a href="/blog/2024-03-12-use-ai-with-bash" style="display: block; width:50%; margin: auto; padding: .75rem; border: 2px #e5e7eb solid; border-radius: 1rem;">
     <h2 style="font-size: 1.25rem; line-height: 1.75rem; font-weight: 700;">Accessing AI Services from Shell Script (OpenAI/ChatGPT, Hugging Face, Google Gemini AI and more)</h2>
     <small><i>By Chris, March 12, 2024</i></small>

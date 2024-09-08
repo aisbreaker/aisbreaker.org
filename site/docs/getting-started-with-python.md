@@ -1,15 +1,4 @@
 ---
-#prev:
-#  text: 'Home'
-#  link: '/'
-#next:
-#  text: 'Reference'
-#  link: '/reference/'
+layout: forward
+target: https://aisbreaker.org/deprecated/aisbreaker-api/docs/getting-started-with-python
 ---
-
-Getting Started - with Python
-=============================
-
-An AIsBreaker Client API for Python is not available yet.
-
-So you need to access the [AIsBreaker REST API](./aisbreaker-rest-api) directly.
