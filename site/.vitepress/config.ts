@@ -38,6 +38,10 @@ export default withMermaid /*defineConfig*/ ({
     ]
   ],
   cleanUrls: true,
+  ignoreDeadLinks: [
+    // ignore all links include "/docs/""
+    /\/docs\//,
+  ],
   transformPageData(pageData) {
     // add  meta tags for social sharing and SEO
     pageData.frontmatter.head ??= []
