@@ -127,85 +127,85 @@ export default withMermaid /*defineConfig*/ ({
       { text: 'Demos', items: [
         {//text: 'Demo JavaScript with NodeJS',
           items: [
-            {text: 'JavaScript Code (Intro)', link: '/docs/demo-javascript-intro' }, 
+            {text: 'JavaScript Code (Intro)', link: '/deprecated/aisbreaker-api/docs/demo-javascript-intro' }, 
             {text: 'JavaScript Code (Live Demo in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
-            //{text: 'Demo JavaScript with NodeJS (Guide)', link: '/docs/demo-javascript-guide' }, 
+            //{text: 'Demo JavaScript with NodeJS (Guide)', link: '/deprecated/aisbreaker-api/docs/demo-javascript-guide' }, 
             //{text: 'Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
          ],
         },
         {
           items: [
-            {text: 'REST API Access (Intro)', link: '/docs/demo-rest-api-access-intro' },
+            {text: 'REST API Access (Intro)', link: '/deprecated/aisbreaker-api/docs/demo-rest-api-access-intro' },
             {text: 'REST API Access (Live Demo with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
-            //{text: 'Demo REST API Access (Guide)', link: '/docs/demo-rest-api-access-guide' },
+            //{text: 'Demo REST API Access (Guide)', link: '/deprecated/aisbreaker-api/docs/demo-rest-api-access-guide' },
             //{text: 'Demo REST API Access (Live with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
           ]
         },
         {
           items: [
-            {text: 'Chat WebApp (Intro)', link: '/docs/demo-chat-webapp-intro' }, 
+            {text: 'Chat WebApp (Intro)', link: '/deprecated/aisbreaker-api/docs/demo-chat-webapp-intro' }, 
             {text: 'Chat WebApp (Live Demo in Web)', link: 'https://demo.aisbreaker.org/' }, 
-            //{text: 'Demo Chat WebApp (Guide)', link: '/docs/demo-webapp-guide' }, 
+            //{text: 'Demo Chat WebApp (Guide)', link: '/deprecated/aisbreaker-api/docs/demo-webapp-guide' }, 
             //{text: 'Demo Chat WebApp (Live in Web)', link: 'https://demo.aisbreaker.org/' }, 
           ]
         },
       ]},
       */
-      //{ text: 'Docs', link: '/docs/' },
+      //{ text: 'Docs', link: '/deprecated/aisbreaker-api/docs/' },
       //{ text: 'Docs', items: [
-      { text: 'API Docs', items: [
+      { text: 'Deprecated API Docs', items: [
         {
           items: [
-            //{ text: 'Full AIsBreaker Docs ', link: '/docs/' },
-            { text: 'Full AIsBreaker API Docs ', link: '/docs/' },
+            //{ text: 'Full AIsBreaker Docs ', link: '/deprecated/aisbreaker-api/docs/' },
+            { text: 'Full AIsBreaker API Docs ', link: '/deprecated/aisbreaker-api/docs/' },
           ],
         },
         {
           items: [
-            // { text: 'Intro - What is AIsBreaker?', link: '/docs/' },
-            { text: 'Intro - What is AIsBreaker API?', link: '/docs/' },
-            { text: 'Intro - Basic Concepts', link: '/docs/concepts' },
+            // { text: 'Intro - What is AIsBreaker?', link: '/deprecated/aisbreaker-api/docs/' },
+            { text: 'Intro - What is AIsBreaker API?', link: '/deprecated/aisbreaker-api/docs/' },
+            { text: 'Intro - Basic Concepts', link: '/deprecated/aisbreaker-api/docs/concepts' },
           ],
         },
         {
           items: [
-            { text: 'Getting Started - with TypeScript/JavaScript', link: '/docs/getting-started-with-typescript-javascript' },
-            { text: 'Getting Started - with Java/Kotlin/JVM', link: '/docs/getting-started-with-java' },
-            { text: 'Getting Started - with Python', link: '/docs/getting-started-with-python' },
-            { text: 'Getting Started - with Bash Shellscript', link: '/docs/getting-started-with-bash' },
-            { text: 'Getting Started - with REST API', link: '/docs/aisbreaker-rest-api' },
+            { text: 'Getting Started - with TypeScript/JavaScript', link: '/deprecated/aisbreaker-api/docs/getting-started-with-typescript-javascript' },
+            { text: 'Getting Started - with Java/Kotlin/JVM', link: '/deprecated/aisbreaker-api/docs/getting-started-with-java' },
+            { text: 'Getting Started - with Python', link: '/deprecated/aisbreaker-api/docs/getting-started-with-python' },
+            { text: 'Getting Started - with Bash Shellscript', link: '/deprecated/aisbreaker-api/docs/getting-started-with-bash' },
+            { text: 'Getting Started - with REST API', link: '/deprecated/aisbreaker-api/docs/aisbreaker-rest-api' },
           ],
         },
         {//text: 'Demo JavaScript with NodeJS',
           items: [
-            {text: 'JavaScript Code (Intro)', link: '/docs/demo-javascript-intro' }, 
+            {text: 'JavaScript Code (Intro)', link: '/deprecated/aisbreaker-api/docs/demo-javascript-intro' }, 
             {text: 'JavaScript Code (Live Demo in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
-            //{text: 'Demo JavaScript with NodeJS (Guide)', link: '/docs/demo-javascript-guide' }, 
+            //{text: 'Demo JavaScript with NodeJS (Guide)', link: '/deprecated/aisbreaker-api/docs/demo-javascript-guide' }, 
             //{text: 'Demo JavaScript with NodeJS (Live in StackBlitz Web-IDE)', link: 'https://stackblitz.com/github/aisbreaker/aisbreaker-example-simple-chat-node-js?title=AIsBreaker+Example+Simple+Chat-node-js&file=aisbreaker-simple-chat.js&startScript=install,start' }, 
          ],
         },
         {
           items: [
-            {text: 'REST API Access (Intro)', link: '/docs/demo-rest-api-access-intro' },
+            {text: 'REST API Access (Intro)', link: '/deprecated/aisbreaker-api/docs/demo-rest-api-access-intro' },
             {text: 'REST API Access (Live Demo with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
-            //{text: 'Demo REST API Access (Guide)', link: '/docs/demo-rest-api-access-guide' },
+            //{text: 'Demo REST API Access (Guide)', link: '/deprecated/aisbreaker-api/docs/demo-rest-api-access-guide' },
             //{text: 'Demo REST API Access (Live with Web-Curl)', link: 'https://reqbin.com/c-m2n6cdnu' },
           ]
         },
         {
           items: [
-            {text: 'Chat WebApp (Intro)', link: '/docs/demo-chat-webapp-intro' }, 
+            {text: 'Chat WebApp (Intro)', link: '/deprecated/aisbreaker-api/docs/demo-chat-webapp-intro' }, 
             {text: 'Chat WebApp (Live Demo in Web)', link: 'https://demo.aisbreaker.org/' }, 
-            //{text: 'Demo Chat WebApp (Guide)', link: '/docs/demo-webapp-guide' }, 
+            //{text: 'Demo Chat WebApp (Guide)', link: '/deprecated/aisbreaker-api/docs/demo-webapp-guide' }, 
             //{text: 'Demo Chat WebApp (Live in Web)', link: 'https://demo.aisbreaker.org/' }, 
           ]
         },
+       //]},
 
 
+       { text: 'API Reference', link: '/reference/' },
       ]},
 
-
-      { text: 'API Reference', link: '/reference/' },
       //{ text: 'Contribute', link: '/contribute' },
       //{ text: 'Contact / Help / Support', link: '/contact' },
       { text: 'Contact', link: '/contact' },
@@ -231,8 +231,9 @@ export default withMermaid /*defineConfig*/ ({
     ],*/
     sidebar: {
       '/docs/': { base: '/docs', items: sidebarDocs() },
+      '/deprecated/aisbreaker-api/docs/': { base: '/deprecated/aisbreaker-api/docs', items: sidebarDocs() },
       '/reference/': { base: '/reference', items: sidebarReference() },
-      //'/docs/aisbreaker-api-js/aisbreaker-packages': { base: '/reference/', items: sidebarReference() },
+      //'/deprecated/aisbreaker-api/docs/aisbreaker-api-js/aisbreaker-packages': { base: '/reference/', items: sidebarReference() },
     },
     //lastUpdatedDateTimeFormatOptions: { dateStyle: 'medium',  timeStyle: 'short' },
     editLink: {
@@ -270,7 +271,7 @@ export default withMermaid /*defineConfig*/ ({
             boostDocument: (documentId, term, storedFields) => {
               //console.log('boostDocument', documentId, term, storedFields)
               if (documentId) {
-                if (documentId.startsWith('/docs/concepts')) {
+                if (documentId.startsWith('/deprecated/aisbreaker-api/docs/concepts')) {
                   // promote concepts
                   return 3;
                 } else if (documentId.startsWith('/docs')) {
@@ -362,7 +363,7 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
       collapsed: false,
       items: [
         { text: 'AIsBreaker for JavaScript/TypeScript',
-          base: '/docs/aisbreaker-api-js',
+          base: '/deprecated/aisbreaker-api/docs/aisbreaker-api-js',
           collapsed: false,
           items: [
             //{ text: 'Topics', link: 'aisbreaker-api-js/' },
@@ -389,7 +390,7 @@ function sidebarReference(): DefaultTheme.SidebarItem[] {
         { text: 'Remote REST API', link: '/#aisbreaker-remote-rest-api'},
         /*
         { text: 'AIsBreaker Packages for TypeScript and JavaScript',
-          base: '/docs/aisbreaker-api-js/',
+          base: '/deprecated/aisbreaker-api/docs/aisbreaker-api-js/',
           items: [
             { text: 'AIsBreaker API (JavaScript)', link: 'aisbreaker-api-js' },
             { text: 'AIsBreaker API (TypeScript)', link: 'aisbreaker-api-ts' },
