@@ -1,8 +1,9 @@
 # Flexi-RAG: A Flexible, Open-Source Solution for Retrieval-Augmented Generation
 
-In the age of advanced AI, providing accurate and relevant information at the right moment is more important than ever. Whether you're building chatbots, search engines, or other intelligent applications, Retrieval-Augmented Generation (RAG) has emerged as a powerful technique to enhance the performance of large language models (LLMs). Enter **Flexi-RAG**, an open-source project designed to simplify and supercharge RAG for any AI-driven application.
+In the age of advanced AI, providing accurate and relevant information at the right moment is more important than ever. Whether you're building chatbots, search engines, or other intelligent applications, [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) has emerged as a powerful technique to enhance the performance of large language models (LLMs). Enter **[Flexi-RAG](https://github.com/aisbreaker/flexi-rag/)**, an open-source project designed to simplify and supercharge RAG for any AI-driven application.
 
 Flexi-RAG offers a streamlined, flexible, and highly customizable platform for integrating RAG into your projects, all within a single container. It bridges the gap between document sources and LLMs, helping you leverage external information to produce more accurate, context-aware responses.
+
 
 ## What is Flexi-RAG?
 
@@ -14,7 +15,6 @@ When working with language models, one of the main limitations is their inabilit
 
 Flexi-RAG takes this concept and packages it into an easy-to-use, configurable system. Whether you're a developer building AI-driven customer support, an engineer automating knowledge retrieval, or a researcher looking to integrate RAG with your own models, Flexi-RAG offers a simple and effective solution.
 
----
 
 ## Key Features of Flexi-RAG
 
@@ -39,7 +39,6 @@ For seamless integration with any OpenAI-based chat interface, Flexi-RAG exposes
 ### 7. **Included Chat Client**
 To get started quickly, Flexi-RAG includes a basic OpenAI-compatible web chat client. This client is ready to use right out of the box, providing an instant demonstration of how Flexi-RAG can improve the quality of your AI-driven conversations.
 
----
 
 ## Why You Should Use Flexi-RAG
 
@@ -53,11 +52,10 @@ Whether you're developing customer support bots, content generation tools, or in
 
 - **For Enterprises**: Flexi-RAG enables businesses to deploy robust, AI-powered systems that can pull in the latest company knowledge or documents, making it perfect for use cases like customer service, content generation, or knowledge base management.
 
----
 
 ## Get Involved in the Flexi-RAG Community
 
-Flexi-RAG is an open-source project that thrives on community involvement. Whether you're a developer looking to enhance its capabilities, an AI enthusiast who wants to integrate new features, or a user sharing feedback, your contributions are invaluable. 
+Flexi-RAG is an open-source project that thrives on community involvement. Whether you're a developer looking to enhance its capabilities, an AI enthusiast who wants to integrate new features, or a user sharing feedback, your contributions are invaluable. [Contact](https://aisbreaker.org/contact) us!
 
 ### How You Can Contribute:
 - **Developers**: Contribute by submitting pull requests, resolving issues, or proposing new features. Flexi-RAG is a community-driven project, and any improvements are always welcome.
@@ -70,12 +68,11 @@ Flexi-RAG is an open-source project that thrives on community involvement. Wheth
 3. **Suggest New Features**: Have an idea for a new feature or integration? The community welcomes your suggestions!
 4. **Share Feedback**: Tell us about your experience using Flexi-RAG in real-world applications, so we can continue to make it better.
 
----
 
 ## Conclusion
 
 Flexi-RAG is a powerful, open-source solution that makes it easier to integrate Retrieval-Augmented Generation into any AI-driven application. With its simple deployment, flexible configuration, and broad compatibility with external language models, Flexi-RAG is a versatile tool for developers, researchers, and businesses alike. 
 
-By making cutting-edge AI technology more accessible and customizable, Flexi-RAG empowers users to build smarter, more informed AI systems. Join the community today and help shape the future of retrieval-augmented generation!
+By making cutting-edge AI technology more accessible and customizable, Flexi-RAG empowers users to build smarter, more informed AI systems. [Join the community](https://aisbreaker.org/contact) today and help shape the future of retrieval-augmented generation!
 
 
