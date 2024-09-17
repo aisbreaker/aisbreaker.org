@@ -7,6 +7,12 @@ hero:
   tagline: Read our latest articles
 ---
 
+<a href="/blog/2024-09-17-flexi-rag-introduction" style="display: block; width:50%; margin: auto; padding: .75rem; border: 2px #e5e7eb solid; border-radius: 1rem;">
+    <h2 style="font-size: 1.25rem; line-height: 1.75rem; font-weight: 700;">Flexi-RAG: A Flexible, Open-Source Solution for Retrieval-Augmented Generation</h2>
+    <small><i>By Chris, September 17, 2024</i></small>
+    <p>Flexi-RAG offers a streamlined, flexible, and highly customizable platform for integrating RAG into your projects, all within a single container ...</p>
+</a>
+
 <a href="/blog/2024-09-08-aisbreaker-api-deprecation-langchain-recommendation" style="display: block; width:50%; margin: auto; padding: .75rem; border: 2px #e5e7eb solid; border-radius: 1rem;">
     <h2 style="font-size: 1.25rem; line-height: 1.75rem; font-weight: 700;">AIsBreaker API is Now Deprecated - We Recommend Using LangChain Instead</h2>
     <small><i>By Chris, September 8, 2024</i></small>
