@@ -88,7 +88,7 @@ features:
   #  details: Simplify app development when accessing AI services, allow easy switch to an alternative AI service, prevent vendor lock-in, provide simple and clean APIs/SDKs/tools, provide very good docs, support of many programming languages and environments.
 
   - title: Help
-    details: If you need help, checkout our superb demos and docs, ask questions in the AIsBreaker Discussions forum or contact us directly.
+    details: If you need help, checkout our demos and docs, ask questions in the AIsBreaker Discussions forum or contact us directly.
     #details: If you need help, checkout our superb docs (inclusive getting-started), ask questions in the AIsBreaker Discussions forum or contact us directly.
     link: /contact
     linkText: Contact

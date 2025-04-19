@@ -212,7 +212,7 @@ export default withMermaid /*defineConfig*/ ({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-2024 AIsBreaker',
+      copyright: 'Copyright © 2023-2025 AIsBreaker',
     },
     // https://vitepress.dev/reference/default-theme-config#outline
     outline: {
